@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  21 NOV 2023 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  21 NOV 2023 18:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -523,7 +523,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip64
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 17
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen187
+\ar@mcellbox=\box54
+\extrarowheight=\dimen188
+\NC@list=\toks34
+\extratabsurround=\skip65
+\backup@length=\skip66
+\ar@cellbox=\box55
+)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 18
 .
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/t1lmr.fd
@@ -533,7 +543,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 nd-pdftex.def
 File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count304
-\l__pdf_internal_box=\box54
+\l__pdf_internal_box=\box56
 )
 
 LaTeX Warning: Unused global option(s):
@@ -542,24 +552,24 @@ LaTeX Warning: Unused global option(s):
 (internship-report.aux)
 \openout1 = `internship-report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -606,16 +616,16 @@ Package caption Info: End \AtBeginDocument code.
 pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count305
-\scratchdimen=\dimen187
-\scratchbox=\box55
+\scratchdimen=\dimen189
+\scratchbox=\box57
 \nofMPsegments=\count306
 \nofMParguments=\count307
-\everyMPshowfont=\toks34
+\everyMPshowfont=\toks35
 \MPscratchCnt=\count308
-\MPscratchDim=\dimen188
+\MPscratchDim=\dimen190
 \MPnumerator=\count309
 \makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks35
+\everyMPtoPDFconversion=\toks36
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epst
 opdf-base.sty
@@ -627,20 +637,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 -sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \textsubscript on input line 17.
-LaTeX Info: Redefining \microtypecontext on input line 17.
-Package microtype Info: Applying patch `item' on input line 17.
-Package microtype Info: Applying patch `toc' on input line 17.
-Package microtype Info: Applying patch `eqnum' on input line 17.
-Package microtype Info: Applying patch `footnote' on input line 17.
-Package microtype Info: Applying patch `verbatim' on input line 17.
+LaTeX Info: Redefining \textsubscript on input line 18.
+LaTeX Info: Redefining \microtypecontext on input line 18.
+Package microtype Info: Applying patch `item' on input line 18.
+Package microtype Info: Applying patch `toc' on input line 18.
+Package microtype Info: Applying patch `eqnum' on input line 18.
+Package microtype Info: Applying patch `footnote' on input line 18.
+Package microtype Info: Applying patch `verbatim' on input line 18.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 17.
+LaTeX Info: Redefining \showhyphens on input line 18.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -650,15 +660,15 @@ rotype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 18.
  (internship-report.out) (internship-report.out)
 \@outlinefile=\write3
 \openout3 = `internship-report.out'.
 
-\SAP@parboxindent=\skip65
-\SAP@parboxwidth=\skip66
+\SAP@parboxindent=\skip67
+\SAP@parboxwidth=\skip68
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-0.
+1.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -670,7 +680,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 <sapienzalogo.pdf, id=119, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
-Package pdftex.def Info: sapienzalogo.pdf  used on input line 20.
+Package pdftex.def Info: sapienzalogo.pdf  used on input line 21.
 (pdftex.def)             Requested size: 142.26378pt x 44.11742pt.
 
 [1
@@ -681,46 +691,46 @@ Package pdftex.def Info: sapienzalogo.pdf  used on input line 20.
 /pdftex.map} </Library/Application Support/MiKTeX/texmfs/install/tex/latex/sapt
 hesis/sapienzalogo.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-0.
+1.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
 
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-0.
+1.
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-0.
+1.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-20.
+21.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-20.
+21.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 20.
+(Font)              <10> on input line 21.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 20.
+(Font)              <7> on input line 21.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 20.
+(Font)              <5> on input line 21.
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
 
  []
 
@@ -752,7 +762,7 @@ Chapter 1.
 Chapter 2.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 24.
+(hyperref)                than one, level fixed on input line 30.
 
 [3] [4
 
@@ -764,37 +774,93 @@ Chapter 3.
 Chapter 4.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 29.
+(hyperref)                than one, level fixed on input line 59.
 
-[7] [8]
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+[]|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 84--85
+\T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+[]|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 103--104
+\T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+[]|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 122--123
+\T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
+ []
+
+
+Underfull \vbox (badness 1584) has occurred while \output is active []
+
+ [9]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+[]|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 160--161
+\T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
+ [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+[13] [14]
 Chapter 5.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 41.
+(hyperref)                than one, level fixed on input line 269.
 
-[9
+[15
 
-] [10
+] [16
 
 ]
 Chapter 6.
-[11] [12
-
-]
-Chapter 7.
-[13] [14
-
-]
-Chapter 8.
-[15] [16
-
-]
-Chapter 9.
 [17] [18
 
 ]
-Chapter 10.
+Chapter 7.
 [19] [20
+
+]
+Chapter 8.
+[21] [22
+
+]
+Chapter 9.
+[23] [24
+
+]
+Chapter 10.
+[25] [26
 
 ] (internship-report.aux)
  ***********
@@ -805,11 +871,11 @@ Package rerunfilecheck Info: File `internship-report.out' has not changed.
 (rerunfilecheck)             Checksum: 596B270C63BBFFF4684E7185532620C1;6030.
  ) 
 Here is how much of TeX's memory you used:
- 15153 strings out of 474587
- 252116 string characters out of 5742840
- 1936555 words of memory out of 5000000
- 36979 multiletter control sequences out of 15000+600000
- 626378 words of font info for 114 fonts, out of 8000000 for 9000
+ 15317 strings out of 474587
+ 254266 string characters out of 5742840
+ 1937555 words of memory out of 5000000
+ 37048 multiletter control sequences out of 15000+600000
+ 633906 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,131p,1016b,545s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.
@@ -817,14 +883,15 @@ enc}{/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-t
 s1.enc}</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/l
 m/lmbx10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
 blic/lm/lmbx12.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/ty
-pe1/public/lm/lmr10.pfb></Library/Application Support/MiKTeX/texmfs/install/fon
-ts/type1/public/lm/lmr7.pfb></Library/Application Support/MiKTeX/texmfs/install
-/fonts/type1/public/lm/lmss10.pfb></Library/Application Support/MiKTeX/texmfs/i
-nstall/fonts/type1/public/lm/lmss17.pfb></Library/Application Support/MiKTeX/te
-xmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on internship-report.pdf (24 pages, 234883 bytes).
+pe1/public/lm/lmbxi10.pfb></Library/Application Support/MiKTeX/texmfs/install/f
+onts/type1/public/lm/lmr10.pfb></Library/Application Support/MiKTeX/texmfs/inst
+all/fonts/type1/public/lm/lmr7.pfb></Library/Application Support/MiKTeX/texmfs/
+install/fonts/type1/public/lm/lmss10.pfb></Library/Application Support/MiKTeX/t
+exmfs/install/fonts/type1/public/lm/lmss17.pfb></Library/Application Support/Mi
+KTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on internship-report.pdf (30 pages, 272989 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 43246 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 355 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 45294 words of extra memory for PDF output out of 51595 (max. 10000000)
 

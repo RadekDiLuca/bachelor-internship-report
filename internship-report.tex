@@ -4,6 +4,7 @@
 \documentclass[binding=0.6cm,noexaminfo]{sapthesis}
 \usepackage{microtype} \usepackage[english]{babel}
 \usepackage[utf8]{inputenc} \usepackage{hyperref}
+\usepackage{array}
 \hypersetup{pdftitle={Internship Report: MQTT over TLS Security Assessment},pdfauthor={Radek Patrick Di Luca}}
 \title{Internship Report: MQTT over TLS Security Assessment} \author{Radek Patrick Di Luca}
 \IDnumber{1803854}
@@ -19,24 +20,251 @@
 \maketitle
 \tableofcontents
 \mainmatter
-\chapter{Problem Definition} Some text
-\chapter{Key Concepts} ...
-\subsection{MQTT} ...
-\subsection{SSL/TLS} ...
-\subsection{Certificate Authority} ...
-\chapter{TLS Vulnerabilities} ...
-\chapter{Test Suite} ...
-\subsection{Test Case 1 - Legal Connection} ...
-\subsection{Test Case 2 - Self Signed Attacker} ...
-\subsection{Test Case 3 - Self Signed Attacker's Fake CA} ...
-\subsection{Test Case 4 - Alteration 1 (Common Name)} ...
-\subsection{Test Case 5 - Alteration 2 (Expiration Date)} ...
-\subsection{Test Case 6 - Alteration 3 (Public Key)} ...
-\subsection{Test Case 7 - Expired CA (lteration 4)} ...
-\subsection{Test Case 8 - Certificate Extension} ...
-\subsection{Test Case 9 - Longer Chain Of Trust Legal Connection} ...
-\subsection{Test Case 10 - Altered Intermediate CA Common Name} ...
-\subsection{Test Case 11 - Altered Intermediate CA Public Key} ...
+\chapter{Problem Definition}
+The aim of this internship work was to assess the security of the TLS Protocol implementation of some of the main MQTT Broker Libraries that can be found in the IT community. Some faults at the Application layer (MQTT) of some of these libraries were found by my colleague Edoardo Di Paolo during his internship work, so the hypothesis was that these libraries might very well have some faults at the Transport layer (TLS) too.
+Therefore, through the generation of some fabricated TLS Certificates and the definition of a Suite of Automated Unit Tests, the goal was to expose vulnerabilities in these libraries, or validate their implementation as secure.
+
+\chapter{Key Concepts}
+For the sake of this report, we will be using some core concepts that are critical to understanding the internship work.
+
+\subsection{MQTT}
+MQTT, also known as Message Queuing Telemetry Transport, is a lightweight protocol used on the Application Layer of the TCP/IP stack. MQTT is an alternative to the widely spread HTTP, and it’s mainly used for connectivity to and from Internet of Things devices, due to the lightweight nature of the protocol and due to the low memory availability of the above mentioned IoT devices.
+Since the MQTT protocol is by nature a lightweight protocol, it does not feature many security capabilities, so it must rely on the security checks made by the layer immediately below MQTT, the Transport layer, via SSL/TLS.
+We can see here a representation of a typical message exchange via the MQTT protocol: (TODO)
+
+\subsection{SSL/TLS}
+SSL, also known as Secure Sockets Layer, is a protocol used on the Transport Layer of the TCP/IP stack, to provide security in the form of confidentiality, integrity and authenticity to one or both parties involved in the message exchange. In fact, SSL consists mainly of a Handshake phase, in which the client and server negotiate the parameters that will be used to establish the security of the following communication. During this Handshake phase, it is possible to negotiate whether the security is one-way (only the server is authenticated towards the client) or both ways (also known as mutual SSL, mutual TLS or abbreviated, mTLS).
+
+\subsection{Certificate Authority}
+A Certificate Authority, abbreviated CA, is a secure third party who is trusted by both TLS server and TLS client. In general, the client trusts the CA to certify that the server is who they claim to be. In mutual TLS, the CA is also used by the server, to certify that the client is who they claim to be.
+
+\chapter{TLS Vulnerabilities} TODO
+\chapter{Test Suite}
+To test the MQTT Broker Libraries, a Unit Test Suite was formally defined, with a series of descriptions and assertions made. The Unit Tests are defined following the Triangulation technique, which means that the Test Suite should assert both the valid scenarios in which the connection should be established and the illegal scenarios in which the connection should be rejected. Hence the Tests are defined as follows:
+\begin{enumerate}
+	\item Test Case 1 - Legal Connection
+	\item Test Case 2 - Self Signed Attacker
+	\item Test Case 3 - Self Signed Attacker's Fake CA
+	\item Test Case 4 - Alteration 1 (Common Name)
+	\item Test Case 5 - Alteration 2 (Expiration Date)
+	\item Test Case 6 - Alteration 3 (Public Key)
+	\item Test Case 7 - Expired CA (lteration 4)
+	\item Test Case 8 - Certificate Extension
+	\item Test Case 9 - Longer Chain Of Trust Legal Connection
+	\item Test Case 10 - Altered Intermediate CA Common Name
+	\item Test Case 11 - Altered Intermediate CA Public Key
+\end{enumerate}
+Note: The tested libraries are set up as MQTT Broker, or MQTT Server. The Client, which asserts the outcome of the test, always uses the Mosquitto command line tools to connect to the Server.
+
+\subsection{Test Case 1 - Legal Connection}
+This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & None \\
+\hline
+Intruder’s Attack description & This test case represents the happy path with no intruder attack. \\
+\hline
+State of TLS Certificate & The TLS Certificate we use for this test is exactly the Server’s Certificate. \\
+\hline
+State of Certificate’s Signature & The signature is \textbf{\textit{valid}} \\
+\hline
+Assertion & The Library should \textbf{\textit{accept}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test Case 2 - Self Signed Attacker}
+This Test Case is set up by configuring the MQTT Broker Library with a forged self-signed TLS Certificate. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & The Intruder impersonates an MQTT Server during the TLS Handshake phase. \\
+\hline
+Intruder’s Attack description & The Intruder creates a self-signed certificate and uses it to configure the MQTT Library. \\
+\hline
+State of TLS Certificate & The TLS Certificate is self-signed by the attacker, so any field can be completely different from the Server’s Certificate. \\
+\hline
+State of Certificate’s Signature & The signature is valid \\
+\hline
+Assertion & The Library should reject the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test Case 3 - Self Signed Attacker's Fake CA}
+This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by a forged Root Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & The Intruder impersonates an MQTT Server during the TLS Handshake phase. \\
+\hline
+Intruder’s Attack description & The Intruder imitates the Server Certificate’s chain of trust, creating their own root Certificate Authority and using it to sign their certificate. Then they use their certificate to configure the MQTT Library. \\
+\hline
+State of TLS Certificate & The TLS Certificate is imitating the Server Certificate, but it’s signed by the Attacker’s fake Certificate Authority. \\
+\hline
+State of Certificate’s Signature & The signature is valid \\
+\hline
+Assertion & The Library should reject the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test Case 4 - Alteration 1 (Common Name)}
+This Test Case is set up by configuring the MQTT Broker Library with an altered TLS Certificate signed by the real Certificate Authority. The intruder alters the Common Name field, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & The Intruder impersonates an MQTT Server during the TLS Handshake phase. \\
+\hline
+Intruder’s Attack description & The Intruder alters the Common Name field of the Server Certificate, replacing it with their own Common Name. Then they use the altered certificate to configure the MQTT Library. \\
+\hline
+State of TLS Certificate & The TLS Certificate is equal to the Server Certificate except for the Common Name field. \\
+\hline
+State of Certificate’s Signature & The signature is not valid \\
+\hline
+Assertion & The Library should reject the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test Case 5 - Alteration 2 (Expiration Date)}
+This Test Case is set up by configuring the MQTT Broker Library with an altered expired TLS Certificate signed by the real Certificate Authority. The intruder alters the Not Valid After field, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & The Intruder has access to an old expired Server Certificate \\
+\hline
+Intruder’s Attack description & The Intruder alters the expiration date of the expired Server Certificate, making it valid for the current date. Then the Intruder tries  to configure the MQTT Library with the altered Certificate. \\
+\hline
+State of TLS Certificate & The TLS Certificate is the expired Server Certificate, but the Not Valid After field has been tampered with. \\
+\hline
+State of Certificate’s Signature & The signature is not valid \\
+\hline
+Assertion & The Library should reject the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test Case 6 - Alteration 3 (Public Key)}
+This Test Case is set up by configuring the MQTT Broker Library with an altered TLS Certificate signed by the real Certificate Authority. The intruder replaces the contents of the Public Key field with their own Public Key, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & The Intruder impersonates an MQTT Server during the TLS Handshake phase. \\
+\hline
+Intruder’s Attack description & The Intruder alters the Public Key Info > Public Key field of the Server Certificate, replacing it with their own Public Key. Then they use the altered certificate to configure the MQTT Library. \\
+\hline
+State of TLS Certificate & The TLS Certificate is equal to the Server Certificate except for the Public Key field. \\
+\hline
+State of Certificate’s Signature & The signature is not valid \\
+\hline
+Assertion & The Library should reject the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test Case 7 - Expired CA (lteration 4)}
+This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an expired (real) Certificate Authority. This test represents a scenario in which the Intruder manages to decrypt the Certificate Authority’s Public Key over a long period of time, during which the Client under attack is not updated with a new CA Certificate. Because of this, the Tester Client in this Test Case connects to the server checking the Server TLS Certificate against the expired Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & The Intruder has access to an old expired Certificate Authority Root or Intermediate Certificate \\
+\hline
+Intruder’s Attack description & The Intruder tries using the formerly valid, but now expired, Certificate Authority Certificate, to sign their own certificate. Then they try using this certificate to configure the MQTT Library. \\
+\hline
+State of TLS Certificate & The TLS Certificate is a completely different certificate from the Server Certificate. \\
+\hline
+State of Certificate’s Signature & The signature is valid \\
+\hline
+Assertion & The Library should reject the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test Case 8 - Certificate Extension}
+This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Certificate Authority, though this Certificate has been signed by the CA for the MQTT Broker to use only as a Client Certificate towards other Brokers (in mTLS). The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & The Intruder has access to a certificate belonging to the Server’s entity, but one that is used for TLS Client Authentication. \\
+\hline
+Intruder’s Attack description & The Intruder tries using the TLS Client Certificate to configure the MQTT Library as a MQTT Server, hence using the certificate as a TLS Server Certificate. \\
+\hline
+State of TLS Certificate & The TLS Certificate is rightfully authenticating the MQTT Server entity, but this TLS Certificate is not intended to be used for Server Authentication. \\
+\hline
+State of Certificate’s Signature & The signature is valid \\
+\hline
+Assertion & The Library should reject the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test Case 9 - Longer Chain Of Trust Legal Connection}
+This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & None \\
+\hline
+Intruder’s Attack description & This test case represents a happy path with no intruder attack and with a longer chain of trust (Root CA + Intermediate CA). \\
+\hline
+State of TLS Certificate & The TLS Certificate we use for this test is exactly the Server’s Certificate. (In this case, the Client connecting to the Server expects to receive a certificate signed by the Intermediate CA) \\
+\hline
+State of Certificate’s Signature & The signature is valid \\
+\hline
+Assertion & The Library should accept the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test Case 10 - Altered Intermediate CA Common Name}
+This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an altered Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The intruder alters their Intermediate CA’s Common Name to pretend they are the real Intermediate CA, therefore the signature of the Intermediate CA is compromised. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & The Intruder owns an intermediate CA certificate signed by the Root CA. \\
+\hline
+Intruder’s Attack description & The Intruder alters its certificate Common Name, trying to trick the client into believing the Intruder is signed by the real Intermediate CA. \\
+\hline
+State of TLS Certificate & The TLS Certificate is imitating the Server Certificate, but it’s signed by the Attacker’s fake Certificate Authority. (In this case, the Client connecting to the Server expects to receive a certificate signed by the Intermediate CA) \\
+\hline
+State of Certificate’s Signature & The signature is not valid \\
+\hline
+Assertion & The Library should reject the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Test Case 11 - Altered Intermediate CA Public Key}
+This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an altered Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The intruder replaces the real Intermediate CA’s Public Key field contents with their own Public Key, to be able to decrypt the traffic easily, therefore the signature of the Intermediate CA is compromised. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. The table of the Unit Test is as follows:
+
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & The Intruder owns the Intermediate CA’s Certificate. \\
+\hline
+Intruder’s Attack description & The Intruder alters the Intermediate CA’s Public Key field with their own Public Key, trying to trick the client into sending their traffic in a way that is easy to decrypt for the Intruder. \\
+\hline
+State of TLS Certificate & The TLS Certificate is imitating the Server Certificate, but it’s signed by the Attacker’s fake Certificate Authority. (In this case, the Client connecting to the Server expects to receive a certificate signed by the Intermediate CA) \\
+\hline
+State of Certificate’s Signature & The signature is not valid \\
+\hline
+Assertion & The Library should reject the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\end{center}
+
 \chapter{Code Developed} ...
 \subsection{TLS Certificates Generation Script} ...
 \subsection{TLS Certificate Alteration Scripts} ...
