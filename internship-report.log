@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  21 NOV 2023 18:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  21 NOV 2023 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -871,11 +871,11 @@ Package rerunfilecheck Info: File `internship-report.out' has not changed.
 (rerunfilecheck)             Checksum: 596B270C63BBFFF4684E7185532620C1;6030.
  ) 
 Here is how much of TeX's memory you used:
- 15317 strings out of 474587
- 254266 string characters out of 5742840
+ 15319 strings out of 474587
+ 254292 string characters out of 5742840
  1937555 words of memory out of 5000000
  37048 multiletter control sequences out of 15000+600000
- 633906 words of font info for 152 fonts, out of 8000000 for 9000
+ 634051 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,131p,1016b,545s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.
@@ -889,7 +889,7 @@ all/fonts/type1/public/lm/lmr7.pfb></Library/Application Support/MiKTeX/texmfs/
 install/fonts/type1/public/lm/lmss10.pfb></Library/Application Support/MiKTeX/t
 exmfs/install/fonts/type1/public/lm/lmss17.pfb></Library/Application Support/Mi
 KTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on internship-report.pdf (30 pages, 272989 bytes).
+Output written on internship-report.pdf (30 pages, 274410 bytes).
 PDF statistics:
  355 PDF objects out of 1000 (max. 8388607)
  72 named destinations out of 1000 (max. 500000)
