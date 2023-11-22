@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  22 NOV 2023 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  22 NOV 2023 20:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -937,42 +937,42 @@ Chapter 6.
 Chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/m/n/10.95 (+20) Library
+[]|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--359
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
@@ -986,33 +986,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 364--364
  []
 
 
-Overfull \hbox (19.42609pt too wide) in paragraph at lines 356--373
+Overfull \hbox (59.25931pt too wide) in paragraph at lines 356--373
 []  
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 378--378
-[]|\T1/lmr/m/n/10.95 (+20) Library
+[]|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 378--378
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 378--378
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 378--378
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 378--379
-[]|\T1/lmr/m/n/10.95 (+20) Test
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
@@ -1048,11 +1048,11 @@ Package rerunfilecheck Info: File `internship-report.out' has not changed.
 (rerunfilecheck)             Checksum: 596B270C63BBFFF4684E7185532620C1;6030.
  ) 
 Here is how much of TeX's memory you used:
- 17902 strings out of 474587
- 290431 string characters out of 5742840
+ 17904 strings out of 474587
+ 290453 string characters out of 5742840
  2245555 words of memory out of 5000000
  39318 multiletter control sequences out of 15000+600000
- 644962 words of font info for 170 fonts, out of 8000000 for 9000
+ 645056 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,131p,1016b,2270s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.
@@ -1069,7 +1069,7 @@ X/texmfs/install/fonts/type1/public/lm/lmss10.pfb></Library/Application Support
 /MiKTeX/texmfs/install/fonts/type1/public/lm/lmss17.pfb></Library/Application S
 upport/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></Library/Appli
 cation Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt9.pfb>
-Output written on internship-report.pdf (36 pages, 412425 bytes).
+Output written on internship-report.pdf (36 pages, 412601 bytes).
 PDF statistics:
  699 PDF objects out of 1000 (max. 8388607)
  329 named destinations out of 1000 (max. 500000)
