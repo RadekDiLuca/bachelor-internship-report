@@ -301,7 +301,7 @@ The code developed for this Internship is used to setup the laboratory environme
 \subsection{TLS Certificates Generation Script}
 \lstinputlisting[language=Bash]{setupCertificates.sh}
 This script, `\textbf{setupCertificates.sh}', is the main piece of code which creates the certificates for all the actors involved in the above defined Unit Tests, using the OpenSSL library to do so. When executed, we need to pass as argument the IP address of the  MQTT Library Docker Container which will act as our MQTT Server. The reason we need this argument is that, when generating the certificates, we will need to specify this IP as the Server Certificate’s Common Name.
-To start off, the script calls the subscript `\textbf{clean.sh}' to remove existing certificates and folders that we are going to create later. This is done in order to allow the script to be called multiple times if needed. The script then proceeds creating the following Certificate Authority folders:
+To start off, the script calls the subscript `\textbf{clean.sh}' to remove existing certificates and folders that we are going to create later. This is done in order to allow the script to be called multiple times if needed. The script then proceeds creating the following Certificate Authority folders: (lines 7-54)
 \begin{itemize}
 	\item ca: this is the Root Certificate Authority used to sign the MQTT Server’s TLS Certificate.
 	\item second-level-ca: this is the Intermediate Certificate Authority, signed by the  Root CA and used to sign the MQTT Server’s TLS Certificate in the Test Case 9.
@@ -312,7 +312,7 @@ To start off, the script calls the subscript `\textbf{clean.sh}' to remove exist
 	\item second-level-ca-alt2-public-key: this is the destination folder of the altered  Intermediate Certificate Authority after the attacker tampered with its Public Key field. Used in Test Case 11.
 \end{itemize}
 
-The script then proceeds creating the following TLS Certificate folders:
+The script then proceeds creating the following TLS Certificate folders: (lines 56-63)
 \begin{itemize}
 	\item server-certificate: this folder will contain the TLS Certificate belonging to the MQTT Server.
 	\item attacker-certificate: this folder will contain the self-signed TLS Certificate belonging to the Attacker.
@@ -321,7 +321,9 @@ The script then proceeds creating the following TLS Certificate folders:
 	\item alt3-public-key: this folder will contain the MQTT Server’s Altered TLS Certificate, after the attacker tampered with its Public Key field.
 	\item alt4-expired-ca: this folder will contain the Attacker’s TLS Certificate signed by the expired Root CA.
 	\item fake-chain-of-trust: this folder will contain the Attacker’s TLS Certificate signed by their Fake Root Certificate Authority.
-	\item a (TODO)
+	\item attacker-certificate-signed-by-altered-int-ca: this folder will contain the Attacker's Intermediate CA Altered TLS Certificates, for Test Case 10 (Altered CA's Common Name) and Test Case 11 (Altered CA's Public Key)
+
+The script 
 \end{itemize}
 \subsection{TLS Certificate Alteration Scripts} TODO
 \subsection{TLS Certificate Keystores Generation Script} TODO
