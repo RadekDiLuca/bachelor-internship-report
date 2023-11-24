@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  23 NOV 2023 09:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  24 NOV 2023 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -729,7 +729,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sapienzalogo.pdf, id=119, 288.07625pt x 89.33376pt>
+<sapienzalogo.pdf, id=131, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
 Package pdftex.def Info: sapienzalogo.pdf  used on input line 51.
@@ -795,18 +795,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 4.
-)
-\tf@toc=\write4
-\openout4 = `internship-report.toc'.
-
  [3
 
 
-] [4
+])
+\tf@toc=\write4
+\openout4 = `internship-report.toc'.
 
-]
+ [4]
 Chapter 1.
 [1
+
 
 ] [2
 
@@ -936,92 +935,92 @@ Chapter 6.
 ]
 Chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 360--360
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--364
+Underfull \hbox (badness 10000) in paragraph at lines 366--366
 []|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
 
-Overfull \hbox (59.25931pt too wide) in paragraph at lines 356--373
+Overfull \hbox (59.25931pt too wide) in paragraph at lines 358--375
 []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--378
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--378
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--378
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--378
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 380--380
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--384
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
 []|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
@@ -1029,15 +1028,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--384
 
 ]
 Chapter 8.
-[27] [28
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 398.
+
+(tester-image-dockerfile) [27] (moquette-image-dockerfile)
+Overfull \hbox (27.7942pt too wide) in paragraph at lines 434--435
+\T1/lmr/m/n/10.95 (-20) Lastly, the Dock-er-file runs on startup the script `\T
+1/lmr/bx/n/10.95 (-20) /app/src/moquette/bin/moquette.sh\T1/lmr/m/n/10.95 (-20)
+ ' 
+ []
+
+[28] (aedes-image-dockerfile) [29] [30
 
 ]
 Chapter 9.
-[29] [30
+[31] [32
 
 ]
 Chapter 10.
-[31] [32
+[33] [34
 
 ] (internship-report.aux)
  ***********
@@ -1045,14 +1055,14 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
 Package rerunfilecheck Info: File `internship-report.out' has not changed.
-(rerunfilecheck)             Checksum: 596B270C63BBFFF4684E7185532620C1;6030.
+(rerunfilecheck)             Checksum: 96ADB23DD16D681EE44EA7A87E606298;6616.
  ) 
 Here is how much of TeX's memory you used:
- 17904 strings out of 474587
- 290453 string characters out of 5742840
+ 18026 strings out of 474587
+ 292335 string characters out of 5742840
  2245555 words of memory out of 5000000
- 39318 multiletter control sequences out of 15000+600000
- 645056 words of font info for 171 fonts, out of 8000000 for 9000
+ 39376 multiletter control sequences out of 15000+600000
+ 645432 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,131p,1016b,2270s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.
@@ -1069,9 +1079,9 @@ X/texmfs/install/fonts/type1/public/lm/lmss10.pfb></Library/Application Support
 /MiKTeX/texmfs/install/fonts/type1/public/lm/lmss17.pfb></Library/Application S
 upport/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></Library/Appli
 cation Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt9.pfb>
-Output written on internship-report.pdf (36 pages, 412601 bytes).
+Output written on internship-report.pdf (38 pages, 431691 bytes).
 PDF statistics:
- 699 PDF objects out of 1000 (max. 8388607)
- 329 named destinations out of 1000 (max. 500000)
- 54510 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 780 PDF objects out of 1000 (max. 8388607)
+ 379 named destinations out of 1000 (max. 500000)
+ 54534 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,0 +1,14 @@
+# Based off the docker/welcome-to-docker Image, for more info check MAINTAINERS.md
+FROM debian:stable
+
+WORKDIR /app
+
+COPY ./src ./src
+
+SHELL ["/bin/bash", "-c"]
+
+RUN apt-get update -yq \
+    && apt-get install -yq openssl default-jre
+
+ENTRYPOINT ["src/moquette/bin/moquette.sh"]
+

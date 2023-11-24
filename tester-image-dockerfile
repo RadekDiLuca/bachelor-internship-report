@@ -1,0 +1,14 @@
+# Based off the docker/welcome-to-docker Image, for more info check MAINTAINERS.md
+FROM debian:stable
+
+WORKDIR /app
+
+COPY ./src ./src
+
+SHELL ["/bin/bash", "-c"]
+
+RUN apt-get update -yq \
+    && apt-get install -yq python3 python3-pip python3.11-venv git openssl mosquitto mosquitto-clients default-jre
+
+RUN python3 -m venv ~/.venv/mqtt-over-tls
+RUN ~/.venv/mqtt-over-tls/bin/pip3 install -r ./src/requirements.txt
