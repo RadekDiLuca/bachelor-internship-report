@@ -19,15 +19,17 @@
 \contentsline {subsection}{\numberline {4.0.11}Test Case 11 - Altered Intermediate CA Public Key}{14}{subsection.4.0.11}%
 \contentsline {chapter}{\numberline {5}Code Developed}{15}{chapter.5}%
 \contentsline {subsection}{\numberline {5.0.1}TLS Certificates Generation Script}{15}{subsection.5.0.1}%
-\contentsline {subsection}{\numberline {5.0.2}TLS Certificate Alteration Scripts}{23}{subsection.5.0.2}%
-\contentsline {subsection}{\numberline {5.0.3}TLS Certificate Keystores Generation Script}{23}{subsection.5.0.3}%
-\contentsline {subsection}{\numberline {5.0.4}MQTT Client Tester Script}{24}{subsection.5.0.4}%
-\contentsline {subsection}{\numberline {5.0.5}Library Tester Script}{24}{subsection.5.0.5}%
-\contentsline {chapter}{\numberline {6}Tested MQTT Libraries}{25}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Test Results}{27}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Docker Test Environment}{29}{chapter.8}%
-\contentsline {subsection}{\numberline {8.0.1}MQTT Client Tester Image}{29}{subsection.8.0.1}%
-\contentsline {subsection}{\numberline {8.0.2}Moquette MQTT Server Image}{30}{subsection.8.0.2}%
-\contentsline {subsection}{\numberline {8.0.3}Aedes MQTT Server Image}{30}{subsection.8.0.3}%
-\contentsline {chapter}{\numberline {9}RouterOS CHR Tests}{33}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Conclusion}{35}{chapter.10}%
+\contentsline {subsection}{\numberline {5.0.2}TLS Certificate Common Name Alteration Script}{23}{subsection.5.0.2}%
+\contentsline {subsection}{\numberline {5.0.3}TLS Certificate Expiration Date Alteration Script}{24}{subsection.5.0.3}%
+\contentsline {subsection}{\numberline {5.0.4}TLS Certificate Public Key Alteration Script}{25}{subsection.5.0.4}%
+\contentsline {subsection}{\numberline {5.0.5}TLS Certificate Keystores Generation Script}{26}{subsection.5.0.5}%
+\contentsline {subsection}{\numberline {5.0.6}MQTT Client Tester Script}{26}{subsection.5.0.6}%
+\contentsline {subsection}{\numberline {5.0.7}Library Tester Script}{26}{subsection.5.0.7}%
+\contentsline {chapter}{\numberline {6}Tested MQTT Libraries}{27}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Test Results}{29}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Docker Test Environment}{31}{chapter.8}%
+\contentsline {subsection}{\numberline {8.0.1}MQTT Client Tester Image}{31}{subsection.8.0.1}%
+\contentsline {subsection}{\numberline {8.0.2}Moquette MQTT Server Image}{32}{subsection.8.0.2}%
+\contentsline {subsection}{\numberline {8.0.3}Aedes MQTT Server Image}{32}{subsection.8.0.3}%
+\contentsline {chapter}{\numberline {9}RouterOS CHR Tests}{35}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Conclusion}{37}{chapter.10}%

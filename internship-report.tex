@@ -432,7 +432,51 @@ The script then generates, in order:
 
 Lastly, the script converts back to `\textbf{.pem}' all the certificates that were saved in `\textbf{.der}' extension by the alteration scripts.
 \end{itemize}
-\subsection{TLS Certificate Alteration Scripts} TODO
+\subsection{TLS Certificate Common Name Alteration Script}
+\lstinputlisting[language=Python]{alterCommonName.py}
+Because this script is used to alter both the Legit MQTT Server's TLS Certificate and the second Intermediate CA's TLS Certificate, the script is designed to have 3 inputs:
+\begin{itemize}
+	\item Path of the certificate to be altered.
+	\item Path of the destination where the altered certificate will be saved.
+	\item Path of the reference certificate that will be used to copy and paste the Common Name from.
+\end{itemize}
+The script uses the `\textbf{pyasn1}' , `\textbf{pyasn1\_modules}' and `\textbf{sys}' libraries to:
+\begin{enumerate}
+	\item Read the certificate to be altered and the reference certificate from disk.
+	\item Decode the certificate to be altered and the reference certificate, from ASN1-base64-encoded data to a Dictionary data structure.
+	\item Overwrite the \textbf{Common Name} of the certificate to be altered with the \textbf{Common Name} of the reference Certificate.
+	\item Encode the resulting Altered Certificate from a Dictionary data structure to a ASN1-base64-encoded data.
+	\item Save the Altered Certificate on disk.
+\end{enumerate}
+
+\subsection{TLS Certificate Expiration Date Alteration Script}
+\lstinputlisting[language=Python]{alterExpirationDate.py}
+The script uses the `\textbf{pyasn1}' , `\textbf{pyasn1\_modules}' and `\textbf{sys}' libraries to:
+\begin{enumerate}
+	\item Read the certificate to be altered (`\textbf{server-certificate/serverCertificate.der}') from disk.
+	\item Decode the certificate to be altered from ASN1-base64-encoded data to a Dictionary data structure.
+	\item Change the validity range (`\textbf{Not Valid Before}' and `\textbf{Not Valid After}' fields) to a range that contains the current date, for example in the script it's changed to years 2001 until 2040.
+	\item Encode the resulting Altered Certificate from a Dictionary data structure to a ASN1-base64-encoded data.
+	\item Save the Altered Certificate on disk.
+\end{enumerate}
+
+\subsection{TLS Certificate Public Key Alteration Script}
+\lstinputlisting[language=Python]{alterPublicKey.py}
+Because this script is used to alter both the Legit MQTT Server's TLS Certificate and the Intermediate CA's TLS Certificate, the script is designed to have 3 inputs:
+\begin{itemize}
+	\item Path of the certificate to be altered.
+	\item Path of the destination where the altered certificate will be saved.
+	\item Path of the reference certificate that will be used to copy and paste the Common Name from.
+\end{itemize}
+The script uses the `\textbf{pyasn1}' , `\textbf{pyasn1\_modules}' and `\textbf{sys}' libraries to:
+\begin{enumerate}
+	\item Read the certificate to be altered and the reference certificate from disk.
+	\item Decode the certificate to be altered and the reference certificate, from ASN1-base64-encoded data to a Dictionary data structure.
+	\item Overwrite the \textbf{Public Key} of the certificate to be altered with the \textbf{Public Key} of the reference Certificate.
+	\item Encode the resulting Altered Certificate from a Dictionary data structure to a ASN1-base64-encoded data.
+	\item Save the Altered Certificate on disk.
+\end{enumerate}
+
 \subsection{TLS Certificate Keystores Generation Script} TODO
 \subsection{MQTT Client Tester Script}
 The Tester (MQTT Client) uses a Tester Script invoking a Mosquitto Command-Line Interface distribution subscription command to connect to the MQTT Server set up by the Test Environment. The Tester Script then checks if the subscription was active (if exit code is 0) and prints a line on \textbf{stdout} that represents the Unit Test Result. (TODO - to finish)
