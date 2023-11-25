@@ -326,30 +326,109 @@ The script then proceeds creating the following TLS Certificate folders:
 
 The script then generates, in order:
 \begin{itemize}
-	\item the Root Certificate Authority's Private Key and TLS self-signed Certificate.
-	\item the Legit MQTT Server's Private Key.
-	\item the Legit MQTT Server's TLS Certificate signed by the Root CA.
-	\item the Legit MQTT Server's Private Key for usage as a Client.
-	\item the Legit MQTT Server's TLS Certificate for usage as a Client, signed by the Root CA.
-	\item the Intermediate Certificate Authority's Private Key.
-	\item the Intermediate Certificate Authority TLS Certificate signed by the Root CA.
-	\item the Legit MQTT Server's TLS Certificate signed by the Intermediate CA.
-	\item the concatenation of Root CA's and Intermediate CA's TLS Certificates.
-	\item the Attacker's Private Key and TLS self-signed Certificate.
-	\item the Attacker's Fake Root Certificate Authority's Private Key and TLS self-signed Certificate.
-	\item the Attacker's TLS Certificate signed by the Fake Root CA.
-	\item a second (different) Intermediate Certificate Authority's Private Key.
-	\item the TLS Certificate of the second Intermediate CA, signed by the Root CA.
-	\item the Alteration 1 (Common Name) of the second Intermediate CA's TLS Certificate.
-	\item the Attacker's TLS Certificate signed by the Altered Intermediate CA (Alteration 1).
-	\item the concatenation of Root CA's and Altered Intermediate CA (Alteration 1)'s TLS Certificates.
-	\item the Alteration 2 (Public Key) of the second Intermediate CA's TLS Certificate.
-	\item the Attacker's TLS Certificate signed by the Altered Intermediate CA (Alteration 2).
-	\item the concatenation of Root CA's and Altered Intermediate CA (Alteration 2)'s TLS Certificates.
-	\item the Alteration 1 (Common Name) of the Legit MQTT Server's TLS Certificate.
-	\item the Alteration 2 (Expiration Date) of the Legit MQTT Server's TLS Certificate.
-	\item the Alteration 3 (Public Key) of the Legit MQTT Server's TLS Certificate.
-	\item the Expired Root CA's TLS Certificate.
+	\item the Root Certificate Authority's Private Key and TLS self-signed Certificate:
+	\begin{itemize}
+		\item ca/ca.key
+		\item ca/ca.pem
+	\end{itemize}
+	\item the Legit MQTT Server's Private Key:
+	\begin{itemize}
+		\item server-certificate/serverKey.pem
+	\end{itemize}
+	\item the Legit MQTT Server's TLS Certificate signed by the Root CA:
+	\begin{itemize}
+		\item server-certificate/serverCertificate.pem
+	\end{itemize}
+	\item the Legit MQTT Server's Private Key for usage as a Client:
+	\begin{itemize}
+		\item server-certificate/serverKeyAsClient.pem
+	\end{itemize}
+	\item the Legit MQTT Server's TLS Certificate for usage as a Client, signed by the Root CA:
+	\begin{itemize}
+		\item server-certificate/serverCertificateAsClient.pem
+	\end{itemize}
+	\item the Intermediate Certificate Authority's Private Key:
+	\begin{itemize}
+		\item second-level-ca/ca.key
+	\end{itemize}
+	\item the Intermediate Certificate Authority TLS Certificate signed by the Root CA:
+	\begin{itemize}
+		\item second-level-ca/ca.pem
+	\end{itemize}
+	\item the Legit MQTT Server's TLS Certificate signed by the Intermediate CA:
+	\begin{itemize}
+		\item server-certificate/serverCertificateSignedByIntermediate.pem
+	\end{itemize}
+	\item the concatenation of Root CA's and Intermediate CA's TLS Certificates:
+	\begin{itemize}
+		\item second-level-ca/ca-chain-of-trust.pem
+	\end{itemize}
+	\item the Attacker's Private Key and TLS self-signed Certificate:
+	\begin{itemize}
+		\item attacker-certificate/attackerKey.pem
+		\item attacker-certificate/attackerCertificate.pem
+	\end{itemize}
+	\item the Attacker's Fake Root Certificate Authority's Private Key and TLS self-signed Certificate:
+	\begin{itemize}
+		\item fake-ca/ca.key
+		\item fake-ca/ca.pem
+	\end{itemize}
+	\item the Attacker's TLS Certificate signed by the Fake Root CA:
+	\begin{itemize}
+		\item fake-chain-of-trust/attackerCertificate.pem
+	\end{itemize}
+	\item a second (different) Intermediate Certificate Authority's Private Key:
+	\begin{itemize}
+		\item second-level-ca-2/ca.key
+	\end{itemize}
+	\item the TLS Certificate of the second Intermediate CA, signed by the Root CA:
+	\begin{itemize}
+		\item second-level-ca-2/ca.pem
+	\end{itemize}
+	\item the Alteration 1 (Common Name) of the second Intermediate CA's TLS Certificate:
+	\begin{itemize}
+		\item second-level-ca-alt1-common-name/ca.der
+	\end{itemize}
+	\item the Attacker's TLS Certificate signed by the Altered Intermediate CA (Alteration 1):
+	\begin{itemize}
+		\item attacker-certificate-signed-by-altered-int-ca/attackerCertificate-alt1.pem
+	\end{itemize}
+	\item the concatenation of Root CA's and Altered Intermediate CA (Alteration 1)'s TLS Certificates:
+	\begin{itemize}
+		\item second-level-ca-alt1-common-name/ca-chain-of-trust.pem
+	\end{itemize}
+	\item the Alteration 2 (Public Key) of the second Intermediate CA's TLS Certificate:
+	\begin{itemize}
+		\item second-level-ca-alt2-public-key/ca.der
+	\end{itemize}
+	\item the Attacker's TLS Certificate signed by the Altered Intermediate CA (Alteration 2):
+	\begin{itemize}
+		\item attacker-certificate-signed-by-altered-int-ca/attackerCertificate-alt2.pem
+	\end{itemize}
+	\item the concatenation of Root CA's and Altered Intermediate CA (Alteration 2)'s TLS Certificates:
+	\begin{itemize}
+		\item second-level-ca-alt2-public-key/ca-chain-of-trust.pem
+	\end{itemize}
+	\item the Alteration 1 (Common Name) of the Legit MQTT Server's TLS Certificate:
+	\begin{itemize}
+		\item alt1-common-name/attackerCertificate.der
+	\end{itemize}
+	\item the Alteration 2 (Expiration Date) of the Legit MQTT Server's TLS Certificate:
+	\begin{itemize}
+		\item alt2-expiration-date/attackerCertificate.der
+	\end{itemize}
+	\item the Alteration 3 (Public Key) of the Legit MQTT Server's TLS Certificate:
+	\begin{itemize}
+		\item alt3-public-key/attackerCertificate.der
+	\end{itemize}
+	\item the Expired Root CA's TLS Certificate:
+	\begin{itemize}
+		\item expired-ca/ca.pem
+	\end{itemize}
+	\item the Attacker's TLS Certificate signed by the Expired CA:
+	\begin{itemize}
+		\item alt4-expired-ca/attackerCertificate.der
+	\end{itemize}
 
 Lastly, the script converts back to `\textbf{.pem}' all the certificates that were saved in `\textbf{.der}' extension by the alteration scripts.
 \end{itemize}
