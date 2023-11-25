@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  25 NOV 2023 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  25 NOV 2023 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -936,128 +936,135 @@ Overfull \hbox (2.87344pt too wide) in paragraph at lines 456--457
 10.95 (-20) server-certificate/serverCertificate.der\T1/lmr/m/n/10.95 (-20) ')
  []
 
-(alterPublicKey.py) [25] [26]
-Chapter 6.
-[27
+(alterPublicKey.py) [25] (setupKeystores.sh [26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [28
+ [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28])
+(testMQTTBroker.sh [29]) (runTests.sh [30]) [31] [32
+
+]
+Chapter 6.
+[33] [34
 
 ]
 Chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--512
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--517
+Underfull \hbox (badness 10000) in paragraph at lines 538--538
 []|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
 
-Overfull \hbox (59.25931pt too wide) in paragraph at lines 509--526
+Overfull \hbox (59.25931pt too wide) in paragraph at lines 530--547
 []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 552--552
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--532
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 554--554
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--537
+Underfull \hbox (badness 10000) in paragraph at lines 558--558
 []|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
-[29] [30
+[35] [36
 
 ]
 Chapter 8.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 549.
+(hyperref)                than one, level fixed on input line 570.
 
-(tester-image-dockerfile) [31] (moquette-image-dockerfile)
-Overfull \hbox (27.7942pt too wide) in paragraph at lines 585--586
+(tester-image-dockerfile) [37] (moquette-image-dockerfile)
+Overfull \hbox (27.7942pt too wide) in paragraph at lines 606--607
 \T1/lmr/m/n/10.95 (-20) Lastly, the Dock-er-file runs on startup the script `\T
 1/lmr/bx/n/10.95 (-20) /app/src/moquette/bin/moquette.sh\T1/lmr/m/n/10.95 (-20)
  ' 
  []
 
-[32] (aedes-image-dockerfile) [33] [34
+[38] (aedes-image-dockerfile) [39] [40
 
 ]
 Chapter 9.
-[35] [36
+[41] [42
 
 ]
 Chapter 10.
-[37] [38
+[43] [44
 
 ] (internship-report.aux)
  ***********
@@ -1068,10 +1075,10 @@ Package rerunfilecheck Info: File `internship-report.out' has not changed.
 (rerunfilecheck)             Checksum: 37A5CCCAFCFFA7018641C98277A45E2A;7306.
  ) 
 Here is how much of TeX's memory you used:
- 18270 strings out of 474587
- 295659 string characters out of 5742840
+ 18616 strings out of 474587
+ 301063 string characters out of 5742840
  2245555 words of memory out of 5000000
- 39531 multiletter control sequences out of 15000+600000
+ 39606 multiletter control sequences out of 15000+600000
  645432 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,131p,1016b,2305s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1089,9 +1096,9 @@ X/texmfs/install/fonts/type1/public/lm/lmss10.pfb></Library/Application Support
 /MiKTeX/texmfs/install/fonts/type1/public/lm/lmss17.pfb></Library/Application S
 upport/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></Library/Appli
 cation Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt9.pfb>
-Output written on internship-report.pdf (42 pages, 457040 bytes).
+Output written on internship-report.pdf (48 pages, 512364 bytes).
 PDF statistics:
- 892 PDF objects out of 1000 (max. 8388607)
- 456 named destinations out of 1000 (max. 500000)
+ 1225 PDF objects out of 1440 (max. 8388607)
+ 718 named destinations out of 1000 (max. 500000)
  54550 words of extra memory for PDF output out of 61914 (max. 10000000)
 

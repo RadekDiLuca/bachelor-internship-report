@@ -488,8 +488,20 @@ More specifically, the script applies these steps to the certificates and privat
 All the derived keystores are saved in the `keystores' folder.
 
 \subsection{MQTT Client Tester Script}
-The Tester (MQTT Client) uses a Tester Script invoking a Mosquitto Command-Line Interface distribution subscription command to connect to the MQTT Server set up by the Test Environment. The Tester Script then checks if the subscription was active (if exit code is 0) and prints a line on \textbf{stdout} that represents the Unit Test Result. (TODO - to finish)
-\subsection{Library Tester Script} TODO
+\lstinputlisting[language=Bash]{testMQTTBroker.sh}
+The Tester (MQTT Client) uses a Tester Script named `\textbf{testMQTTBroker.sh}', invoking a Mosquitto Command-Line Interface distribution subscription command to connect to the MQTT Server set up by the Test Environment. The Tester Script then checks if the subscription was active (if exit code is 0) and prints a line on \textbf{stdout} that represents the Unit Test Result.
+The Tester Script also accepts an optional argument to specify a Certificate Authority TLS Certificate path to use to connect to the MQTT Server. This is used mainly for \textbf{Test Case 7}, where the reference CA TLS Certificate to use must be the expired one.
+\subsection{Library Tester Script}
+\lstinputlisting[language=Bash]{runTests.sh}
+For each library an automated Tester Script has been developed. The script is designed to loop through the Test Cases, and for each test case the script will:
+\begin{enumerate}
+	\item Configure the MQTT Server Docker Container with the Broker Configuration of the current Test Case.
+	\item Restart the MQTT Server Docker Container
+	\item Command the MQTT Client Docker Container to try connecting to the MQTT Server using the MQTT Client Tester Script (`\textbf{testMQTTBroker.sh}')
+	\item Proceed to the next Test Case
+\end{enumerate}
+The automated script works only if, before executing it, both the MQTT Server and MQTT Client Docker Containers are running.
+
 \chapter{Tested MQTT Libraries}
 The MQTT Libraries that were subjected to Unit Testing are some Libraries that are widely spread:
 
