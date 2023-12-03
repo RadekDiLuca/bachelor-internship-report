@@ -100,6 +100,33 @@
       \endverb
       \keyw{tls}
     \endentry
+    \entry{mqttpaper}{article}{}
+      \name{author}{1}{}{%
+        {{hash=db9816e62d052faa467b5474cd1963c0}{%
+           family={Edoardo\bibnamedelimb Di\bibnamedelima Paolo},
+           familyi={E\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Angelo\bibnamedelima Spognardi},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           suffix={Enrico\bibnamedelima Bassetti},
+           suffixi={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{db9816e62d052faa467b5474cd1963c0}
+      \strng{fullhash}{db9816e62d052faa467b5474cd1963c0}
+      \strng{bibnamehash}{db9816e62d052faa467b5474cd1963c0}
+      \strng{authorbibnamehash}{db9816e62d052faa467b5474cd1963c0}
+      \strng{authornamehash}{db9816e62d052faa467b5474cd1963c0}
+      \strng{authorfullhash}{db9816e62d052faa467b5474cd1963c0}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Security assessment of common open source MQTT brokers and clients}
+      \field{year}{2021}
+      \verb{doi}
+      \verb https://doi.org/10.48550/arXiv.2309.03547
+      \endverb
+      \keyw{mqtt}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

@@ -56,7 +56,7 @@
 \tableofcontents
 \mainmatter
 \chapter{Problem Definition}
-The aim of this internship work was to assess the security of the TLS Protocol implementation of some of the main MQTT Broker Libraries that can be found in the IT community. Some faults at the Application layer (MQTT) of some of these libraries were found by my colleague Edoardo Di Paolo during his internship work, so the hypothesis was that these libraries might very well have some faults at the Transport layer (TLS) too.
+The aim of this internship work was to assess the security of the TLS Protocol implementation of some of the main MQTT Broker Libraries that can be found in the IT community. Some faults at the Application layer (MQTT) of some of these libraries were found by my colleague Edoardo Di Paolo during his internship work \cite{mqttpaper}, so the hypothesis was that these libraries might very well have some faults at the Transport layer (TLS) too.
 Therefore, through the generation of some fabricated TLS Certificates and the definition of a Suite of Automated Unit Tests, the goal was to expose vulnerabilities in these libraries, or validate their implementation as secure.
 
 \chapter{Key Concepts}
@@ -65,7 +65,15 @@ For the sake of this report, we will be using some core concepts that are critic
 \subsection{MQTT}
 MQTT, also known as Message Queuing Telemetry Transport, is a lightweight protocol used on the Application Layer of the TCP/IP stack. MQTT is an alternative to the widely spread HTTP, and it’s mainly used for connectivity to and from Internet of Things devices, due to the lightweight nature of the protocol and due to the low memory availability of the above mentioned IoT devices.
 Since the MQTT protocol is by nature a lightweight protocol, it does not feature many security capabilities, so it must rely on the security checks made by the layer immediately below MQTT, the Transport layer, via SSL/TLS.
-We can see here a representation of a typical message exchange via the MQTT protocol: (TODO)
+We can see here a representation of a typical message exchange via the MQTT protocol:
+
+\includegraphics[width=13cm]{MQTT}
+
+The exchange of information is mainly done through the publish/subscribe paradigm:
+\begin{itemize}
+	\item \textbf{subscribe}: an MQTT Client subscribes to one or more topics. Each topic is identified by a unique string and after subscribing to the topic(s), the MQTT Client will be in a `listening' state, receiving any new messages that will be published on the topic(s).
+	\item \textbf{publish}: an MQTT Client publishes a message to a topic. Each topic is identified by a unique string, and by publishing the message, any Client that was subscribed to the topic will receive the published message.
+\end{itemize}
 
 \subsection{SSL/TLS}
 SSL, also known as Secure Sockets Layer, is a protocol used on the Transport Layer of the TCP/IP stack, to provide security in the form of confidentiality, integrity and authenticity to one or both parties involved in the message exchange. In fact, SSL consists mainly of a Handshake phase, in which the client and server negotiate the parameters that will be used to establish the security of the following communication. During this Handshake phase, it is possible to negotiate whether the security is one-way (only the server is authenticated towards the client) or both ways (also known as mutual SSL, mutual TLS or abbreviated, mTLS).
