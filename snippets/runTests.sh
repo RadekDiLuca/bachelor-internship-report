@@ -18,7 +18,8 @@ testConfigurations=(
     "mosquitto-altered-public-key-longer-chain-of-trust.conf"
 )
 
-testTitles=("Test Case 1 - Legal Connection"
+testTitles=(
+    "Test Case 1 - Legal Connection"
     "Test Case 2 - Self Signed Attacker"
     "Test Case 3 - Self Signed Attacker Fake CA"
     "Test Case 4 - Alteration 1 (Common Name)"

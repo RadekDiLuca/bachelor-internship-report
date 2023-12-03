@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  25 NOV 2023 18:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  3 DEC 2023 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -911,7 +911,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-(setupCertificates.sh [15
+(snippets/setupCertificates.sh [15
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -930,20 +930,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1
 .sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (alterCommonName.py [23]) (alterExpirationDate.py [24])
+) (snippets/alterCommonName.py [23]) (snippets/alterExpirationDate.py
+[24])
 Overfull \hbox (2.87344pt too wide) in paragraph at lines 456--457
 []\T1/lmr/m/n/10.95 (-20) Read the cer-tifi-cate to be al-tered (`\T1/lmr/bx/n/
 10.95 (-20) server-certificate/serverCertificate.der\T1/lmr/m/n/10.95 (-20) ')
  []
 
-(alterPublicKey.py) [25] (setupKeystores.sh [26]
+(snippets/alterPublicKey.py) [25] (snippets/setupKeystores.sh [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28])
-(testMQTTBroker.sh [29]) (runTests.sh [30]) [31] [32
+(snippets/testMQTTBroker.sh [29]) (snippets/runTests.sh [30]) [31] [32
 
 ]
 Chapter 6.
@@ -1049,14 +1050,14 @@ Chapter 8.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 570.
 
-(tester-image-dockerfile) [37] (moquette-image-dockerfile)
+(snippets/tester-image-dockerfile) [37] (snippets/moquette-image-dockerfile)
 Overfull \hbox (27.7942pt too wide) in paragraph at lines 606--607
 \T1/lmr/m/n/10.95 (-20) Lastly, the Dock-er-file runs on startup the script `\T
 1/lmr/bx/n/10.95 (-20) /app/src/moquette/bin/moquette.sh\T1/lmr/m/n/10.95 (-20)
  ' 
  []
 
-[38] (aedes-image-dockerfile) [39] [40
+[38] (snippets/aedes-image-dockerfile) [39] [40
 
 ]
 Chapter 9.
@@ -1072,11 +1073,11 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
 Package rerunfilecheck Info: File `internship-report.out' has not changed.
-(rerunfilecheck)             Checksum: 37A5CCCAFCFFA7018641C98277A45E2A;7306.
+(rerunfilecheck)             Checksum: 79AAE71DC4AACD3DCDCA68EA68C0EFCC;7306.
  ) 
 Here is how much of TeX's memory you used:
- 18616 strings out of 474587
- 301063 string characters out of 5742840
+ 18622 strings out of 474587
+ 301669 string characters out of 5742840
  2245555 words of memory out of 5000000
  39606 multiletter control sequences out of 15000+600000
  645432 words of font info for 175 fonts, out of 8000000 for 9000
@@ -1096,9 +1097,9 @@ X/texmfs/install/fonts/type1/public/lm/lmss10.pfb></Library/Application Support
 /MiKTeX/texmfs/install/fonts/type1/public/lm/lmss17.pfb></Library/Application S
 upport/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></Library/Appli
 cation Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt9.pfb>
-Output written on internship-report.pdf (48 pages, 512364 bytes).
+Output written on internship-report.pdf (48 pages, 512547 bytes).
 PDF statistics:
- 1225 PDF objects out of 1440 (max. 8388607)
- 718 named destinations out of 1000 (max. 500000)
+ 1226 PDF objects out of 1440 (max. 8388607)
+ 719 named destinations out of 1000 (max. 500000)
  54550 words of extra memory for PDF output out of 61914 (max. 10000000)
 
