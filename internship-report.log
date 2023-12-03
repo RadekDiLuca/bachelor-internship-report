@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  3 DEC 2023 13:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  3 DEC 2023 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1131,6 +1131,96 @@ Overfull \hbox (27.7942pt too wide) in paragraph at lines 630--631
 
 ]
 Chapter 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
+[]|\T1/lmr/bx/n/10.95 (+20) Library
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--657
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--658
+\T1/lmr/m/n/10.95 (+20) (Ex-pected
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--660
+[]|\T1/lmr/m/n/10.95 (+20) RouterOS
+ []
+
+
+Overfull \hbox (59.25931pt too wide) in paragraph at lines 654--663
+[]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
+[]|\T1/lmr/bx/n/10.95 (+20) Library
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--669
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--670
+\T1/lmr/m/n/10.95 (+20) (Ex-pected
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--672
+[]|\T1/lmr/m/n/10.95 (+20) RouterOS
+ []
+
 [49] [50
 
 ]
@@ -1167,7 +1257,7 @@ X/texmfs/install/fonts/type1/public/lm/lmss10.pfb></Library/Application Support
 /MiKTeX/texmfs/install/fonts/type1/public/lm/lmss17.pfb></Library/Application S
 upport/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></Library/Appli
 cation Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt9.pfb>
-Output written on internship-report.pdf (56 pages, 2380397 bytes).
+Output written on internship-report.pdf (56 pages, 2381642 bytes).
 PDF statistics:
  1286 PDF objects out of 1440 (max. 8388607)
  727 named destinations out of 1000 (max. 500000)
