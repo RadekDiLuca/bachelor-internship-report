@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  3 DEC 2023 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  3 DEC 2023 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -583,17 +583,275 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 50
-.
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex
+.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
-(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+(/Users/dilucar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/log
+req/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count312
+
+(/Users/dilucar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/log
+req/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
+\c@tabx@nest=\count313
+\c@listtotal=\count314
+\c@listcount=\count315
+\c@liststart=\count316
+\c@liststop=\count317
+\c@citecount=\count318
+\c@citetotal=\count319
+\c@multicitecount=\count320
+\c@multicitetotal=\count321
+\c@instcount=\count322
+\c@maxnames=\count323
+\c@minnames=\count324
+\c@maxitems=\count325
+\c@minitems=\count326
+\c@citecounter=\count327
+\c@maxcitecounter=\count328
+\c@savedcitecounter=\count329
+\c@uniquelist=\count330
+\c@uniquename=\count331
+\c@refsection=\count332
+\c@refsegment=\count333
+\c@maxextratitle=\count334
+\c@maxextratitleyear=\count335
+\c@maxextraname=\count336
+\c@maxextradate=\count337
+\c@maxextraalpha=\count338
+\c@abbrvpenalty=\count339
+\c@highnamepenalty=\count340
+\c@lownamepenalty=\count341
+\c@maxparens=\count342
+\c@parenlevel=\count343
+\blx@tempcnta=\count344
+\blx@tempcntb=\count345
+\blx@tempcntc=\count346
+\c@blx@maxsection=\count347
+\blx@maxsegment@0=\count348
+\blx@notetype=\count349
+\blx@parenlevel@text=\count350
+\blx@parenlevel@foot=\count351
+\blx@sectionciteorder@0=\count352
+\blx@sectionciteorderinternal@0=\count353
+\blx@entrysetcounter=\count354
+\blx@biblioinstance=\count355
+\labelnumberwidth=\skip67
+\labelalphawidth=\skip68
+\biblabelsep=\skip69
+\bibitemsep=\skip70
+\bibnamesep=\skip71
+\bibinitsep=\skip72
+\bibparsep=\skip73
+\bibhang=\skip74
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language80
+\c@mincomprange=\count356
+\c@maxcomprange=\count357
+\c@mincompwidth=\count358
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-dm.d
+ef
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count359
+\c@savedafterword=\count360
+\c@annotator=\count361
+\c@savedannotator=\count362
+\c@author=\count363
+\c@savedauthor=\count364
+\c@bookauthor=\count365
+\c@savedbookauthor=\count366
+\c@commentator=\count367
+\c@savedcommentator=\count368
+\c@editor=\count369
+\c@savededitor=\count370
+\c@editora=\count371
+\c@savededitora=\count372
+\c@editorb=\count373
+\c@savededitorb=\count374
+\c@editorc=\count375
+\c@savededitorc=\count376
+\c@foreword=\count377
+\c@savedforeword=\count378
+\c@holder=\count379
+\c@savedholder=\count380
+\c@introduction=\count381
+\c@savedintroduction=\count382
+\c@namea=\count383
+\c@savednamea=\count384
+\c@nameb=\count385
+\c@savednameb=\count386
+\c@namec=\count387
+\c@savednamec=\count388
+\c@translator=\count389
+\c@savedtranslator=\count390
+\c@shortauthor=\count391
+\c@savedshortauthor=\count392
+\c@shorteditor=\count393
+\c@savedshorteditor=\count394
+\c@labelname=\count395
+\c@savedlabelname=\count396
+\c@institution=\count397
+\c@savedinstitution=\count398
+\c@lista=\count399
+\c@savedlista=\count400
+\c@listb=\count401
+\c@savedlistb=\count402
+\c@listc=\count403
+\c@savedlistc=\count404
+\c@listd=\count405
+\c@savedlistd=\count406
+\c@liste=\count407
+\c@savedliste=\count408
+\c@listf=\count409
+\c@savedlistf=\count410
+\c@location=\count411
+\c@savedlocation=\count412
+\c@organization=\count413
+\c@savedorganization=\count414
+\c@origlocation=\count415
+\c@savedoriglocation=\count416
+\c@origpublisher=\count417
+\c@savedorigpublisher=\count418
+\c@publisher=\count419
+\c@savedpublisher=\count420
+\c@language=\count421
+\c@savedlanguage=\count422
+\c@origlanguage=\count423
+\c@savedoriglanguage=\count424
+\c@pageref=\count425
+\c@savedpageref=\count426
+\shorthandwidth=\skip75
+\shortjournalwidth=\skip76
+\shortserieswidth=\skip77
+\shorttitlewidth=\skip78
+\shortauthorwidth=\skip79
+\shorteditorwidth=\skip80
+\locallabelnumberwidth=\skip81
+\locallabelalphawidth=\skip82
+\localshorthandwidth=\skip83
+\localshortjournalwidth=\skip84
+\localshortserieswidth=\skip85
+\localshorttitlewidth=\skip86
+\localshortauthorwidth=\skip87
+\localshorteditorwidth=\skip88
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-comp
+at.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex
+.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count427
+\c@textcitetotal=\count428
+\c@textcitemaxnames=\count429
+\c@biburlbigbreakpenalty=\count430
+\c@biburlbreakpenalty=\count431
+\c@biburlnumpenalty=\count432
+\c@biburlucpenalty=\count433
+\c@biburllcpenalty=\count434
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count435
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/bbx/nume
+ric.bbx
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/bbx/stan
+dard.bbx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count436
+\c@bbx:relatedtotal=\count437
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/cbx/nume
+ric.cbx
+File: numeric.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex
+.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3kernel/expl3.st
+y
+Package: expl3 2023-11-09 L3 programming layer (loader) 
+
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backe
 nd-pdftex.def
 File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count312
+\l__color_backend_stack_int=\count438
 \l__pdf_internal_box=\box58
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2023-11-09 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-case
+-expl3.sty
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/xparse
+/xparse.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+))
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count439
+\@quotereset=\count440
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 53
+.
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Warning: Unused global option(s):
@@ -602,24 +860,24 @@ LaTeX Warning: Unused global option(s):
 (internship-report.aux)
 \openout1 = `internship-report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -666,16 +924,16 @@ Package caption Info: End \AtBeginDocument code.
 (/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-
 pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
+\scratchcounter=\count441
 \scratchdimen=\dimen193
 \scratchbox=\box59
-\nofMPsegments=\count314
-\nofMParguments=\count315
+\nofMPsegments=\count442
+\nofMParguments=\count443
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count316
+\MPscratchCnt=\count444
 \MPscratchDim=\dimen194
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
+\MPnumerator=\count445
+\makeMPintoPDFobject=\count446
 \everyMPtoPDFconversion=\toks37
 )
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epst
@@ -688,20 +946,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 -sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \textsubscript on input line 50.
-LaTeX Info: Redefining \microtypecontext on input line 50.
-Package microtype Info: Applying patch `item' on input line 50.
-Package microtype Info: Applying patch `toc' on input line 50.
-Package microtype Info: Applying patch `eqnum' on input line 50.
-Package microtype Info: Applying patch `footnote' on input line 50.
-Package microtype Info: Applying patch `verbatim' on input line 50.
+LaTeX Info: Redefining \textsubscript on input line 53.
+LaTeX Info: Redefining \microtypecontext on input line 53.
+Package microtype Info: Applying patch `item' on input line 53.
+Package microtype Info: Applying patch `toc' on input line 53.
+Package microtype Info: Applying patch `eqnum' on input line 53.
+Package microtype Info: Applying patch `footnote' on input line 53.
+Package microtype Info: Applying patch `verbatim' on input line 53.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 50.
+LaTeX Info: Redefining \showhyphens on input line 53.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -711,16 +969,33 @@ rotype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 50.
+Package hyperref Info: Link coloring OFF on input line 53.
  (internship-report.out) (internship-report.out)
-\@outlinefile=\write3
-\openout3 = `internship-report.out'.
+\@outlinefile=\write4
+\openout4 = `internship-report.out'.
 
-\c@lstlisting=\count319
-\SAP@parboxindent=\skip67
-\SAP@parboxwidth=\skip68
+\c@lstlisting=\count447
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/engl
+ish.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `internship-report.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'internship-report.bbl' found.
+ (internship-report.bbl)
+Package biblatex Info: Reference section=0 on input line 53.
+Package biblatex Info: Reference segment=0 on input line 53.
+\SAP@parboxindent=\skip89
+\SAP@parboxwidth=\skip90
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 5
-3.
+6.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -729,10 +1004,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sapienzalogo.pdf, id=139, 288.07625pt x 89.33376pt>
+<sapienzalogo.pdf, id=143, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
-Package pdftex.def Info: sapienzalogo.pdf  used on input line 53.
+Package pdftex.def Info: sapienzalogo.pdf  used on input line 56.
 (pdftex.def)             Requested size: 142.26378pt x 44.11742pt.
 
 [1
@@ -743,46 +1018,46 @@ Package pdftex.def Info: sapienzalogo.pdf  used on input line 53.
 /pdftex.map} </Library/Application Support/MiKTeX/texmfs/install/tex/latex/sapt
 hesis/sapienzalogo.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-3.
+6.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
-3.
+6.
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
-3.
+6.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-53.
+56.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-53.
+56.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 53.
+(Font)              <10> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 53.
+(Font)              <7> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 53.
+(Font)              <5> on input line 56.
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
@@ -799,8 +1074,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ])
-\tf@toc=\write4
-\openout4 = `internship-report.toc'.
+\tf@toc=\write5
+\openout5 = `internship-report.toc'.
 
  [4]
 Chapter 1.
@@ -813,7 +1088,7 @@ Chapter 1.
 Chapter 2.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 62.
+(hyperref)                than one, level fixed on input line 65.
 
 [3] [4
 
@@ -825,54 +1100,54 @@ Chapter 3.
 Chapter 4.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 91.
+(hyperref)                than one, level fixed on input line 104.
 
 [7]
-<./images/TC1.png, id=245, 835.12pt x 378.41376pt>
+<./images/TC1.png, id=257, 835.12pt x 378.41376pt>
 File: ./images/TC1.png Graphic file (type png)
 <use ./images/TC1.png>
-Package pdftex.def Info: ./images/TC1.png  used on input line 110.
+Package pdftex.def Info: ./images/TC1.png  used on input line 123.
 (pdftex.def)             Requested size: 369.88582pt x 167.60542pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 118--119
+Underfull \hbox (badness 2790) in paragraph at lines 131--132
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC2.png, id=247, 816.04875pt x 503.8825pt>
+<./images/TC2.png, id=259, 816.04875pt x 503.8825pt>
 File: ./images/TC2.png Graphic file (type png)
 <use ./images/TC2.png>
-Package pdftex.def Info: ./images/TC2.png  used on input line 131.
+Package pdftex.def Info: ./images/TC2.png  used on input line 144.
 (pdftex.def)             Requested size: 369.88582pt x 228.3904pt.
 [8 <./images/TC1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 139--140
+Underfull \hbox (badness 2790) in paragraph at lines 152--153
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC3.png, id=254, 492.84125pt x 502.87875pt>
+<./images/TC3.png, id=266, 492.84125pt x 502.87875pt>
 File: ./images/TC3.png Graphic file (type png)
 <use ./images/TC3.png>
-Package pdftex.def Info: ./images/TC3.png  used on input line 152.
+Package pdftex.def Info: ./images/TC3.png  used on input line 165.
 (pdftex.def)             Requested size: 369.88582pt x 377.43437pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <./images/TC2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 160--161
+Underfull \hbox (badness 2790) in paragraph at lines 173--174
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
@@ -880,52 +1155,52 @@ Underfull \hbox (badness 2790) in paragraph at lines 160--161
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10 <./images/TC3.png>]
-<./images/TC4.png, id=266, 641.39626pt x 503.8825pt>
+<./images/TC4.png, id=278, 641.39626pt x 503.8825pt>
 File: ./images/TC4.png Graphic file (type png)
 <use ./images/TC4.png>
-Package pdftex.def Info: ./images/TC4.png  used on input line 173.
+Package pdftex.def Info: ./images/TC4.png  used on input line 186.
 (pdftex.def)             Requested size: 369.88582pt x 290.59131pt.
  [11 <./images/TC4.png>]
-<./images/TC5.png, id=272, 585.18625pt x 437.635pt>
+<./images/TC5.png, id=284, 585.18625pt x 437.635pt>
 File: ./images/TC5.png Graphic file (type png)
 <use ./images/TC5.png>
-Package pdftex.def Info: ./images/TC5.png  used on input line 194.
+Package pdftex.def Info: ./images/TC5.png  used on input line 207.
 (pdftex.def)             Requested size: 369.88582pt x 276.63304pt.
  [12 <./images/TC5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 202--203
+Underfull \hbox (badness 2790) in paragraph at lines 215--216
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC6.png, id=278, 585.18625pt x 460.72125pt>
+<./images/TC6.png, id=290, 585.18625pt x 460.72125pt>
 File: ./images/TC6.png Graphic file (type png)
 <use ./images/TC6.png>
-Package pdftex.def Info: ./images/TC6.png  used on input line 215.
+Package pdftex.def Info: ./images/TC6.png  used on input line 228.
 (pdftex.def)             Requested size: 369.88582pt x 291.22606pt.
 [13 <./images/TC6.png>]
-<./images/TC7.png, id=284, 631.35875pt x 471.7625pt>
+<./images/TC7.png, id=296, 631.35875pt x 471.7625pt>
 File: ./images/TC7.png Graphic file (type png)
 <use ./images/TC7.png>
-Package pdftex.def Info: ./images/TC7.png  used on input line 236.
+Package pdftex.def Info: ./images/TC7.png  used on input line 249.
 (pdftex.def)             Requested size: 369.88582pt x 276.38666pt.
 
 Underfull \vbox (badness 2717) has occurred while \output is active []
 
  [14 <./images/TC7.png>]
-<./images/TC8.png, id=290, 614.295pt x 427.5975pt>
+<./images/TC8.png, id=302, 614.295pt x 427.5975pt>
 File: ./images/TC8.png Graphic file (type png)
 <use ./images/TC8.png>
-Package pdftex.def Info: ./images/TC8.png  used on input line 257.
+Package pdftex.def Info: ./images/TC8.png  used on input line 270.
 (pdftex.def)             Requested size: 369.88582pt x 257.47392pt.
  [15 <./images/TC8.png>]
-<./images/TC9.png, id=297, 540.0175pt x 469.755pt>
+<./images/TC9.png, id=309, 540.0175pt x 469.755pt>
 File: ./images/TC9.png Graphic file (type png)
 <use ./images/TC9.png>
-Package pdftex.def Info: ./images/TC9.png  used on input line 278.
+Package pdftex.def Info: ./images/TC9.png  used on input line 291.
 (pdftex.def)             Requested size: 369.88582pt x 321.7659pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -934,20 +1209,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17 <./images/TC9.png>]
-<./images/TC10.png, id=307, 416.55624pt x 582.175pt>
+<./images/TC10.png, id=319, 416.55624pt x 582.175pt>
 File: ./images/TC10.png Graphic file (type png)
 <use ./images/TC10.png>
-Package pdftex.def Info: ./images/TC10.png  used on input line 299.
+Package pdftex.def Info: ./images/TC10.png  used on input line 312.
 (pdftex.def)             Requested size: 369.88582pt x 516.97041pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
 [19 <./images/TC10.png>]
-<./images/TC11.png, id=317, 477.785pt x 593.21625pt>
+<./images/TC11.png, id=329, 477.785pt x 593.21625pt>
 File: ./images/TC11.png Graphic file (type png)
 <use ./images/TC11.png>
-Package pdftex.def Info: ./images/TC11.png  used on input line 320.
+Package pdftex.def Info: ./images/TC11.png  used on input line 333.
 (pdftex.def)             Requested size: 369.88582pt x 459.24904pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -959,7 +1234,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 5.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 325.
+(hyperref)                than one, level fixed on input line 338.
 
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1
@@ -971,9 +1246,9 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 326.
+nput line 339.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-26.
+39.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1002,7 +1277,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (snippets/alterCommonName.py [31]) (snippets/alterExpirationDate.py
 [32])
-Overfull \hbox (2.87344pt too wide) in paragraph at lines 480--481
+Overfull \hbox (2.87344pt too wide) in paragraph at lines 493--494
 []\T1/lmr/m/n/10.95 (-20) Read the cer-tifi-cate to be al-tered (`\T1/lmr/bx/n/
 10.95 (-20) server-certificate/serverCertificate.der\T1/lmr/m/n/10.95 (-20) ')
  []
@@ -1023,92 +1298,92 @@ Chapter 6.
 ]
 Chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--556
+Underfull \hbox (badness 10000) in paragraph at lines 569--569
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--556
+Underfull \hbox (badness 10000) in paragraph at lines 569--569
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--556
+Underfull \hbox (badness 10000) in paragraph at lines 569--569
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--556
+Underfull \hbox (badness 10000) in paragraph at lines 569--569
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--556
+Underfull \hbox (badness 10000) in paragraph at lines 569--569
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--556
+Underfull \hbox (badness 10000) in paragraph at lines 569--569
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--556
+Underfull \hbox (badness 10000) in paragraph at lines 569--569
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
+Underfull \hbox (badness 10000) in paragraph at lines 569--570
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--558
+Underfull \hbox (badness 10000) in paragraph at lines 571--571
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 562--562
+Underfull \hbox (badness 10000) in paragraph at lines 575--575
 []|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
 
-Overfull \hbox (59.25931pt too wide) in paragraph at lines 554--571
+Overfull \hbox (59.25931pt too wide) in paragraph at lines 567--584
 []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
+Underfull \hbox (badness 10000) in paragraph at lines 589--589
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
+Underfull \hbox (badness 10000) in paragraph at lines 589--589
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
+Underfull \hbox (badness 10000) in paragraph at lines 589--589
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
+Underfull \hbox (badness 10000) in paragraph at lines 589--589
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--577
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 591--591
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
+Underfull \hbox (badness 10000) in paragraph at lines 595--595
 []|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
@@ -1118,10 +1393,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 582--582
 Chapter 8.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 594.
+(hyperref)                than one, level fixed on input line 607.
 
 (snippets/tester-image-dockerfile) [45] (snippets/moquette-image-dockerfile)
-Overfull \hbox (27.7942pt too wide) in paragraph at lines 630--631
+Overfull \hbox (27.7942pt too wide) in paragraph at lines 643--644
 \T1/lmr/m/n/10.95 (-20) Lastly, the Dock-er-file runs on startup the script `\T
 1/lmr/bx/n/10.95 (-20) /app/src/moquette/bin/moquette.sh\T1/lmr/m/n/10.95 (-20)
  ' 
@@ -1132,92 +1407,92 @@ Overfull \hbox (27.7942pt too wide) in paragraph at lines 630--631
 ]
 Chapter 9.
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--656
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--656
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--656
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--656
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--656
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--656
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--656
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--657
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--658
+Underfull \hbox (badness 10000) in paragraph at lines 671--671
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--660
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
 []|\T1/lmr/m/n/10.95 (+20) RouterOS
  []
 
 
-Overfull \hbox (59.25931pt too wide) in paragraph at lines 654--663
+Overfull \hbox (59.25931pt too wide) in paragraph at lines 667--676
 []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--670
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 672--672
+Underfull \hbox (badness 10000) in paragraph at lines 685--685
 []|\T1/lmr/m/n/10.95 (+20) RouterOS
  []
 
@@ -1227,22 +1502,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 672--672
 Chapter 10.
 [51] [52
 
+]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+ [53
+
+
 ] (internship-report.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
 Package rerunfilecheck Info: File `internship-report.out' has not changed.
-(rerunfilecheck)             Checksum: 79AAE71DC4AACD3DCDCA68EA68C0EFCC;7306.
+(rerunfilecheck)             Checksum: 466A523459CA72495DFC156B0A6EA53C;7411.
+Package logreq Info: Writing requests to 'internship-report.run.xml'.
+\openout1 = `internship-report.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 18762 strings out of 474587
- 304202 string characters out of 5742840
- 2245555 words of memory out of 5000000
- 39738 multiletter control sequences out of 15000+600000
- 645432 words of font info for 175 fonts, out of 8000000 for 9000
+ 26037 strings out of 474587
+ 451684 string characters out of 5742840
+ 2246555 words of memory out of 5000000
+ 46935 multiletter control sequences out of 15000+600000
+ 653353 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,13n,131p,1016b,2305s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,131p,1016b,2346s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.
 enc}{/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-t
 s1.enc}</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/l
@@ -1250,16 +1535,20 @@ m/lmbx10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
 blic/lm/lmbx12.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/ty
 pe1/public/lm/lmbx9.pfb></Library/Application Support/MiKTeX/texmfs/install/fon
 ts/type1/public/lm/lmbxi10.pfb></Library/Application Support/MiKTeX/texmfs/inst
-all/fonts/type1/public/lm/lmr10.pfb></Library/Application Support/MiKTeX/texmfs
-/install/fonts/type1/public/lm/lmr6.pfb></Library/Application Support/MiKTeX/te
-xmfs/install/fonts/type1/public/lm/lmr7.pfb></Library/Application Support/MiKTe
-X/texmfs/install/fonts/type1/public/lm/lmss10.pfb></Library/Application Support
-/MiKTeX/texmfs/install/fonts/type1/public/lm/lmss17.pfb></Library/Application S
-upport/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></Library/Appli
-cation Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt9.pfb>
-Output written on internship-report.pdf (56 pages, 2382255 bytes).
+all/fonts/type1/public/lm/lmcsc10.pfb></Library/Application Support/MiKTeX/texm
+fs/install/fonts/type1/public/lm/lmr10.pfb></Library/Application Support/MiKTeX
+/texmfs/install/fonts/type1/public/lm/lmr6.pfb></Library/Application Support/Mi
+KTeX/texmfs/install/fonts/type1/public/lm/lmr7.pfb></Library/Application Suppor
+t/MiKTeX/texmfs/install/fonts/type1/public/lm/lmri10.pfb></Library/Application 
+Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmss10.pfb></Library/Applic
+ation Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmss17.pfb></Library/
+Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></
+Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.
+pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/l
+mtt9.pfb>
+Output written on internship-report.pdf (57 pages, 2457060 bytes).
 PDF statistics:
- 1286 PDF objects out of 1440 (max. 8388607)
- 727 named destinations out of 1000 (max. 500000)
- 54605 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1322 PDF objects out of 1440 (max. 8388607)
+ 733 named destinations out of 1000 (max. 500000)
+ 58709 words of extra memory for PDF output out of 61914 (max. 10000000)
 

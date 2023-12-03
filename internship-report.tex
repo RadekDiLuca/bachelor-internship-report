@@ -9,6 +9,9 @@
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 
+\usepackage[style=numeric]{biblatex}
+\addbibresource{bibliography.bib}
+
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codeorange}{rgb}{1,0.6,0.2}
@@ -70,7 +73,17 @@ SSL, also known as Secure Sockets Layer, is a protocol used on the Transport Lay
 \subsection{Certificate Authority}
 A Certificate Authority, abbreviated CA, is a secure third party who is trusted by both TLS server and TLS client. In general, the client trusts the CA to certify that the server is who they claim to be. In mutual TLS, the CA is also used by the server, to certify that the client is who they claim to be.
 
-\chapter{TLS Vulnerabilities} TODO
+\chapter{TLS Vulnerabilities}
+One of the main pieces of work done for this Internship was to define the ways in which an Attacker could possibly exploit a badly implemented TLS connection. Therefore, referencing the specifications RFC 2818 \cite{rfc2818}, RFC 8446 \cite{rfc8446} and RFC 5280 \cite{rfc5280}, the following list of validations an MQTT Broker Library should implement was produced:
+
+\begin{itemize}
+	\item \textbf{Chain of trust}: the certificate has to be either signed by a root Certificate Authority, or it has to have a linked list of references to various Certificate Authorities, up to a root node certificate self-signed by a root Certificate Authority. In this linked list, the certificate of every issuing Certificate Authority has to be signed by the Certificate Authority immediately above it.
+	\item \textbf{Hostname}: the \textit{Common Name} field should match the identifier of the entity to which we’re connecting (server).
+	\item \textbf{(Recursive) Expiration}: the \textit{Not Valid Before} and \textit{Not Valid After} fields contain information on the timestamps that delimit the interval in which the certificate should be accepted as valid. The Library should check that today's date is contained within that interval. This is valid also recursively for the Certificates of the issuing Certificate Authorities throughout the chain of trust.
+	\item \textbf{Public key}: the \textit{Public Key Info > Public Key} field should match the information provided by the Certificate Authority. This public key will be used to encrypt all the upcoming communication, so using the correct public key is essential.
+	\item \textbf{Downgrade attack}: some attackers might try pretending that the latests versions of TLS are not supported by one of the two communicating parties, or they could also pretend that the set of supported ciphers is limited to only easily breakable ciphers, for example based on 512 bit-long cipher keys. This is why it’s important to support only the versions of TLS that are still considered secure, and it’s important to restrict the set of supported ciphers to only implementation-strong ciphers.
+\end{itemize}
+
 \chapter{Test Suite}
 To test the MQTT Broker Libraries, a Unit Test Suite was formally defined, with a series of descriptions and assertions made. The Unit Tests are defined following the Triangulation technique, which means that the Test Suite should assert both the valid scenarios in which the connection should be established and the illegal scenarios in which the connection should be rejected. Hence the Tests are defined as follows:
 \begin{enumerate}
@@ -682,6 +695,7 @@ Furthermore, the developed Test Suite and Laboratory Environment enables us for 
 \cleardoublepage
 \phantomsection % Give this command only if hyperref is loaded
 \addcontentsline{toc}{chapter}{\bibname}
-% Here put the code for the bibliography. You can use BibTeX or
-% the BibLaTeX package or the simple environment thebibliography.
+
+\printbibliography
+
 \end{document}

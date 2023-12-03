@@ -1,0 +1,106 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{rfc2818}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cd9dea511a9302e0330b2de961eff491}{%
+           family={2818},
+           familyi={2\bibinitperiod},
+           given={RFC},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd9dea511a9302e0330b2de961eff491}
+      \strng{fullhash}{cd9dea511a9302e0330b2de961eff491}
+      \strng{bibnamehash}{cd9dea511a9302e0330b2de961eff491}
+      \strng{authorbibnamehash}{cd9dea511a9302e0330b2de961eff491}
+      \strng{authornamehash}{cd9dea511a9302e0330b2de961eff491}
+      \strng{authorfullhash}{cd9dea511a9302e0330b2de961eff491}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{HTPP over TLS.}
+      \verb{urlraw}
+      \verb http://www.ietf.org/rfc/rfc2818.txt
+      \endverb
+      \verb{url}
+      \verb http://www.ietf.org/rfc/rfc2818.txt
+      \endverb
+      \keyw{http,tls}
+    \endentry
+    \entry{rfc5280}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cedb3f343f70d29ca4d5b85bc54c6dea}{%
+           family={5280},
+           familyi={5\bibinitperiod},
+           given={RFC},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cedb3f343f70d29ca4d5b85bc54c6dea}
+      \strng{fullhash}{cedb3f343f70d29ca4d5b85bc54c6dea}
+      \strng{bibnamehash}{cedb3f343f70d29ca4d5b85bc54c6dea}
+      \strng{authorbibnamehash}{cedb3f343f70d29ca4d5b85bc54c6dea}
+      \strng{authornamehash}{cedb3f343f70d29ca4d5b85bc54c6dea}
+      \strng{authorfullhash}{cedb3f343f70d29ca4d5b85bc54c6dea}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Internet X.509 public key infrastructure certificate and certificate revocation list (CRL) profile.}
+      \verb{urlraw}
+      \verb http://tools.ietf.org/html/rfc5280
+      \endverb
+      \verb{url}
+      \verb http://tools.ietf.org/html/rfc5280
+      \endverb
+      \keyw{tls}
+    \endentry
+    \entry{rfc8446}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7313234247fc48e9d9c6c034b5179397}{%
+           family={8446},
+           familyi={8\bibinitperiod},
+           given={RFC},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7313234247fc48e9d9c6c034b5179397}
+      \strng{fullhash}{7313234247fc48e9d9c6c034b5179397}
+      \strng{bibnamehash}{7313234247fc48e9d9c6c034b5179397}
+      \strng{authorbibnamehash}{7313234247fc48e9d9c6c034b5179397}
+      \strng{authornamehash}{7313234247fc48e9d9c6c034b5179397}
+      \strng{authorfullhash}{7313234247fc48e9d9c6c034b5179397}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TLS v1.3.}
+      \verb{urlraw}
+      \verb https://datatracker.ietf.org/doc/html/rfc8446
+      \endverb
+      \verb{url}
+      \verb https://datatracker.ietf.org/doc/html/rfc8446
+      \endverb
+      \keyw{tls}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
