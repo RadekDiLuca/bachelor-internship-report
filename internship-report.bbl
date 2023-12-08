@@ -127,6 +127,58 @@
       \endverb
       \keyw{mqtt}
     \endentry
+    \entry{mithys}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bb1c10bfe022b7618fdbdeca64b6595d}{%
+           family={Mauro\bibnamedelima Conti},
+           familyi={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Sebastiano\bibnamedelima Gottardo},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           suffix={Nicola\bibnamedelima Dragoni},
+           suffixi={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb1c10bfe022b7618fdbdeca64b6595d}
+      \strng{fullhash}{bb1c10bfe022b7618fdbdeca64b6595d}
+      \strng{bibnamehash}{bb1c10bfe022b7618fdbdeca64b6595d}
+      \strng{authorbibnamehash}{bb1c10bfe022b7618fdbdeca64b6595d}
+      \strng{authornamehash}{bb1c10bfe022b7618fdbdeca64b6595d}
+      \strng{authorfullhash}{bb1c10bfe022b7618fdbdeca64b6595d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{MITHYS: Mind The Hand You Shake - Protecting mobile devices from SSL usage vulnerabilities}
+      \field{year}{2013}
+      \verb{doi}
+      \verb http://dx.doi.org/10.1007/978-3-642-41098-7_5
+      \endverb
+      \keyw{ssl,tls}
+    \endentry
+    \entry{sslvalidation}{article}{}
+      \name{author}{1}{}{%
+        {{hash=709fe288d980c069050cdad6357d2215}{%
+           family={Shmatikov},
+           familyi={S\bibinitperiod},
+           given={Martin\bibnamedelimb Georgiev\bibnamedelimb Subodh\bibnamedelimb Iyengar\bibnamedelimb Suman\bibnamedelimb Jana\bibnamedelimb Rishita\bibnamedelimb Anubhai\bibnamedelimb Dan\bibnamedelimb Boneh\bibnamedelima Vitaly},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{709fe288d980c069050cdad6357d2215}
+      \strng{fullhash}{709fe288d980c069050cdad6357d2215}
+      \strng{bibnamehash}{709fe288d980c069050cdad6357d2215}
+      \strng{authorbibnamehash}{709fe288d980c069050cdad6357d2215}
+      \strng{authornamehash}{709fe288d980c069050cdad6357d2215}
+      \strng{authorfullhash}{709fe288d980c069050cdad6357d2215}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The most dangerous code in the world: validating SSL certificates in non-browser software}
+      \field{year}{2012}
+      \verb{doi}
+      \verb https://dl.acm.org/doi/10.1145/2382196.2382204
+      \endverb
+      \keyw{ssl,tls}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
