@@ -62,7 +62,7 @@ Therefore, through the generation of some fabricated TLS Certificates and the de
 \chapter{Key Concepts}
 For the sake of this report, we will be using some core concepts that are critical to understanding the internship work.
 
-\subsection{MQTT}
+\section{MQTT}
 MQTT, also known as Message Queuing Telemetry Transport, is a lightweight protocol used on the Application Layer of the TCP/IP stack. MQTT is an alternative to the widely spread HTTP, and it’s mainly used for connectivity to and from Internet of Things devices, due to the lightweight nature of the protocol and due to the low memory availability of the above mentioned IoT devices.
 Since the MQTT protocol is by nature a lightweight protocol, it does not feature many security capabilities, so it must rely on the security checks made by the layer immediately below MQTT, the Transport layer, via SSL/TLS.
 We can see here a representation of a typical message exchange via the MQTT protocol:
@@ -75,10 +75,10 @@ The exchange of information is mainly done through the publish/subscribe paradig
 	\item \textbf{publish}: an MQTT Client publishes a message to a topic. Each topic is identified by a unique string, and by publishing the message, any Client that was subscribed to the topic will receive the published message.
 \end{itemize}
 
-\subsection{SSL/TLS}
+\section{SSL/TLS}
 SSL, also known as Secure Sockets Layer, is a protocol used on the Transport Layer of the TCP/IP stack, to provide security in the form of confidentiality, integrity and authenticity to one or both parties involved in the message exchange. In fact, SSL consists mainly of a Handshake phase, in which the client and server negotiate the parameters that will be used to establish the security of the following communication. During this Handshake phase, it is possible to negotiate whether the security is one-way (only the server is authenticated towards the client) or both ways (also known as mutual SSL, mutual TLS or abbreviated, mTLS).
 
-\subsection{Certificate Authority}
+\section{Certificate Authority}
 A Certificate Authority, abbreviated CA, is a secure third party who is trusted by both TLS server and TLS client. In general, the client trusts the CA to certify that the server is who they claim to be. In mutual TLS, the CA is also used by the server, to certify that the client is who they claim to be.
 
 \chapter{TLS Vulnerabilities}
@@ -109,7 +109,7 @@ To test the MQTT Broker Libraries, a Unit Test Suite was formally defined, with 
 \end{enumerate}
 Note: The tested libraries are set up as MQTT Broker, or MQTT Server. The Client, which asserts the outcome of the test, always uses the Mosquitto command line tools to connect to the Server.
 
-\subsection{Test Case 1 - Legal Connection}
+\section{Test Case 1 - Legal Connection}
 This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -130,7 +130,7 @@ Assertion & The Library should \textbf{\textit{accept}} the connection when a cl
 
 \includegraphics[width=13cm]{TC1}
 
-\subsection{Test Case 2 - Self Signed Attacker}
+\section{Test Case 2 - Self Signed Attacker}
 This Test Case is set up by configuring the MQTT Broker Library with a forged self-signed TLS Certificate. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -151,7 +151,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 
 \includegraphics[width=13cm]{TC2}
 
-\subsection{Test Case 3 - Self Signed Attacker's Fake CA}
+\section{Test Case 3 - Self Signed Attacker's Fake CA}
 This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by a forged Root Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -172,7 +172,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 
 \includegraphics[width=13cm]{TC3}
 
-\subsection{Test Case 4 - Alteration 1 (Common Name)}
+\section{Test Case 4 - Alteration 1 (Common Name)}
 This Test Case is set up by configuring the MQTT Broker Library with an altered TLS Certificate signed by the real Certificate Authority. The intruder alters the Common Name field, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -193,7 +193,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 
 \includegraphics[width=13cm]{TC4}
 
-\subsection{Test Case 5 - Alteration 2 (Expiration Date)}
+\section{Test Case 5 - Alteration 2 (Expiration Date)}
 This Test Case is set up by configuring the MQTT Broker Library with an altered expired TLS Certificate signed by the real Certificate Authority. The intruder alters the Not Valid After field, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -214,7 +214,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 
 \includegraphics[width=13cm]{TC5}
 
-\subsection{Test Case 6 - Alteration 3 (Public Key)}
+\section{Test Case 6 - Alteration 3 (Public Key)}
 This Test Case is set up by configuring the MQTT Broker Library with an altered TLS Certificate signed by the real Certificate Authority. The intruder replaces the contents of the Public Key field with their own Public Key, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -235,7 +235,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 
 \includegraphics[width=13cm]{TC6}
 
-\subsection{Test Case 7 - Expired CA (lteration 4)}
+\section{Test Case 7 - Expired CA (lteration 4)}
 This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an expired (real) Certificate Authority. This test represents a scenario in which the Intruder manages to decrypt the Certificate Authority’s Public Key over a long period of time, during which the Client under attack is not updated with a new CA Certificate. Because of this, the Tester Client in this Test Case connects to the server checking the Server TLS Certificate against the expired Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -256,7 +256,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 
 \includegraphics[width=13cm]{TC7}
 
-\subsection{Test Case 8 - Certificate Extension}
+\section{Test Case 8 - Certificate Extension}
 This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Certificate Authority, though this Certificate has been signed by the CA for the MQTT Broker to use only as a Client Certificate towards other Brokers (in mTLS). The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -277,7 +277,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 
 \includegraphics[width=13cm]{TC8}
 
-\subsection{Test Case 9 - Longer Chain Of Trust Legal Connection}
+\section{Test Case 9 - Longer Chain Of Trust Legal Connection}
 This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -298,7 +298,7 @@ Assertion & The Library should \textbf{\textit{accept}} the connection when a cl
 
 \includegraphics[width=13cm]{TC9}
 
-\subsection{Test Case 10 - Altered Intermediate CA Common Name}
+\section{Test Case 10 - Altered Intermediate CA Common Name}
 This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an altered Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The intruder alters their Intermediate CA’s Common Name to pretend they are the real Intermediate CA, therefore the signature of the Intermediate CA is compromised. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -319,7 +319,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 
 \includegraphics[width=13cm]{TC10}
 
-\subsection{Test Case 11 - Altered Intermediate CA Public Key}
+\section{Test Case 11 - Altered Intermediate CA Public Key}
 This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an altered Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The intruder replaces the real Intermediate CA’s Public Key field contents with their own Public Key, to be able to decrypt the traffic easily, therefore the signature of the Intermediate CA is compromised. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -343,7 +343,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \chapter{Developed Code}
 The code developed for this Internship is used to setup the laboratory environment and to execute the Unit Tests for each library. For each file there will be the code snippet followed by an explanation of the code.
 
-\subsection{TLS Certificates Generation Script}
+\section{TLS Certificates Generation Script}
 \lstinputlisting[language=Bash]{snippets/setupCertificates.sh}
 This script, `\textbf{setupCertificates.sh}', is the main piece of code which creates the certificates for all the actors involved in the above defined Unit Tests, using the OpenSSL library to do so. When executed, we need to pass as argument the IP address of the  MQTT Library Docker Container which will act as our MQTT Server. The reason we need this argument is that, when generating the certificates, we will need to specify this IP as the Server Certificate’s Common Name.
 To start off, the script calls the subscript `\textbf{clean.sh}' to remove existing certificates and folders that we are going to create later. This is done in order to allow the script to be called multiple times if needed. The script then proceeds creating the following Certificate Authority folders:
@@ -477,7 +477,7 @@ The script then generates, in order:
 
 Lastly, the script converts back to `\textbf{.pem}' all the certificates that were saved in `\textbf{.der}' extension by the alteration scripts.
 \end{itemize}
-\subsection{TLS Certificate Common Name Alteration Script}
+\section{TLS Certificate Common Name Alteration Script}
 \lstinputlisting[language=Python]{snippets/alterCommonName.py}
 Because this script is used to alter both the Legit MQTT Server's TLS Certificate and the second Intermediate CA's TLS Certificate, the script is designed to have 3 inputs:
 \begin{itemize}
@@ -494,7 +494,7 @@ The script uses the `\textbf{pyasn1}' , `\textbf{pyasn1\_modules}' and `\textbf{
 	\item Save the Altered Certificate on disk.
 \end{enumerate}
 
-\subsection{TLS Certificate Expiration Date Alteration Script}
+\section{TLS Certificate Expiration Date Alteration Script}
 \lstinputlisting[language=Python]{snippets/alterExpirationDate.py}
 The script uses the `\textbf{pyasn1}' , `\textbf{pyasn1\_modules}' and `\textbf{sys}' libraries to:
 \begin{enumerate}
@@ -505,7 +505,7 @@ The script uses the `\textbf{pyasn1}' , `\textbf{pyasn1\_modules}' and `\textbf{
 	\item Save the Altered Certificate on disk.
 \end{enumerate}
 
-\subsection{TLS Certificate Public Key Alteration Script}
+\section{TLS Certificate Public Key Alteration Script}
 \lstinputlisting[language=Python]{snippets/alterPublicKey.py}
 Because this script is used to alter both the Legit MQTT Server's TLS Certificate and the Intermediate CA's TLS Certificate, the script is designed to have 3 inputs:
 \begin{itemize}
@@ -522,7 +522,7 @@ The script uses the `\textbf{pyasn1}' , `\textbf{pyasn1\_modules}' and `\textbf{
 	\item Save the Altered Certificate on disk.
 \end{enumerate}
 
-\subsection{TLS Certificate Keystores Generation Script}
+\section{TLS Certificate Keystores Generation Script}
 \lstinputlisting[language=Bash]{snippets/setupKeystores.sh}
 Some of the tested MQTT Libraries work with Java Keystores (JKS) instead of retrieving the TLS Certificates from absolute paths. Therefore this script is designed to save the TLS Certificates generated by the `\textbf{setupCertificates.sh}' script into Java Keystores.
 More specifically, the script applies these steps to the certificates and private keys of each Test Case:
@@ -532,11 +532,11 @@ More specifically, the script applies these steps to the certificates and privat
 \end{enumerate}
 All the derived keystores are saved in the `keystores' folder.
 
-\subsection{MQTT Client Tester Script}
+\section{MQTT Client Tester Script}
 \lstinputlisting[language=Bash]{snippets/testMQTTBroker.sh}
 The Tester (MQTT Client) uses a Tester Script named `\textbf{testMQTTBroker.sh}', invoking a Mosquitto Command-Line Interface distribution subscription command to connect to the MQTT Server set up by the Test Environment. The Tester Script then checks if the subscription was active (if exit code is 0) and prints a line on \textbf{stdout} that represents the Unit Test Result.
 The Tester Script also accepts an optional argument to specify a Certificate Authority TLS Certificate path to use to connect to the MQTT Server. This is used mainly for \textbf{Test Case 7}, where the reference CA TLS Certificate to use must be the expired one.
-\subsection{Library Tester Script}
+\section{Library Tester Script}
 \lstinputlisting[language=Bash]{snippets/runTests.sh}
 For each library an automated Tester Script has been developed. The script is designed to loop through the Test Cases, and for each test case the script will:
 \begin{enumerate}
@@ -612,7 +612,7 @@ EMQX & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} &
 \end{flushleft}
 
 \chapter{Docker Test Environment}
-\subsection{MQTT Client Tester Image}
+\section{MQTT Client Tester Image}
 For the Docker Test Environment, the main piece of work was to setup the MQTT Client Tester Docker Container Image. The code used for the generation of this Image can be found in the following Dockerfile:
 \lstinputlisting{snippets/tester-image-dockerfile}
 
@@ -637,7 +637,7 @@ The Dockerfile also installs all the tools and libraries needed to run the tests
 	\item mosquitto-clients
 	\item default-jre
 \end{itemize}
-\subsection{Moquette MQTT Server Image}
+\section{Moquette MQTT Server Image}
 There was no official Moquette Docker Container Image on Docker Hub, so our work included also the creation of a MQTT Server Docker Container Image which runs Moquette on startup.
 The code used for the generation of this Image can be found in the following Dockerfile:
 \lstinputlisting{snippets/moquette-image-dockerfile}
@@ -649,7 +649,7 @@ The Dockerfile also installs all the dependencies needed by Moquette to run the 
 	\item default-jre
 \end{itemize}
 Lastly, the Dockerfile runs on startup the script `\textbf{/app/src/moquette/bin/moquette.sh}'
-\subsection{Aedes MQTT Server Image}
+\section{Aedes MQTT Server Image}
 The official Aedes Docker Container Image found on Docker Hub had a very complex Container setup that used Docker Volumes to setup the configuration of the library. Because this procedure was not fitting our means of testing, we decided to create a custom MQTT Server Docker Container Image which runs Aedes on startup.
 
 The code used for the generation of this Image can be found in the following Dockerfile:
