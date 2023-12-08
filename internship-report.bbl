@@ -37,7 +37,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{HTPP over TLS.}
+      \field{title}{HTTP over TLS.}
       \verb{urlraw}
       \verb http://www.ietf.org/rfc/rfc2818.txt
       \endverb
@@ -100,51 +100,32 @@
       \endverb
       \keyw{tls}
     \endentry
-    \entry{mqttpaper}{article}{}
-      \name{author}{1}{}{%
-        {{hash=db9816e62d052faa467b5474cd1963c0}{%
-           family={Edoardo\bibnamedelimb Di\bibnamedelima Paolo},
-           familyi={E\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim P\bibinitperiod},
-           given={Angelo\bibnamedelima Spognardi},
-           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
-           suffix={Enrico\bibnamedelima Bassetti},
-           suffixi={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-      }
-      \strng{namehash}{db9816e62d052faa467b5474cd1963c0}
-      \strng{fullhash}{db9816e62d052faa467b5474cd1963c0}
-      \strng{bibnamehash}{db9816e62d052faa467b5474cd1963c0}
-      \strng{authorbibnamehash}{db9816e62d052faa467b5474cd1963c0}
-      \strng{authornamehash}{db9816e62d052faa467b5474cd1963c0}
-      \strng{authorfullhash}{db9816e62d052faa467b5474cd1963c0}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Security assessment of common open source MQTT brokers and clients}
-      \field{year}{2021}
-      \verb{doi}
-      \verb https://doi.org/10.48550/arXiv.2309.03547
-      \endverb
-      \keyw{mqtt}
-    \endentry
     \entry{mithys}{article}{}
-      \name{author}{1}{}{%
-        {{hash=bb1c10bfe022b7618fdbdeca64b6595d}{%
-           family={Mauro\bibnamedelima Conti},
-           familyi={M\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={Sebastiano\bibnamedelima Gottardo},
-           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
-           suffix={Nicola\bibnamedelima Dragoni},
-           suffixi={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      \name{author}{3}{}{%
+        {{hash=c1c6cc37d38b38f6ff327e1eabebda0c}{%
+           family={Conti},
+           familyi={C\bibinitperiod},
+           given={Mauro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=05023247140dc3d76c65df203f9a1ca5}{%
+           family={Dragoni},
+           familyi={D\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+        {{hash=71b72c679ac032af2ebfa61e4467e6e4}{%
+           family={Gottardo},
+           familyi={G\bibinitperiod},
+           given={Sebastiano},
+           giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{bb1c10bfe022b7618fdbdeca64b6595d}
-      \strng{fullhash}{bb1c10bfe022b7618fdbdeca64b6595d}
-      \strng{bibnamehash}{bb1c10bfe022b7618fdbdeca64b6595d}
-      \strng{authorbibnamehash}{bb1c10bfe022b7618fdbdeca64b6595d}
-      \strng{authornamehash}{bb1c10bfe022b7618fdbdeca64b6595d}
-      \strng{authorfullhash}{bb1c10bfe022b7618fdbdeca64b6595d}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \strng{namehash}{9f5bb0867c87f2437a951100ebdb4763}
+      \strng{fullhash}{9f5bb0867c87f2437a951100ebdb4763}
+      \strng{bibnamehash}{9f5bb0867c87f2437a951100ebdb4763}
+      \strng{authorbibnamehash}{9f5bb0867c87f2437a951100ebdb4763}
+      \strng{authornamehash}{9f5bb0867c87f2437a951100ebdb4763}
+      \strng{authorfullhash}{9f5bb0867c87f2437a951100ebdb4763}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{MITHYS: Mind The Hand You Shake - Protecting mobile devices from SSL usage vulnerabilities}
@@ -154,22 +135,82 @@
       \endverb
       \keyw{ssl,tls}
     \endentry
+    \entry{mqttpaper}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8dd4bc9b2d7f319964ef0c4882d9dfe9}{%
+           family={Di\bibnamedelima Paolo},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Edoardo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=da5b47326e8b954ab80e4c45dbfd04f9}{%
+           family={Bassetti},
+           familyi={B\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+        {{hash=dc8f4f054f37a19ffb4ef2ad0c165508}{%
+           family={Spognardi},
+           familyi={S\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{76eaa280e9217061d264961dc980b102}
+      \strng{fullhash}{76eaa280e9217061d264961dc980b102}
+      \strng{bibnamehash}{76eaa280e9217061d264961dc980b102}
+      \strng{authorbibnamehash}{76eaa280e9217061d264961dc980b102}
+      \strng{authornamehash}{76eaa280e9217061d264961dc980b102}
+      \strng{authorfullhash}{76eaa280e9217061d264961dc980b102}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Security assessment of common open source MQTT brokers and clients}
+      \field{year}{2021}
+      \verb{doi}
+      \verb https://doi.org/10.48550/arXiv.2309.03547
+      \endverb
+      \keyw{mqtt}
+    \endentry
     \entry{sslvalidation}{article}{}
-      \name{author}{1}{}{%
-        {{hash=709fe288d980c069050cdad6357d2215}{%
+      \name{author}{6}{}{%
+        {{hash=f45774a0481a5f79c65ce0de2bba5bd7}{%
+           family={Georgiev},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b46957889a8914ba8054ef43381900b2}{%
+           family={Iyengar},
+           familyi={I\bibinitperiod},
+           given={Subodh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=03829f26d35c66b0a0cd1b49e8866681}{%
+           family={Jana},
+           familyi={J\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fdef54d5fc720caa3f6851155995ff33}{%
+           family={Anubhai},
+           familyi={A\bibinitperiod},
+           given={Rishita},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9ef331cc9e5b527723547dfa1becd8cf}{%
+           family={Boneh},
+           familyi={B\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=29abef6d5f9ba10547dab2eee5bceb2e}{%
            family={Shmatikov},
            familyi={S\bibinitperiod},
-           given={Martin\bibnamedelimb Georgiev\bibnamedelimb Subodh\bibnamedelimb Iyengar\bibnamedelimb Suman\bibnamedelimb Jana\bibnamedelimb Rishita\bibnamedelimb Anubhai\bibnamedelimb Dan\bibnamedelimb Boneh\bibnamedelima Vitaly},
-           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+           given={Vitaly},
+           giveni={V\bibinitperiod}}}%
       }
-      \strng{namehash}{709fe288d980c069050cdad6357d2215}
-      \strng{fullhash}{709fe288d980c069050cdad6357d2215}
-      \strng{bibnamehash}{709fe288d980c069050cdad6357d2215}
-      \strng{authorbibnamehash}{709fe288d980c069050cdad6357d2215}
-      \strng{authornamehash}{709fe288d980c069050cdad6357d2215}
-      \strng{authorfullhash}{709fe288d980c069050cdad6357d2215}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \strng{namehash}{a3c6044f3d88bd5707fa909f4e81dcd3}
+      \strng{fullhash}{30938e0ed94b83c4290a8a33478c50b9}
+      \strng{bibnamehash}{a3c6044f3d88bd5707fa909f4e81dcd3}
+      \strng{authorbibnamehash}{a3c6044f3d88bd5707fa909f4e81dcd3}
+      \strng{authornamehash}{a3c6044f3d88bd5707fa909f4e81dcd3}
+      \strng{authorfullhash}{30938e0ed94b83c4290a8a33478c50b9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The most dangerous code in the world: validating SSL certificates in non-browser software}

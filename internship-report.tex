@@ -55,16 +55,22 @@
 \maketitle
 \tableofcontents
 \mainmatter
-\chapter{Problem Definition}
-The aim of this internship work was to assess the security of the TLS Protocol implementation of some of the main MQTT Broker Libraries that can be found in the IT community. Some faults at the Application layer (MQTT) of some of these libraries were found by my colleague Edoardo Di Paolo during his internship work \cite{mqttpaper}, so the hypothesis was that these libraries might very well have some faults at the Transport layer (TLS) too.
-Therefore, through the generation of some fabricated TLS Certificates and the definition of a Suite of Automated Unit Tests, the goal was to expose vulnerabilities in these libraries, or validate their implementation as secure.
+\chapter{Introduction}
+\section{Problem Definition}
+The aim of this internship work was to assess the security of the TLS Protocol implementation of some of the main MQTT Broker Libraries that can be found in the IT community. Some faults in the Application layer Protocol (MQTT) of some of these libraries were found by my colleague Edoardo Di Paolo during his Internship work \cite{mqttpaper}, so the hypothesis was that these libraries might very well have some faults in the Transport layer Protocol (TLS) too.
+Therefore, through the generation of some forged TLS Certificates and the definition of a Suite of Automated Unit Tests, the goal was to expose vulnerabilities in these libraries, or validate their implementation as secure.
 
-\cite{mithys} \cite{sslvalidation} (TODO RELATED WORKS)
+\section{Related Works}
+As it was just stated, the main inspiration for this work has been the article published by my colleague Edoardo Di Paolo \cite{mqttpaper}, which gave us clear information on the publish-subscribe communication paradigm of the MQTT Protocol and on which libraries to test, finally focusing our efforts on the \textit{Mosquitto}, \textit{HiveMQ}, \textit{Moquette}, \textit{EMQX} and \textit{Aedes} MQTT Broker Libraries. The article \cite{mqttpaper} also helped us designing our communication Test Environment, which is later discussed in \textit{Chapter/Section (TODO)}.
 
-\chapter{Key Concepts}
-For the sake of this report, we will be using some core concepts that are critical to understanding the internship work.
+On top of that, the research led by Stanford and Texas at Austin Universities on SSL Certificate Validation in Non-Browser Software \cite{sslvalidation} helped us targeting possible MQTT over TLS Implementation Faults, namely \textit{Chain Of Trust Verification}, \textit{Hostname Verification} and \textit{X.509 Extension Verification}. The research \cite{sslvalidation} also pointed us towards the official RFCs \cites{rfc2818}{rfc5280}{rfc8446} which contain more extensive information regarding TLS Certificate Validation. All these pieces of information allowed us to formally define the TLS Vulnerabilities and Unit Test Suite, described respectively in \textit{Chapter/Section (TODO)} and \textit{Chapter/Section (TODO)}.
 
-\section{MQTT}
+Finally, the article published by University of Padua and the Technical University of Denmark on the design of an SSL Validation Proxy named MITHYS \cite{mithys} exhibits how similar TLS Implementation Faults could be found in some widely spread Mobile Application Software.
+
+\section{Key Concepts}
+For the sake of this report, we will be using some core concepts that are critical to understanding the Internship work.
+
+\subsection{MQTT}
 MQTT, also known as Message Queuing Telemetry Transport, is a lightweight protocol used on the Application Layer of the TCP/IP stack. MQTT is an alternative to the widely spread HTTP, and it’s mainly used for connectivity to and from Internet of Things devices, due to the lightweight nature of the protocol and due to the low memory availability of the above mentioned IoT devices.
 Since the MQTT protocol is by nature a lightweight protocol, it does not feature many security capabilities, so it must rely on the security checks made by the layer immediately below MQTT, the Transport layer, via SSL/TLS.
 We can see here a representation of a typical message exchange via the MQTT protocol:
@@ -77,21 +83,22 @@ The exchange of information is mainly done through the publish/subscribe paradig
 	\item \textbf{publish}: an MQTT Client publishes a message to a topic. Each topic is identified by a unique string, and by publishing the message, any Client that was subscribed to the topic will receive the published message.
 \end{itemize}
 
-\section{SSL/TLS}
+\subsection{SSL/TLS}
 SSL, also known as Secure Sockets Layer, is a protocol used on the Transport Layer of the TCP/IP stack, to provide security in the form of confidentiality, integrity and authenticity to one or both parties involved in the message exchange. In fact, SSL consists mainly of a Handshake phase, in which the client and server negotiate the parameters that will be used to establish the security of the following communication. During this Handshake phase, it is possible to negotiate whether the security is one-way (only the server is authenticated towards the client) or both ways (also known as mutual SSL, mutual TLS or abbreviated, mTLS).
 
-\section{Certificate Authority}
+\subsection{Certificate Authority}
 A Certificate Authority, abbreviated CA, is a secure third party who is trusted by both TLS server and TLS client. In general, the client trusts the CA to certify that the server is who they claim to be. In mutual TLS, the CA is also used by the server, to certify that the client is who they claim to be.
 
-\chapter{TLS Vulnerabilities}
+\section{TLS Vulnerabilities}
 One of the main pieces of work done for this Internship was to define the ways in which an Attacker could possibly exploit a badly implemented TLS connection. Therefore, referencing the specifications RFC 2818 \cite{rfc2818}, RFC 8446 \cite{rfc8446} and RFC 5280 \cite{rfc5280}, the following list of validations an MQTT Broker Library should implement was produced:
 
 \begin{itemize}
-	\item \textbf{Chain of trust}: the certificate has to be either signed by a root Certificate Authority, or it has to have a linked list of references to various Certificate Authorities, up to a root node certificate self-signed by a root Certificate Authority. In this linked list, the certificate of every issuing Certificate Authority has to be signed by the Certificate Authority immediately above it.
-	\item \textbf{Hostname}: the \textit{Common Name} field should match the identifier of the entity to which we’re connecting (server).
-	\item \textbf{(Recursive) Expiration}: the \textit{Not Valid Before} and \textit{Not Valid After} fields contain information on the timestamps that delimit the interval in which the certificate should be accepted as valid. The Library should check that today's date is contained within that interval. This is valid also recursively for the Certificates of the issuing Certificate Authorities throughout the chain of trust.
-	\item \textbf{Public key}: the \textit{Public Key Info > Public Key} field should match the information provided by the Certificate Authority. This public key will be used to encrypt all the upcoming communication, so using the correct public key is essential.
-	\item \textbf{Downgrade attack}: some attackers might try pretending that the latests versions of TLS are not supported by one of the two communicating parties, or they could also pretend that the set of supported ciphers is limited to only easily breakable ciphers, for example based on 512 bit-long cipher keys. This is why it’s important to support only the versions of TLS that are still considered secure, and it’s important to restrict the set of supported ciphers to only implementation-strong ciphers.
+	\item \textbf{Chain of trust}: the certificate has to be either signed by a root Certificate Authority, or it has to have a linked list of references to various Certificate Authorities, up to a root node certificate self-signed by a root Certificate Authority. In this linked list, the certificate of every issuing Certificate Authority has to be signed by the Certificate Authority immediately above it. Validating this check led us to define \textit{Test Cases 1, 2, 3, and 9}.
+	\item \textbf{Hostname}: the \textit{Common Name} field should match the identifier of the entity to which we’re connecting (server). Validating this check led us to define \textit{Test Cases 4 and 10}.
+	\item \textbf{(Recursive) Expiration}: the \textit{Not Valid Before} and \textit{Not Valid After} fields contain information on the timestamps that delimit the interval in which the certificate should be accepted as valid. The Library should check that today's date is contained within that interval. This is valid also recursively for the Certificates of the issuing Certificate Authorities throughout the chain of trust. Validating this check led us to define \textit{Test Cases 5 and 7}.
+	\item \textbf{Public key}: the \textit{Public Key Info > Public Key} field should match the information provided by the Certificate Authority. This public key will be used to encrypt all the upcoming communication, so using the correct public key is essential. Validating this check led us to define \textit{Test Cases 6 and 11}.
+	\item \textbf{X.509 Certificate Extension}: the \textit{Certificate Extensions} should not contain information that would impair the validity of the Certificate itself. In our example, in \textit{Test Case 8}, the Certificate used by the MQTT Server should not be flagged as "Client Only" in the Certificate Extensions, and the tested Library should check for these fields to be valid.
+	\item \textbf{Downgrade attack}: some attackers might try pretending that the latests versions of TLS are not supported by one of the two communicating parties, or they could also pretend that the set of supported ciphers is limited to only easily breakable ciphers, for example based on 512 bit-long cipher keys. This is why it’s important to support only the versions of TLS that are still considered secure, and it’s important to restrict the set of supported ciphers to only implementation-strong ciphers. This known vulnerability led us to test RouterOS for weak ciphers. This will be described later in \textit{Chapter/Section (TODO)}.
 \end{itemize}
 
 \chapter{Test Suite}
