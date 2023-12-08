@@ -556,6 +556,64 @@ For each library an automated Tester Script has been developed. The script is de
 \end{enumerate}
 The automated script works only if, before executing it, both the MQTT Server and MQTT Client Docker Containers are running.
 
+\section{Docker Test Environment}
+\subsection{MQTT Client Tester Image}
+For the Docker Test Environment, the main piece of work was to setup the MQTT Client Tester Docker Container Image. The code used for the generation of this Image can be found in the following Dockerfile:
+\lstinputlisting{snippets/tester-image-dockerfile}
+
+The Dockerfile is based on the Linux Debian operating system image. It stores all its files in the folders `\textbf{/app}' and `\textbf{/app/src}'. The main files that are copied in these folders are:
+\begin{itemize}
+	\item setupCertificates.sh
+	\item setupKeystores.sh
+	\item testMQTTBroker.sh
+	\item requirements.txt (configuration file to install python package dependencies)
+	\item Test configurations for: \textbf{EMQX}, \textbf{HiveMQ} and \textbf{Mosquitto}
+	\item Automated scripts to run all Test Cases for: \textbf{EMQX}, \textbf{HiveMQ}, \textbf{Mosquitto}, \textbf{Aedes} and \textbf{Moquette}
+\end{itemize}
+
+The Dockerfile also installs all the tools and libraries needed to run the tests:
+\begin{itemize}
+	\item python
+	\item pip
+	\item python virtual environment
+	\item git
+	\item openssl
+	\item mosquitto
+	\item mosquitto-clients
+	\item default-jre
+\end{itemize}
+\subsection{Moquette MQTT Server Image}
+There was no official Moquette Docker Container Image on Docker Hub, so our work included also the creation of a MQTT Server Docker Container Image which runs Moquette on startup.
+The code used for the generation of this Image can be found in the following Dockerfile:
+\lstinputlisting{snippets/moquette-image-dockerfile}
+
+This Dockerfile is also based on the Linux Debian operating system image. It stores all its files in the folder `\textbf{/app/src/moquette}'. This folder contains a pre-compiled version of the Moquette MQTT Broker library.
+The Dockerfile also installs all the dependencies needed by Moquette to run the MQTT Server:
+\begin{itemize}
+	\item openssl
+	\item default-jre
+\end{itemize}
+Lastly, the Dockerfile runs on startup the script `\textbf{/app/src/moquette/bin/moquette.sh}'
+\subsection{Aedes MQTT Server Image}
+The official Aedes Docker Container Image found on Docker Hub had a very complex Container setup that used Docker Volumes to setup the configuration of the library. Because this procedure was not fitting our means of testing, we decided to create a custom MQTT Server Docker Container Image which runs Aedes on startup.
+
+The code used for the generation of this Image can be found in the following Dockerfile:
+\lstinputlisting{snippets/aedes-image-dockerfile}
+
+This Dockerfile is also based on the Linux Debian operating system image. It stores all its files in the folder `\textbf{/app/src}'. This folder contains:
+\begin{itemize}
+	\item the Aedes test configurations needed to run each Test Case
+	\item a `\textbf{run.sh}' script which simply runs aedes-cli getting the configuration from the path `\textbf{/app/src/config/conf.js}'
+\end{itemize}
+The Dockerfile also installs all the dependencies needed to run Aedes' MQTT Server, and it installs the latest version of Aedes itself.
+The dependencies are:
+\begin{itemize}
+	\item openssl
+	\item default-jre
+	\item npm
+\end{itemize}
+Lastly, the Dockerfile runs on startup the above mentioned script `\textbf{run.sh}'.
+
 \chapter{Tested MQTT Libraries}
 The MQTT Libraries that were subjected to Unit Testing are some Libraries that are widely spread:
 
@@ -620,63 +678,6 @@ EMQX & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} &
 \end{tabular}
 \end{flushleft}
 
-\chapter{Docker Test Environment}
-\section{MQTT Client Tester Image}
-For the Docker Test Environment, the main piece of work was to setup the MQTT Client Tester Docker Container Image. The code used for the generation of this Image can be found in the following Dockerfile:
-\lstinputlisting{snippets/tester-image-dockerfile}
-
-The Dockerfile is based on the Linux Debian operating system image. It stores all its files in the folders `\textbf{/app}' and `\textbf{/app/src}'. The main files that are copied in these folders are:
-\begin{itemize}
-	\item setupCertificates.sh
-	\item setupKeystores.sh
-	\item testMQTTBroker.sh
-	\item requirements.txt (configuration file to install python package dependencies)
-	\item Test configurations for: \textbf{EMQX}, \textbf{HiveMQ} and \textbf{Mosquitto}
-	\item Automated scripts to run all Test Cases for: \textbf{EMQX}, \textbf{HiveMQ}, \textbf{Mosquitto}, \textbf{Aedes} and \textbf{Moquette}
-\end{itemize}
-
-The Dockerfile also installs all the tools and libraries needed to run the tests:
-\begin{itemize}
-	\item python
-	\item pip
-	\item python virtual environment
-	\item git
-	\item openssl
-	\item mosquitto
-	\item mosquitto-clients
-	\item default-jre
-\end{itemize}
-\section{Moquette MQTT Server Image}
-There was no official Moquette Docker Container Image on Docker Hub, so our work included also the creation of a MQTT Server Docker Container Image which runs Moquette on startup.
-The code used for the generation of this Image can be found in the following Dockerfile:
-\lstinputlisting{snippets/moquette-image-dockerfile}
-
-This Dockerfile is also based on the Linux Debian operating system image. It stores all its files in the folder `\textbf{/app/src/moquette}'. This folder contains a pre-compiled version of the Moquette MQTT Broker library.
-The Dockerfile also installs all the dependencies needed by Moquette to run the MQTT Server:
-\begin{itemize}
-	\item openssl
-	\item default-jre
-\end{itemize}
-Lastly, the Dockerfile runs on startup the script `\textbf{/app/src/moquette/bin/moquette.sh}'
-\section{Aedes MQTT Server Image}
-The official Aedes Docker Container Image found on Docker Hub had a very complex Container setup that used Docker Volumes to setup the configuration of the library. Because this procedure was not fitting our means of testing, we decided to create a custom MQTT Server Docker Container Image which runs Aedes on startup.
-
-The code used for the generation of this Image can be found in the following Dockerfile:
-\lstinputlisting{snippets/aedes-image-dockerfile}
-
-This Dockerfile is also based on the Linux Debian operating system image. It stores all its files in the folder `\textbf{/app/src}'. This folder contains:
-\begin{itemize}
-	\item the Aedes test configurations needed to run each Test Case
-	\item a `\textbf{run.sh}' script which simply runs aedes-cli getting the configuration from the path `\textbf{/app/src/config/conf.js}'
-\end{itemize}
-The Dockerfile also installs all the dependencies needed to run Aedes' MQTT Server, and it installs the latest version of Aedes itself.
-The dependencies are:
-\begin{itemize}
-	\item openssl
-	\item default-jre
-	\item npm
-\end{itemize}
-Lastly, the Dockerfile runs on startup the above mentioned script `\textbf{run.sh}'.
 \chapter{RouterOS CHR Tests}
 As part of this Internship research, we also validated the TLS implementation of the MQTT features offered by the RouterOS Cloud Hosted Router (CHR) distribution. RouterOS CHR enables a machine to act as a MQTT Client, optionally encrypting data via TLS. The tests have been done manually, and as MQTT Broker to connect to, we used the Mosquitto Library. Just like in Chapter 7, the results are summarised in the following table:
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  8 DEC 2023 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  8 DEC 2023 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1281,220 +1281,217 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34])
-(snippets/testMQTTBroker.sh [35]) (snippets/runTests.sh [36]) [37] [38
-
-]
-Chapter 4.
-[39] [40
-
-]
-Chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--586
-[]|\T1/lmr/bx/n/10.95 (+20) Library
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--586
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--586
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--586
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--586
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--586
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--586
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 588--588
-\T1/lmr/m/n/10.95 (+20) (Ex-pected
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 592--592
-[]|\T1/lmr/m/n/10.95 (+20) HiveMQ
- []
-
-
-Overfull \hbox (59.25931pt too wide) in paragraph at lines 584--601
-[]  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 606--606
-[]|\T1/lmr/bx/n/10.95 (+20) Library
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 606--606
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 606--606
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 606--606
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 606--607
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 608--608
-\T1/lmr/m/n/10.95 (+20) (Ex-pected
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 612--612
-[]|\T1/lmr/m/n/10.95 (+20) HiveMQ
- []
-
-[41] [42
-
-]
-Chapter 6.
-(snippets/tester-image-dockerfile) [43] (snippets/moquette-image-dockerfile)
-Overfull \hbox (27.7942pt too wide) in paragraph at lines 660--661
+(snippets/testMQTTBroker.sh [35]) (snippets/runTests.sh [36]) [37]
+(snippets/tester-image-dockerfile) [38] (snippets/moquette-image-dockerfile)
+Overfull \hbox (27.7942pt too wide) in paragraph at lines 596--597
 \T1/lmr/m/n/10.95 (-20) Lastly, the Dock-er-file runs on startup the script `\T
 1/lmr/bx/n/10.95 (-20) /app/src/moquette/bin/moquette.sh\T1/lmr/m/n/10.95 (-20)
  ' 
  []
 
-[44] (snippets/aedes-image-dockerfile) [45] [46
+(snippets/aedes-image-dockerfile) [39] [40]
+Chapter 4.
+[41
+
+] [42
 
 ]
-Chapter 7.
+Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
+Underfull \hbox (badness 10000) in paragraph at lines 644--644
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
+Underfull \hbox (badness 10000) in paragraph at lines 644--644
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
+Underfull \hbox (badness 10000) in paragraph at lines 644--644
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
+Underfull \hbox (badness 10000) in paragraph at lines 644--644
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
+Underfull \hbox (badness 10000) in paragraph at lines 644--644
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
+Underfull \hbox (badness 10000) in paragraph at lines 644--644
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
+Underfull \hbox (badness 10000) in paragraph at lines 644--644
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--687
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--688
+Underfull \hbox (badness 10000) in paragraph at lines 646--646
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--690
-[]|\T1/lmr/m/n/10.95 (+20) RouterOS
+Underfull \hbox (badness 10000) in paragraph at lines 650--650
+[]|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
 
-Overfull \hbox (59.25931pt too wide) in paragraph at lines 684--693
+Overfull \hbox (59.25931pt too wide) in paragraph at lines 642--659
 []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--698
+Underfull \hbox (badness 10000) in paragraph at lines 664--664
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--698
+Underfull \hbox (badness 10000) in paragraph at lines 664--664
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--698
+Underfull \hbox (badness 10000) in paragraph at lines 664--664
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--698
+Underfull \hbox (badness 10000) in paragraph at lines 664--664
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 698--699
+Underfull \hbox (badness 10000) in paragraph at lines 664--665
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--700
+Underfull \hbox (badness 10000) in paragraph at lines 666--666
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--702
+Underfull \hbox (badness 10000) in paragraph at lines 670--670
+[]|\T1/lmr/m/n/10.95 (+20) HiveMQ
+ []
+
+[43] [44
+
+]
+Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
+[]|\T1/lmr/bx/n/10.95 (+20) Library
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--688
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+\T1/lmr/m/n/10.95 (+20) (Ex-pected
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--691
 []|\T1/lmr/m/n/10.95 (+20) RouterOS
  []
 
-[47] [48
+
+Overfull \hbox (59.25931pt too wide) in paragraph at lines 685--694
+[]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]|\T1/lmr/bx/n/10.95 (+20) Library
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--701
+\T1/lmr/m/n/10.95 (+20) (Ex-pected
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--703
+[]|\T1/lmr/m/n/10.95 (+20) RouterOS
+ []
+
+[45] [46
 
 ]
-Chapter 8.
-[49] [50
+Chapter 7.
+[47] [48
 
 ]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [51
+ [49
 
 
 ] (internship-report.aux)
@@ -1503,14 +1500,14 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
 Package rerunfilecheck Info: File `internship-report.out' has not changed.
-(rerunfilecheck)             Checksum: 89131E33B7865E263CE05D14C63F6B63;7431.
+(rerunfilecheck)             Checksum: CCB808D5A049F89E196BA05A6E9481EE;7463.
 Package logreq Info: Writing requests to 'internship-report.run.xml'.
 \openout1 = `internship-report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26088 strings out of 474587
- 452510 string characters out of 5742840
+ 26086 strings out of 474587
+ 452530 string characters out of 5742840
  2255555 words of memory out of 5000000
  46965 multiletter control sequences out of 15000+600000
  660310 words of font info for 196 fonts, out of 8000000 for 9000
@@ -1534,9 +1531,9 @@ Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></
 Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.
 pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/l
 mtt9.pfb>
-Output written on internship-report.pdf (55 pages, 2780933 bytes).
+Output written on internship-report.pdf (53 pages, 2779406 bytes).
 PDF statistics:
- 1343 PDF objects out of 1440 (max. 8388607)
- 736 named destinations out of 1000 (max. 500000)
+ 1334 PDF objects out of 1440 (max. 8388607)
+ 734 named destinations out of 1000 (max. 500000)
  62826 words of extra memory for PDF output out of 74296 (max. 10000000)
 
