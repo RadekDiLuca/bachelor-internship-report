@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  8 DEC 2023 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  8 DEC 2023 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1004,7 +1004,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sapienzalogo.pdf, id=151, 288.07625pt x 89.33376pt>
+<sapienzalogo.pdf, id=155, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
 Package pdftex.def Info: sapienzalogo.pdf  used on input line 56.
@@ -1083,7 +1083,7 @@ Chapter 1.
 
 
 ]
-<./images/MQTT.png, id=240, 922.44624pt x 603.25375pt>
+<./images/MQTT.png, id=245, 922.44624pt x 603.25375pt>
 File: ./images/MQTT.png Graphic file (type png)
 <use ./images/MQTT.png>
 Package pdftex.def Info: ./images/MQTT.png  used on input line 78.
@@ -1096,7 +1096,7 @@ Chapter 2.
 [5
 
 ]
-<./images/TC1.png, id=274, 835.12pt x 378.41376pt>
+<./images/TC1.png, id=279, 835.12pt x 378.41376pt>
 File: ./images/TC1.png Graphic file (type png)
 <use ./images/TC1.png>
 Package pdftex.def Info: ./images/TC1.png  used on input line 140.
@@ -1111,7 +1111,7 @@ Underfull \hbox (badness 2790) in paragraph at lines 148--149
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC2.png, id=275, 816.04875pt x 503.8825pt>
+<./images/TC2.png, id=280, 816.04875pt x 503.8825pt>
 File: ./images/TC2.png Graphic file (type png)
 <use ./images/TC2.png>
 Package pdftex.def Info: ./images/TC2.png  used on input line 161.
@@ -1126,7 +1126,7 @@ Underfull \hbox (badness 2790) in paragraph at lines 169--170
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC3.png, id=282, 492.84125pt x 502.87875pt>
+<./images/TC3.png, id=287, 492.84125pt x 502.87875pt>
 File: ./images/TC3.png Graphic file (type png)
 <use ./images/TC3.png>
 Package pdftex.def Info: ./images/TC3.png  used on input line 182.
@@ -1148,13 +1148,13 @@ Underfull \hbox (badness 2790) in paragraph at lines 190--191
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./images/TC3.png>]
-<./images/TC4.png, id=293, 641.39626pt x 503.8825pt>
+<./images/TC4.png, id=298, 641.39626pt x 503.8825pt>
 File: ./images/TC4.png Graphic file (type png)
 <use ./images/TC4.png>
 Package pdftex.def Info: ./images/TC4.png  used on input line 203.
 (pdftex.def)             Requested size: 369.88582pt x 290.59131pt.
  [9 <./images/TC4.png>]
-<./images/TC5.png, id=300, 585.18625pt x 437.635pt>
+<./images/TC5.png, id=305, 585.18625pt x 437.635pt>
 File: ./images/TC5.png Graphic file (type png)
 <use ./images/TC5.png>
 Package pdftex.def Info: ./images/TC5.png  used on input line 224.
@@ -1169,7 +1169,7 @@ Underfull \hbox (badness 2790) in paragraph at lines 232--233
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC6.png, id=306, 585.18625pt x 460.72125pt>
+<./images/TC6.png, id=311, 585.18625pt x 460.72125pt>
 File: ./images/TC6.png Graphic file (type png)
 <use ./images/TC6.png>
 Package pdftex.def Info: ./images/TC6.png  used on input line 245.
@@ -1178,7 +1178,7 @@ Package pdftex.def Info: ./images/TC6.png  used on input line 245.
 Underfull \vbox (badness 7047) has occurred while \output is active []
 
  [11 <./images/TC6.png>]
-<./images/TC7.png, id=312, 631.35875pt x 471.7625pt>
+<./images/TC7.png, id=317, 631.35875pt x 471.7625pt>
 File: ./images/TC7.png Graphic file (type png)
 <use ./images/TC7.png>
 Package pdftex.def Info: ./images/TC7.png  used on input line 266.
@@ -1190,13 +1190,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13 <./images/TC7.png>]
-<./images/TC8.png, id=322, 614.295pt x 427.5975pt>
+<./images/TC8.png, id=327, 614.295pt x 427.5975pt>
 File: ./images/TC8.png Graphic file (type png)
 <use ./images/TC8.png>
 Package pdftex.def Info: ./images/TC8.png  used on input line 287.
 (pdftex.def)             Requested size: 369.88582pt x 257.47392pt.
  [14 <./images/TC8.png>]
-<./images/TC9.png, id=328, 540.0175pt x 469.755pt>
+<./images/TC9.png, id=333, 540.0175pt x 469.755pt>
 File: ./images/TC9.png Graphic file (type png)
 <use ./images/TC9.png>
 Package pdftex.def Info: ./images/TC9.png  used on input line 308.
@@ -1205,7 +1205,7 @@ Package pdftex.def Info: ./images/TC9.png  used on input line 308.
 Underfull \vbox (badness 5592) has occurred while \output is active []
 
  [15 <./images/TC9.png>]
-<./images/TC10.png, id=335, 416.55624pt x 582.175pt>
+<./images/TC10.png, id=340, 416.55624pt x 582.175pt>
 File: ./images/TC10.png Graphic file (type png)
 <use ./images/TC10.png>
 Package pdftex.def Info: ./images/TC10.png  used on input line 329.
@@ -1215,7 +1215,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
 [17 <./images/TC10.png>]
-<./images/TC11.png, id=345, 477.785pt x 593.21625pt>
+<./images/TC11.png, id=350, 477.785pt x 593.21625pt>
 File: ./images/TC11.png Graphic file (type png)
 <use ./images/TC11.png>
 Package pdftex.def Info: ./images/TC11.png  used on input line 350.
@@ -1291,207 +1291,203 @@ Overfull \hbox (27.7942pt too wide) in paragraph at lines 596--597
 
 (snippets/aedes-image-dockerfile) [39] [40]
 Chapter 4.
-[41
 
-] [42
-
-]
-Chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 644--644
+Underfull \hbox (badness 10000) in paragraph at lines 645--645
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--644
+Underfull \hbox (badness 10000) in paragraph at lines 645--645
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--644
+Underfull \hbox (badness 10000) in paragraph at lines 645--645
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--644
+Underfull \hbox (badness 10000) in paragraph at lines 645--645
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--644
+Underfull \hbox (badness 10000) in paragraph at lines 645--645
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--644
+Underfull \hbox (badness 10000) in paragraph at lines 645--645
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--644
+Underfull \hbox (badness 10000) in paragraph at lines 645--646
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--645
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 646--646
+Underfull \hbox (badness 10000) in paragraph at lines 647--647
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
+Underfull \hbox (badness 10000) in paragraph at lines 651--651
 []|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
 
-Overfull \hbox (59.25931pt too wide) in paragraph at lines 642--659
+Overfull \hbox (4.18019pt too wide) in paragraph at lines 643--660
 []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--664
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--664
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--664
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--664
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--665
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 666--666
+Underfull \hbox (badness 10000) in paragraph at lines 665--666
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
 \T1/lmr/m/n/10.95 (+20) (Ex-pected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--670
+Underfull \hbox (badness 10000) in paragraph at lines 671--671
 []|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
-[43] [44
+[41
 
-]
-Chapter 6.
+] [42]
+Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--687
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--687
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 687--687
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 687--687
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 687--687
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 687--687
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 687--687
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 687--688
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 689--689
-\T1/lmr/m/n/10.95 (+20) (Ex-pected
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--690
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 691--691
+\T1/lmr/m/n/10.95 (+20) (Ex-pected
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
 []|\T1/lmr/m/n/10.95 (+20) RouterOS
  []
 
 
-Overfull \hbox (59.25931pt too wide) in paragraph at lines 685--694
+Overfull \hbox (4.18019pt too wide) in paragraph at lines 687--696
 []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+Underfull \hbox (badness 10000) in paragraph at lines 701--701
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 699--700
+Underfull \hbox (badness 10000) in paragraph at lines 701--701
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 701--701
-\T1/lmr/m/n/10.95 (+20) (Ex-pected
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--701
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--701
+[]|\T1/lmr/bx/n/10.95 (+20) Test
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
+[]|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 703--703
+\T1/lmr/m/n/10.95 (+20) (Ex-pected
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 705--705
 []|\T1/lmr/m/n/10.95 (+20) RouterOS
  []
 
-[45] [46
+[43
+
+] [44
 
 ]
-Chapter 7.
-[47] [48
+Chapter 6.
+[45] [46
 
 ]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [49
+ [47
 
 
 ] (internship-report.aux)
@@ -1500,16 +1496,16 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
 Package rerunfilecheck Info: File `internship-report.out' has not changed.
-(rerunfilecheck)             Checksum: CCB808D5A049F89E196BA05A6E9481EE;7463.
+(rerunfilecheck)             Checksum: 49A8465B182ABDB06E1B20B0FCB97B2B;7592.
 Package logreq Info: Writing requests to 'internship-report.run.xml'.
 \openout1 = `internship-report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  26086 strings out of 474587
- 452530 string characters out of 5742840
+ 452544 string characters out of 5742840
  2255555 words of memory out of 5000000
- 46965 multiletter control sequences out of 15000+600000
+ 46966 multiletter control sequences out of 15000+600000
  660310 words of font info for 196 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,131p,1016b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1531,9 +1527,9 @@ Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></
 Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.
 pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/l
 mtt9.pfb>
-Output written on internship-report.pdf (53 pages, 2779406 bytes).
+Output written on internship-report.pdf (51 pages, 2779405 bytes).
 PDF statistics:
- 1334 PDF objects out of 1440 (max. 8388607)
- 734 named destinations out of 1000 (max. 500000)
- 62826 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1331 PDF objects out of 1440 (max. 8388607)
+ 733 named destinations out of 1000 (max. 500000)
+ 62834 words of extra memory for PDF output out of 74296 (max. 10000000)
 

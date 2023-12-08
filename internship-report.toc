@@ -31,8 +31,9 @@
 \contentsline {subsection}{\numberline {3.8.1}MQTT Client Tester Image}{38}{subsection.3.8.1}%
 \contentsline {subsection}{\numberline {3.8.2}Moquette MQTT Server Image}{39}{subsection.3.8.2}%
 \contentsline {subsection}{\numberline {3.8.3}Aedes MQTT Server Image}{39}{subsection.3.8.3}%
-\contentsline {chapter}{\numberline {4}Tested MQTT Libraries}{41}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Test Results}{43}{chapter.5}%
-\contentsline {chapter}{\numberline {6}RouterOS CHR Tests}{45}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{47}{chapter.7}%
-\contentsline {chapter}{Bibliography}{49}{section*.2}%
+\contentsline {chapter}{\numberline {4}Test Results}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Tested MQTT Libraries}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Result Table}{41}{section.4.2}%
+\contentsline {chapter}{\numberline {5}RouterOS CHR Tests}{43}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{45}{chapter.6}%
+\contentsline {chapter}{Bibliography}{47}{section*.2}%

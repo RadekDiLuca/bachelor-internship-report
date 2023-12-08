@@ -614,8 +614,9 @@ The dependencies are:
 \end{itemize}
 Lastly, the Dockerfile runs on startup the above mentioned script `\textbf{run.sh}'.
 
-\chapter{Tested MQTT Libraries}
-The MQTT Libraries that were subjected to Unit Testing are some Libraries that are widely spread:
+\chapter{Test Results}
+\section{Tested MQTT Libraries}
+These are the MQTT Libraries that were subjected to Unit Testing and their respective version:
 
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
@@ -635,72 +636,73 @@ EMQX & 5.3.0 \\
 \end{tabular}
 \end{center}
 
-\chapter{Test Results}
+\section{Result Table}
 The Test Results for the tested MQTT Libraries can be found in the following tables. A green `\textcolor{green}{ok}' represents a succesful connection, a red `\textcolor{red}{error}' represents a failed connection. The first row of the table represents the expected result for each Unit Test to succeed.
 
 \begin{flushleft}
-\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
+\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
 \hline
-\bf Library Name & \bf Test Case 1 & \bf Test Case 2 & \bf Test Case 3 & \bf Test Case 4 & \bf Test Case 5 & \bf Test Case 6 & \bf Test Case 7 \\
+\bf Library Name & \bf Test Case 1 & \bf Test Case 2 & \bf Test Case 3 & \bf Test Case 4 & \bf Test Case 5 & \bf Test Case 6 \\
 \hline
-No Library (Expected Results) & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+No Library (Expected Results) & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-Mosquitto & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Mosquitto & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error}  \\
 \hline
-HiveMQ Community Edition & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+HiveMQ Community Edition & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-Aedes & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Aedes & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-Moquette & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Moquette & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-EMQX & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+EMQX & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
 \end{tabular}
 \end{flushleft}
 
 \begin{flushleft}
-\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
+\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
 \hline
-\bf Library Name & \bf Test Case 8 & \bf Test Case 9 & \bf Test Case 10 & \bf Test Case 11 \\
+\bf Library Name & \bf Test Case 7 & \bf Test Case 8 & \bf Test Case 9 & \bf Test Case 10 & \bf Test Case 11 \\
 \hline
-No Library (Expected Results) & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+No Library (Expected Results) & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-Mosquitto & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Mosquitto & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-HiveMQ Community Edition & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+HiveMQ Community Edition & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-Aedes & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Aedes & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-Moquette & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Moquette & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-EMQX & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+EMQX & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
 \end{tabular}
 \end{flushleft}
+
 
 \chapter{RouterOS CHR Tests}
 As part of this Internship research, we also validated the TLS implementation of the MQTT features offered by the RouterOS Cloud Hosted Router (CHR) distribution. RouterOS CHR enables a machine to act as a MQTT Client, optionally encrypting data via TLS. The tests have been done manually, and as MQTT Broker to connect to, we used the Mosquitto Library. Just like in Chapter 7, the results are summarised in the following table:
 
 \begin{flushleft}
-\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
+\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
 \hline
-\bf Library Name & \bf Test Case 1 & \bf Test Case 2 & \bf Test Case 3 & \bf Test Case 4 & \bf Test Case 5 & \bf Test Case 6 & \bf Test Case 7 \\
+\bf Library Name & \bf Test Case 1 & \bf Test Case 2 & \bf Test Case 3 & \bf Test Case 4 & \bf Test Case 5 & \bf Test Case 6 \\
 \hline
-No Library (Expected Results) & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+No Library (Expected Results) & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-RouterOS CHR & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+RouterOS CHR & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
 \end{tabular}
 \end{flushleft}
 
 \begin{flushleft}
-\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
+\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
 \hline
-\bf Library Name & \bf Test Case 8 & \bf Test Case 9 & \bf Test Case 10 & \bf Test Case 11 \\
+\bf Library Name & \bf Test Case 7 & \bf Test Case 8 & \bf Test Case 9 & \bf Test Case 10 & \bf Test Case 11 \\
 \hline
-No Library (Expected Results) & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+No Library (Expected Results) & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
-RouterOS CHR & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+RouterOS CHR & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
 \hline
 \end{tabular}
 \end{flushleft}
