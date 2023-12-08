@@ -679,6 +679,7 @@ EMQX & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} &
 \end{tabular}
 \end{flushleft}
 
+From the tables we can see that all the Libraries \textcolor{green}{establish a connection} when the TLS Certificate is valid and \textcolor{red}{do not establish a connection} when the TLS Certificate is \textbf{not} valid. Therefore all the Unit Tests \textbf{passed} for all the Libraries.
 
 \chapter{RouterOS CHR Tests}
 As part of this Internship research, we also validated the TLS implementation of the MQTT features offered by the RouterOS Cloud Hosted Router (CHR) distribution. RouterOS CHR enables a machine to act as a MQTT Client, optionally encrypting data via TLS. The tests have been done manually, and as MQTT Broker to connect to, we used the Mosquitto Library. Just like in Chapter 7, the results are summarised in the following table:
