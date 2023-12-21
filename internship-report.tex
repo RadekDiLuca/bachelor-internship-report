@@ -717,11 +717,13 @@ TODO
 \subsection{Test Case 11 - Altered Intermediate CA Public Key}
 
 \chapter{Conclusion}
+MQTT is a protocol which, inherently to its lightweight nature, has little security measures. Therefore it needs to rely on the Transport Layer Security protocol much more than other Application Level protocols such as SFTP and SMP.
+
 Thanks to our literary research, we could produce a formally defined Test Suite, with Test Cases designed to expose possible weaknesses of a faulty TLS implementation of any Application, all the more so of a faulty TLS implementation of an MQTT Broker.
 
-Through the setup of our Test Laboratory Environment, we managed to adapt those formal Test Cases in a reproducible manner, to be able to recreate the same conditions and reach the same results over time. More specifically, our results showed that the tested Libraries are \textbf{secure} from the Transport Layer Security perspective.
+Through the setup of our Test Laboratory Environment, we managed to adapt those formal Test Cases in a reproducible manner, allowing us to recreate the same conditions and reach the same results over time. More specifically, our results showed that the tested Libraries are secure from the Transport Layer Security perspective.
 
-Furthermore, the developed Test Suite and Laboratory Environment enables us for future monitoring of the TLS security requirements of new versions of the tested libraries, or of additional Libraries altogether.
+Furthermore, the developed Test Suite and Laboratory Environment will enable us for future monitoring of the TLS security requirements of new versions of the tested libraries, or of additional Libraries altogether.
 
 \backmatter
 \cleardoublepage
