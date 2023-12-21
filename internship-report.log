@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  21 DEC 2023 16:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  21 DEC 2023 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -583,6 +583,36 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amssymb.
+sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts
+.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/Users/dilucar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psn
+fss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(/Users/dilucar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psn
+fss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(/Users/dilucar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psn
+fss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex
 .sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
@@ -848,7 +878,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count439
 \@quotereset=\count440
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 53
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 57
 .
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -860,24 +890,24 @@ LaTeX Warning: Unused global option(s):
 (internship-report.aux)
 \openout1 = `internship-report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -946,20 +976,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 -sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \textsubscript on input line 53.
-LaTeX Info: Redefining \microtypecontext on input line 53.
-Package microtype Info: Applying patch `item' on input line 53.
-Package microtype Info: Applying patch `toc' on input line 53.
-Package microtype Info: Applying patch `eqnum' on input line 53.
-Package microtype Info: Applying patch `footnote' on input line 53.
-Package microtype Info: Applying patch `verbatim' on input line 53.
+LaTeX Info: Redefining \textsubscript on input line 57.
+LaTeX Info: Redefining \microtypecontext on input line 57.
+Package microtype Info: Applying patch `item' on input line 57.
+Package microtype Info: Applying patch `toc' on input line 57.
+Package microtype Info: Applying patch `eqnum' on input line 57.
+Package microtype Info: Applying patch `footnote' on input line 57.
+Package microtype Info: Applying patch `verbatim' on input line 57.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 53.
+LaTeX Info: Redefining \showhyphens on input line 57.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -969,7 +999,7 @@ rotype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 53.
+Package hyperref Info: Link coloring OFF on input line 57.
  (internship-report.out) (internship-report.out)
 \@outlinefile=\write4
 \openout4 = `internship-report.out'.
@@ -990,12 +1020,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'internship-report.bbl' found.
  (internship-report.bbl)
-Package biblatex Info: Reference section=0 on input line 53.
-Package biblatex Info: Reference segment=0 on input line 53.
+Package biblatex Info: Reference section=0 on input line 57.
+Package biblatex Info: Reference segment=0 on input line 57.
 \SAP@parboxindent=\skip89
 \SAP@parboxwidth=\skip90
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 5
-6.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 6
+0.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1004,10 +1034,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<sapienzalogo.pdf, id=155, 288.07625pt x 89.33376pt>
+<sapienzalogo.pdf, id=195, 288.07625pt x 89.33376pt>
 File: sapienzalogo.pdf Graphic file (type pdf)
 <use sapienzalogo.pdf>
-Package pdftex.def Info: sapienzalogo.pdf  used on input line 56.
+Package pdftex.def Info: sapienzalogo.pdf  used on input line 60.
 (pdftex.def)             Requested size: 142.26378pt x 44.11742pt.
 
 [1
@@ -1017,47 +1047,66 @@ Package pdftex.def Info: sapienzalogo.pdf  used on input line 56.
 {/Users/dilucar/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex
 /pdftex.map} </Library/Application Support/MiKTeX/texmfs/install/tex/latex/sapt
 hesis/sapienzalogo.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-6.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6
+0.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
-6.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
+0.
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
-6.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
+0.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-56.
+60.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-56.
+60.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 56.
+(Font)              <10> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 56.
+(Font)              <7> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 56.
+(Font)              <5> on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/Users/dilucar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mic
+rotype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+
+
+(/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/Users/dilucar/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mic
+rotype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 
  []
 
@@ -1083,10 +1132,10 @@ Chapter 1.
 
 
 ]
-<./images/MQTT.png, id=245, 922.44624pt x 603.25375pt>
+<./images/MQTT.png, id=295, 922.44624pt x 603.25375pt>
 File: ./images/MQTT.png Graphic file (type png)
 <use ./images/MQTT.png>
-Package pdftex.def Info: ./images/MQTT.png  used on input line 78.
+Package pdftex.def Info: ./images/MQTT.png  used on input line 82.
 (pdftex.def)             Requested size: 369.88582pt x 241.89554pt.
 
 Underfull \vbox (badness 1077) has occurred while \output is active []
@@ -1096,110 +1145,110 @@ Chapter 2.
 [5
 
 ]
-<./images/TC1.png, id=279, 835.12pt x 378.41376pt>
+<./images/TC1.png, id=329, 835.12pt x 378.41376pt>
 File: ./images/TC1.png Graphic file (type png)
 <use ./images/TC1.png>
-Package pdftex.def Info: ./images/TC1.png  used on input line 140.
+Package pdftex.def Info: ./images/TC1.png  used on input line 144.
 (pdftex.def)             Requested size: 369.88582pt x 167.60542pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 148--149
+Underfull \hbox (badness 2790) in paragraph at lines 152--153
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC2.png, id=280, 816.04875pt x 503.8825pt>
+<./images/TC2.png, id=330, 816.04875pt x 503.8825pt>
 File: ./images/TC2.png Graphic file (type png)
 <use ./images/TC2.png>
-Package pdftex.def Info: ./images/TC2.png  used on input line 161.
+Package pdftex.def Info: ./images/TC2.png  used on input line 165.
 (pdftex.def)             Requested size: 369.88582pt x 228.3904pt.
 [6 <./images/TC1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 169--170
+Underfull \hbox (badness 2790) in paragraph at lines 173--174
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC3.png, id=287, 492.84125pt x 502.87875pt>
+<./images/TC3.png, id=337, 492.84125pt x 502.87875pt>
 File: ./images/TC3.png Graphic file (type png)
 <use ./images/TC3.png>
-Package pdftex.def Info: ./images/TC3.png  used on input line 182.
+Package pdftex.def Info: ./images/TC3.png  used on input line 186.
 (pdftex.def)             Requested size: 369.88582pt x 377.43437pt.
 
 Underfull \vbox (badness 5388) has occurred while \output is active []
 
  [7 <./images/TC2.png>] [8 <./images/TC3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 191--192
+Underfull \hbox (badness 2790) in paragraph at lines 195--196
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC4.png, id=298, 641.39626pt x 503.8825pt>
+<./images/TC4.png, id=348, 641.39626pt x 503.8825pt>
 File: ./images/TC4.png Graphic file (type png)
 <use ./images/TC4.png>
-Package pdftex.def Info: ./images/TC4.png  used on input line 204.
+Package pdftex.def Info: ./images/TC4.png  used on input line 208.
 (pdftex.def)             Requested size: 341.43306pt x 268.2328pt.
 [9 <./images/TC4.png>]
-<./images/TC5.png, id=305, 585.18625pt x 437.635pt>
+<./images/TC5.png, id=355, 585.18625pt x 437.635pt>
 File: ./images/TC5.png Graphic file (type png)
 <use ./images/TC5.png>
-Package pdftex.def Info: ./images/TC5.png  used on input line 226.
+Package pdftex.def Info: ./images/TC5.png  used on input line 230.
 (pdftex.def)             Requested size: 369.88582pt x 276.63304pt.
  [10 <./images/TC5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 234--235
+Underfull \hbox (badness 2790) in paragraph at lines 238--239
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC6.png, id=311, 585.18625pt x 460.72125pt>
+<./images/TC6.png, id=361, 585.18625pt x 460.72125pt>
 File: ./images/TC6.png Graphic file (type png)
 <use ./images/TC6.png>
-Package pdftex.def Info: ./images/TC6.png  used on input line 247.
+Package pdftex.def Info: ./images/TC6.png  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 268.82135pt.
 [11 <./images/TC6.png>]
-<./images/TC7.png, id=317, 631.35875pt x 471.7625pt>
+<./images/TC7.png, id=367, 631.35875pt x 471.7625pt>
 File: ./images/TC7.png Graphic file (type png)
 <use ./images/TC7.png>
-Package pdftex.def Info: ./images/TC7.png  used on input line 269.
+Package pdftex.def Info: ./images/TC7.png  used on input line 273.
 (pdftex.def)             Requested size: 341.43306pt x 255.12947pt.
  [12 <./images/TC7.png>]
-<./images/TC8.png, id=323, 614.295pt x 427.5975pt>
+<./images/TC8.png, id=373, 614.295pt x 427.5975pt>
 File: ./images/TC8.png Graphic file (type png)
 <use ./images/TC8.png>
-Package pdftex.def Info: ./images/TC8.png  used on input line 290.
+Package pdftex.def Info: ./images/TC8.png  used on input line 294.
 (pdftex.def)             Requested size: 369.88582pt x 257.47392pt.
  [13 <./images/TC8.png>]
-<./images/TC9.png, id=329, 540.0175pt x 469.755pt>
+<./images/TC9.png, id=379, 540.0175pt x 469.755pt>
 File: ./images/TC9.png Graphic file (type png)
 <use ./images/TC9.png>
-Package pdftex.def Info: ./images/TC9.png  used on input line 311.
+Package pdftex.def Info: ./images/TC9.png  used on input line 315.
 (pdftex.def)             Requested size: 312.9803pt x 272.26456pt.
 
 [14 <./images/TC9.png>] [15]
-<./images/TC10.png, id=340, 416.55624pt x 582.175pt>
+<./images/TC10.png, id=390, 416.55624pt x 582.175pt>
 File: ./images/TC10.png Graphic file (type png)
 <use ./images/TC10.png>
-Package pdftex.def Info: ./images/TC10.png  used on input line 333.
+Package pdftex.def Info: ./images/TC10.png  used on input line 337.
 (pdftex.def)             Requested size: 369.88582pt x 516.97041pt.
  [16 <./images/TC10.png>] [17]
-<./images/TC11.png, id=350, 477.785pt x 593.21625pt>
+<./images/TC11.png, id=400, 477.785pt x 593.21625pt>
 File: ./images/TC11.png Graphic file (type png)
 <use ./images/TC11.png>
-Package pdftex.def Info: ./images/TC11.png  used on input line 355.
+Package pdftex.def Info: ./images/TC11.png  used on input line 359.
 (pdftex.def)             Requested size: 369.88582pt x 459.24904pt.
  [18 <./images/TC11.png>]
 Chapter 3.
@@ -1213,9 +1262,9 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 361.
+nput line 365.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-61.
+65.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1246,7 +1295,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (snippets/alterCommonName.py [27]) (snippets/alterExpirationDate.py
 [28])
-Overfull \hbox (2.87344pt too wide) in paragraph at lines 515--516
+Overfull \hbox (2.87344pt too wide) in paragraph at lines 519--520
 []\T1/lmr/m/n/10.95 (-20) Read the cer-tifi-cate to be al-tered (`\T1/lmr/bx/n/
 10.95 (-20) server-certificate/serverCertificate.der\T1/lmr/m/n/10.95 (-20) ')
  []
@@ -1260,7 +1309,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [32])
 (snippets/testMQTTBroker.sh [33]) (snippets/runTests.sh [34]) [35]
 (snippets/tester-image-dockerfile) [36] (snippets/moquette-image-dockerfile)
-Overfull \hbox (27.7942pt too wide) in paragraph at lines 601--602
+Overfull \hbox (27.7942pt too wide) in paragraph at lines 605--606
 \T1/lmr/m/n/10.95 (-20) Lastly, the Dock-er-file runs on startup the script `\T
 1/lmr/bx/n/10.95 (-20) /app/src/moquette/bin/moquette.sh\T1/lmr/m/n/10.95 (-20)
  ' 
@@ -1268,286 +1317,141 @@ Overfull \hbox (27.7942pt too wide) in paragraph at lines 601--602
 
 (snippets/aedes-image-dockerfile) [37] [38]
 Chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
-[]|\T1/lmr/bx/n/10.95 (+20) Host-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 650--650
-[]|\T1/lmr/bx/n/10.95 (+20) Exp.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 650--651
-[]|\T1/lmr/bx/n/10.95 (+20) Public
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-[]|\T1/lmr/bx/n/10.95 (+20) Library
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--652
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 652--653
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 654--654
-\T1/lmr/m/n/10.95 (+20) (Ex-pected
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 658--658
-[]|\T1/lmr/m/n/10.95 (+20) HiveMQ
- []
-
-
-Overfull \hbox (4.18019pt too wide) in paragraph at lines 648--667
-[]  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 672--672
-[]|\T1/lmr/bx/n/10.95 (+20) Exp.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 672--672
-[]|\T1/lmr/bx/n/10.95 (+20) Cert.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 672--672
-\T1/lmr/bx/n/10.95 (+20) Exten-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 672--672
-[]|\T1/lmr/bx/n/10.95 (+20) Chain
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 672--672
-[]|\T1/lmr/bx/n/10.95 (+20) Host-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 672--673
-[]|\T1/lmr/bx/n/10.95 (+20) Public
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-[]|\T1/lmr/bx/n/10.95 (+20) Library
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
-[]|\T1/lmr/bx/n/10.95 (+20) Test
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 676--676
-\T1/lmr/m/n/10.95 (+20) (Ex-pected
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
-[]|\T1/lmr/m/n/10.95 (+20) HiveMQ
- []
-
 [39
 
-] [40]
-Chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+]
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
 []|\T1/lmr/bx/n/10.95 (+20) Host-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
 []|\T1/lmr/bx/n/10.95 (+20) Exp.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--700
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
 []|\T1/lmr/bx/n/10.95 (+20) Public
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
+Underfull \hbox (badness 10000) in paragraph at lines 661--662
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--703
-\T1/lmr/m/n/10.95 (+20) (Ex-pected
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 705--705
-[]|\T1/lmr/m/n/10.95 (+20) RouterOS
- []
-
-
-Overfull \hbox (4.18019pt too wide) in paragraph at lines 697--708
+Overfull \hbox (4.18019pt too wide) in paragraph at lines 657--676
 []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--713
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 []|\T1/lmr/bx/n/10.95 (+20) Exp.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--713
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 []|\T1/lmr/bx/n/10.95 (+20) Cert.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--713
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 \T1/lmr/bx/n/10.95 (+20) Exten-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--713
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 []|\T1/lmr/bx/n/10.95 (+20) Chain
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--713
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 []|\T1/lmr/bx/n/10.95 (+20) Host-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--714
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
 []|\T1/lmr/bx/n/10.95 (+20) Public
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--715
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--715
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--715
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--715
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--715
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--716
+Underfull \hbox (badness 10000) in paragraph at lines 683--684
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--717
-\T1/lmr/m/n/10.95 (+20) (Ex-pected
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
+[]|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 719--719
-[]|\T1/lmr/m/n/10.95 (+20) RouterOS
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[41
-
-] [42
+ [40]
+[41] [42
 
 ]
-Chapter 6.
+Chapter 5.
 [43] [44
 
 ]
@@ -1563,17 +1467,17 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
 Package rerunfilecheck Info: File `internship-report.out' has not changed.
-(rerunfilecheck)             Checksum: A6E0817F670E926AB3E861AF49C09F4D;7597.
+(rerunfilecheck)             Checksum: 327F590094CB47DF5FCE73493216413B;10676.
 Package logreq Info: Writing requests to 'internship-report.run.xml'.
 \openout1 = `internship-report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26084 strings out of 474587
- 452530 string characters out of 5742840
+ 26731 strings out of 474587
+ 461448 string characters out of 5742840
  2255555 words of memory out of 5000000
- 46966 multiletter control sequences out of 15000+600000
- 660310 words of font info for 196 fonts, out of 8000000 for 9000
+ 47566 multiletter control sequences out of 15000+600000
+ 663480 words of font info for 210 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,131p,1016b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.
@@ -1593,10 +1497,11 @@ ation Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmss17.pfb></Library/
 Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmssbx10.pfb></
 Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.
 pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/l
-mtt9.pfb>
-Output written on internship-report.pdf (49 pages, 2778687 bytes).
+mtt9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/za
+pfding/uzdr.pfb>
+Output written on internship-report.pdf (49 pages, 2789257 bytes).
 PDF statistics:
- 1322 PDF objects out of 1440 (max. 8388607)
- 731 named destinations out of 1000 (max. 500000)
- 62834 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1379 PDF objects out of 1440 (max. 8388607)
+ 741 named destinations out of 1000 (max. 500000)
+ 62914 words of extra memory for PDF output out of 74296 (max. 10000000)
 

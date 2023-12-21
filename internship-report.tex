@@ -7,6 +7,10 @@
 \usepackage{array} \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
 \graphicspath{ {./images/} }
 
 \usepackage[style=numeric]{biblatex}
@@ -621,7 +625,7 @@ Lastly, the Dockerfile runs on startup the above mentioned script `\textbf{run.s
 
 \chapter{Test Results}
 \section{Tested MQTT Libraries}
-These are the MQTT Libraries that were subjected to Unit Testing and their respective version:
+These are the Libraries that were subjected to Unit Testing and their respective version:
 
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
@@ -638,11 +642,16 @@ Moquette & 0.18 \\
 \hline
 EMQX & 5.3.0 \\
 \hline
+RouterOS & CHR (6.49.10 Long-term) \\
+\hline
 \end{tabular}
 \end{center}
 
+All the Libraries except RouterOS have been set up as MQTT Broker and have been interacted with using the Mosquitto command line tools as MQTT Tester Client. On the other hand, RouterOS is a Library that enables MQTT connection in the form of Client-only up until version \textbf{v7.4beta4}. Therefore, RouterOS has been submitted to the same Test Suite as the other Libraries, except the Client connection was made by the tested Library itself, and the MQTT Tester Broker we chose was Mosquitto.
+
+\newpage
 \section{Result Table}
-The Test Results for the tested MQTT Libraries can be found in the following tables. A green `\textcolor{green}{ok}' represents a succesful connection, a red `\textcolor{red}{error}' represents a failed connection. The first row of the table represents the expected result for each Unit Test to succeed.
+The Test Results for the tested Libraries can be found in the following tables. A tick `\cmark' represents a positive test outcome, a cross `\xmark' represents a failed test outcome.
 
 \begin{flushleft}
 \begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
@@ -651,17 +660,17 @@ The Test Results for the tested MQTT Libraries can be found in the following tab
 \hline
 \bf Library Name & \bf Test Case 1 & \bf Test Case 2 & \bf Test Case 3 & \bf Test Case 4 & \bf Test Case 5 & \bf Test Case 6 \\
 \hline
-No Library (Expected Results) & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Mosquitto & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
 \hline
-Mosquitto & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error}  \\
+HiveMQ Community Edition & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
 \hline
-HiveMQ Community Edition & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Aedes & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
 \hline
-Aedes & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Moquette & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
 \hline
-Moquette & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+EMQX & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
 \hline
-EMQX & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+RouterOS & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
 \hline
 \end{tabular}
 \end{flushleft}
@@ -673,53 +682,36 @@ EMQX & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} &
 \hline
 \bf Library Name & \bf Test Case 7 & \bf Test Case 8 & \bf Test Case 9 & \bf Test Case 10 & \bf Test Case 11 \\
 \hline
-No Library (Expected Results) & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Mosquitto & \cmark & \cmark & \cmark & \cmark & \cmark \\
 \hline
-Mosquitto & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+HiveMQ Community Edition & \cmark & \cmark & \cmark & \cmark & \cmark \\
 \hline
-HiveMQ Community Edition & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Aedes & \cmark & \cmark & \cmark & \cmark & \cmark \\
 \hline
-Aedes & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+Moquette & \cmark & \cmark & \cmark & \cmark & \cmark \\
 \hline
-Moquette & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
+EMQX & \cmark & \cmark & \cmark & \cmark & \cmark \\
 \hline
-EMQX & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
-\hline
-\end{tabular}
-\end{flushleft}
-
-From the tables we can see that all the Libraries \textcolor{green}{establish a connection} when the TLS Certificate is valid and \textcolor{red}{do not establish a connection} when the TLS Certificate is \textbf{not} valid. Therefore all the Unit Tests \textbf{passed} for all the Libraries.
-
-\chapter{RouterOS CHR Tests}
-As part of this Internship research, we also validated the TLS implementation of the MQTT features offered by the RouterOS Cloud Hosted Router (CHR) distribution. RouterOS CHR enables a machine to act as a MQTT Client, optionally encrypting data via TLS. The tests have been done manually, and as MQTT Broker to connect to, we used the Mosquitto Library. Just like in Chapter 7, the results are summarised in the following table:
-
-\begin{flushleft}
-\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
-\hline
- & \multicolumn{3}{|c|}{\bf Chain of Trust} & \bf Host- name & \bf Exp. Date & \bf Public Key \\
-\hline
-\bf Library Name & \bf Test Case 1 & \bf Test Case 2 & \bf Test Case 3 & \bf Test Case 4 & \bf Test Case 5 & \bf Test Case 6 \\
-\hline
-No Library (Expected Results) & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
-\hline
-RouterOS CHR & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{red}{error} \\
+RouterOS & \cmark & \cmark & \cmark & \cmark & \cmark \\
 \hline
 \end{tabular}
 \end{flushleft}
 
-\begin{flushleft}
-\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
-\hline
- & \bf Exp. Date & \bf Cert. Exten- sions & \bf Chain of trust & \bf Host- name & \bf Public Key \\
-\hline
-\bf Library Name & \bf Test Case 7 & \bf Test Case 8 & \bf Test Case 9 & \bf Test Case 10 & \bf Test Case 11 \\
-\hline
-No Library (Expected Results) & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
-\hline
-RouterOS CHR & \textcolor{red}{error} & \textcolor{red}{error} & \textcolor{green}{ok} & \textcolor{red}{error} & \textcolor{red}{error} \\
-\hline
-\end{tabular}
-\end{flushleft}
+\subsection{Test Case 1 - Legal Connection}
+
+In this Test Case we expected the Libraries to correctly accept the connection of our MQTT Tester Client, since the TLS Certificates used were all valid. All the Libraries passed this test, since all Libraries accepted our MQTT Tester Client connection.
+RouterOS passed this test too, since it correctly connected to the Mosquitto Broker.
+
+\subsection{Test Case 2 - Self Signed Attacker}
+\subsection{Test Case 3 - Self Signed Attacker's Fake CA}
+\subsection{Test Case 4 - Alteration 1 (Common Name)}
+\subsection{Test Case 5 - Alteration 2 (Expiration Date)}
+\subsection{Test Case 6 - Alteration 3 (Public Key)}
+\subsection{Test Case 7 - Expired CA (Alteration 4)}
+\subsection{Test Case 8 - Certificate Extension}
+\subsection{Test Case 9 - Longer Chain Of Trust Legal Connection}
+\subsection{Test Case 10 - Altered Intermediate CA Common Name}
+\subsection{Test Case 11 - Altered Intermediate CA Public Key}
 
 \chapter{Conclusion}
 The development of the Unit Tests presented in this Internship Report allowed us to assert the security of the tested MQTT Broker Libraries and RouterOS CHR Operating System, which all passed the entirety of the developed Test Suite. Therefore, the results presented in Chapters 7 and 9 represent a validation of the TLS security requirements of the tested software.
