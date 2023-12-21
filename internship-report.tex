@@ -110,7 +110,7 @@ To test the MQTT Broker Libraries, a Unit Test Suite was formally defined, with 
 	\item Test Case 4 - Alteration 1 (Common Name)
 	\item Test Case 5 - Alteration 2 (Expiration Date)
 	\item Test Case 6 - Alteration 3 (Public Key)
-	\item Test Case 7 - Expired CA (lteration 4)
+	\item Test Case 7 - Expired CA (Alteration 4)
 	\item Test Case 8 - Certificate Extension
 	\item Test Case 9 - Longer Chain Of Trust Legal Connection
 	\item Test Case 10 - Altered Intermediate CA Common Name
@@ -181,6 +181,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 
 \includegraphics[width=13cm]{TC3}
 
+\newpage
 \section{Test Case 4 - Alteration 1 (Common Name)}
 This Test Case is set up by configuring the MQTT Broker Library with an altered TLS Certificate signed by the real Certificate Authority. The intruder alters the Common Name field, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
@@ -200,8 +201,9 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{tabular}
 \end{center}
 
-\includegraphics[width=13cm]{TC4}
+\includegraphics[width=12cm]{TC4}
 
+\newpage
 \section{Test Case 5 - Alteration 2 (Expiration Date)}
 This Test Case is set up by configuring the MQTT Broker Library with an altered expired TLS Certificate signed by the real Certificate Authority. The intruder alters the Not Valid After field, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
@@ -242,9 +244,10 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{tabular}
 \end{center}
 
-\includegraphics[width=13cm]{TC6}
+\includegraphics[width=12cm]{TC6}
 
-\section{Test Case 7 - Expired CA (lteration 4)}
+\newpage
+\section{Test Case 7 - Expired CA (Alteration 4)}
 This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an expired (real) Certificate Authority. This test represents a scenario in which the Intruder manages to decrypt the Certificate Authority’s Public Key over a long period of time, during which the Client under attack is not updated with a new CA Certificate. Because of this, the Tester Client in this Test Case connects to the server checking the Server TLS Certificate against the expired Certificate Authority’s Certificate. The table of the Unit Test is as follows:
 
 \begin{center}
@@ -263,7 +266,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{tabular}
 \end{center}
 
-\includegraphics[width=13cm]{TC7}
+\includegraphics[width=12cm]{TC7}
 
 \section{Test Case 8 - Certificate Extension}
 This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Certificate Authority, though this Certificate has been signed by the CA for the MQTT Broker to use only as a Client Certificate towards other Brokers (in mTLS). The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. The table of the Unit Test is as follows:
@@ -305,7 +308,7 @@ Assertion & The Library should \textbf{\textit{accept}} the connection when a cl
 \end{tabular}
 \end{center}
 
-\includegraphics[width=13cm]{TC9}
+\includegraphics[width=11cm]{TC9}
 
 \section{Test Case 10 - Altered Intermediate CA Common Name}
 This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an altered Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The intruder alters their Intermediate CA’s Common Name to pretend they are the real Intermediate CA, therefore the signature of the Intermediate CA is compromised. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. The table of the Unit Test is as follows:
@@ -326,6 +329,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{tabular}
 \end{center}
 
+\newpage
 \includegraphics[width=13cm]{TC10}
 
 \section{Test Case 11 - Altered Intermediate CA Public Key}
@@ -347,6 +351,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{tabular}
 \end{center}
 
+\newpage
 \includegraphics[width=13cm]{TC11}
 
 \chapter{Developed Code}
