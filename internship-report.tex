@@ -625,6 +625,40 @@ The dependencies are:
 \end{itemize}
 Lastly, the Dockerfile runs on startup the above mentioned script `\textbf{run.sh}'.
 
+\section{Libraries Differences}
+\subsection{Mosquitto}
+Mosquitto has been the easiest Library to setup. Clear documentation and fast startup times, Mosquitto works with configurations defined by single-line key-value parameters. The parameters used for TLS purposes are:
+
+\begin{itemize}
+	\item Root Certificate Authority's Certificate path
+	\item Broker Certificate path
+	\item Broker Private Key path
+\end{itemize}
+
+Once that is done, the configuration can be loaded directly by the command line interface using the `-c' parameter.
+
+\subsection{Hive MQ}
+HiveMQ's configuration is in XML tree format, and it is loaded automatically by the library in a pre-defined reserved path inside the library's folder. The TLS parameters in this configuration are:
+
+\begin{itemize}
+	\item Path to the Certificate's Java Keystore
+	\item Password for the Certificate's Java Keystore
+\end{itemize}
+
+In fact, HiveMQ does not use path references to the Certificate Components (CA, Certificate, Private Key). Instead, it uses a Java Keystore containing all the Certificate Components that are otherwise defined one by one in other Libraries, such as Mosquitto.
+
+\subsection{Aedes}
+Aedes's configuration is in Java Object format, it's defined by setting the `module.exports' value in JSON format. Similarly to Mosquitto, it requires the user to define the path to the Broker Certificate and to the respective Private Key. The configuration is then loaded by the command lien inteface using the `--config' parameter.
+
+\subsection{Moquette}
+Moquette has been the hardest Library to setup, due to a faulty distribution. We had to manually download the latest release from their GitHub and compile it using `maven'. Once this is done, the configuration setup is similar to both Mosquitto and HiveMQ: the configuration format is single-line key-value parameters, and the TLS Certificate information has to be stored in a Java Keystore. Lastly, the configuration is being retrieved by the library automatically thanks to a pre-defined reserved path inside the library's folder.
+
+\subsection{EMQX}
+EMQX's default configuration is already set to support TLS, so the way we configured it for our Test Cases is by rewriting the Certificate Components (CA, Certificate, Private Key) used by the default configuration. For that purpose, we created a simple configuration system in which each configuration file would define as first line the Certificate Authority's Certificate path, as second line the Server Certificate path, as third line the Server's Private Key path.
+
+\subsection{RouterOS}
+The RouterOS setup was done through a Virtual Machine environment. To upload the needed TLS Certificates to the Virtual Machine, we used the `Winbox' helper tool. Then, from the RouterOS console we would define a new broker via the `iot mqtt broker add' command. This command retrieves the TLS Certificate Components via path, but for some persistency bug it would not retrieve new TLS Certificates when the same path was rewritten via `winbox'. Therefore, in each Test Case we had to remove and re-add the broker before publishing a message.
+
 \chapter{Test Results}
 \section{Tested MQTT Libraries}
 These are the Libraries that were subjected to Unit Testing and their respective version:
