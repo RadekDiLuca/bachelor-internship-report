@@ -700,24 +700,51 @@ RouterOS & \cmark & \cmark & \cmark & \cmark & \cmark \\
 \end{flushleft}
 
 \subsection{Test Case 1 - Legal Connection}
-
 In this Test Case we expected the Libraries to correctly accept the connection of our MQTT Tester Client, since the TLS Certificates used were all valid. All the Libraries passed this test, since all Libraries accepted our MQTT Tester Client connection.
 RouterOS passed this test too, since it correctly connected to the Mosquitto Broker.
 
 \subsection{Test Case 2 - Self Signed Attacker}
-TODO
+In this Test Case the attacker forges a self-signed server certificate, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to an invalid signature and invalid chain of trust. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
+Also RouterOS refused the connection to the Mosquitto Broker.
+
 \subsection{Test Case 3 - Self Signed Attacker's Fake CA}
+In this Test Case the attacker forges a self-signed Root Certificate Authority Certificate, used to sign a forged server certificate, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to an invalid signature. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
+Also RouterOS refused the connection to the Mosquitto Broker.
+
 \subsection{Test Case 4 - Alteration 1 (Common Name)}
+In this Test Case the attacker alters a valid server certificate by changing its Common Name, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to an invalid signature. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
+Also RouterOS refused the connection to the Mosquitto Broker.
+
 \subsection{Test Case 5 - Alteration 2 (Expiration Date)}
+In this Test Case the attacker alters an expired server certificate by changing its Expiration Date, trying to make it look valid, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to an invalid signature. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
+Also RouterOS refused the connection to the Mosquitto Broker.
+
 \subsection{Test Case 6 - Alteration 3 (Public Key)}
+In this Test Case the attacker alters a valid server certificate by changing its Public Key, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to an invalid signature. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
+Also RouterOS refused the connection to the Mosquitto Broker.
+
 \subsection{Test Case 7 - Expired CA (Alteration 4)}
+In this Test Case the Library is checking the server certificate using an expired Root Certificate Authority Certificate as signature reference, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to the expired signature. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
+Also RouterOS refused the connection to the Mosquitto Broker.
+
 \subsection{Test Case 8 - Certificate Extension}
+In this Test Case the attacker uses a valid server certificate that has a wrong Certificate Extension, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to a wrong usage of the Server Certificate. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
+Also RouterOS refused the connection to the Mosquitto Broker.
+
 \subsection{Test Case 9 - Longer Chain Of Trust Legal Connection}
+In this Test Case we expected the Libraries to correctly accept the connection of our MQTT Tester Client, since the TLS Certificates used were all valid. The main difference with Test Case 1 is that in this Test Case we used a chain of trust consisting of a Root Certificate Authority and an additional Intermediate Certificate Authority Certificate signed by the Root CA. All the Libraries passed this test, since all Libraries accepted our MQTT Tester Client connection.
+RouterOS passed this test too, since it correctly connected to the Mosquitto Broker.
+
 \subsection{Test Case 10 - Altered Intermediate CA Common Name}
+In this Test Case the attacker alters a valid Intermediate Certificate Authority's Certificate by changing its Common Name. Then they use this Certificate to sign a forged server certificate. Therefore, we expected the Libraries to refuse the connection of our MQTT Tester Client due to an invalid chain of trust. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
+Also RouterOS refused the connection to the Mosquitto Broker.
+
 \subsection{Test Case 11 - Altered Intermediate CA Public Key}
+In this Test Case the attacker alters a valid Intermediate Certificate Authority's Certificate by changing its Public Key. Then they use this Certificate to sign a forged server certificate. Therefore, we expected the Libraries to refuse the connection of our MQTT Tester Client due to an invalid chain of trust. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
+Also RouterOS refused the connection to the Mosquitto Broker.
 
 \chapter{Conclusion}
-MQTT is a protocol which, inherently to its lightweight nature, has little security measures. Therefore it needs to rely on the Transport Layer Security protocol much more than other Application Level protocols such as SFTP and SMP.
+MQTT is a protocol which, inherently to its lightweight nature, has little security measures. Therefore it needs to rely on the Transport Layer Security protocol much more than other Application Level protocols such as SFTP.
 
 Thanks to our literary research, we could produce a formally defined Test Suite, with Test Cases designed to expose possible weaknesses of a faulty TLS implementation of any Application, all the more so of a faulty TLS implementation of an MQTT Broker.
 
