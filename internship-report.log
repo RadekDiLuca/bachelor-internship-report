@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  2 JAN 2024 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  2 JAN 2024 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1132,7 +1132,7 @@ Chapter 1.
 
 
 ]
-<./images/MQTT.pdf, id=331, 845.04686pt x 597.50786pt>
+<./images/MQTT.pdf, id=334, 845.04686pt x 597.50786pt>
 File: ./images/MQTT.pdf Graphic file (type pdf)
 <use ./images/MQTT.pdf>
 Package pdftex.def Info: ./images/MQTT.pdf  used on input line 85.
@@ -1147,7 +1147,7 @@ Chapter 2.
 [5
 
 ]
-<./images/TC1.pdf, id=370, 845.04686pt x 597.50786pt>
+<./images/TC1.pdf, id=373, 845.04686pt x 597.50786pt>
 File: ./images/TC1.pdf Graphic file (type pdf)
 <use ./images/TC1.pdf>
 Package pdftex.def Info: ./images/TC1.pdf  used on input line 155.
@@ -1167,7 +1167,7 @@ Underfull \hbox (badness 2790) in paragraph at lines 167--168
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC2.pdf, id=373, 845.04686pt x 597.50786pt>
+<./images/TC2.pdf, id=376, 845.04686pt x 597.50786pt>
 File: ./images/TC2.pdf Graphic file (type pdf)
 <use ./images/TC2.pdf>
 Package pdftex.def Info: ./images/TC2.pdf  used on input line 184.
@@ -1187,7 +1187,7 @@ Underfull \hbox (badness 2790) in paragraph at lines 196--197
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC3.pdf, id=376, 597.50786pt x 845.04686pt>
+<./images/TC3.pdf, id=379, 597.50786pt x 845.04686pt>
 File: ./images/TC3.pdf Graphic file (type pdf)
 <use ./images/TC3.pdf>
 Package pdftex.def Info: ./images/TC3.pdf  used on input line 213.
@@ -1207,7 +1207,7 @@ Underfull \hbox (badness 2790) in paragraph at lines 225--226
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC4.pdf, id=379, 845.04686pt x 597.50786pt>
+<./images/TC4.pdf, id=382, 845.04686pt x 597.50786pt>
 File: ./images/TC4.pdf Graphic file (type pdf)
 <use ./images/TC4.pdf>
 Package pdftex.def Info: ./images/TC4.pdf  used on input line 242.
@@ -1219,7 +1219,7 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 242--243
 
 [6] [7 <./images/TC1.pdf>] [8 <./images/TC2.pdf>] [9 <./images/TC3.pdf>]
 [10 <./images/TC4.pdf>]
-<./images/TC5.pdf, id=428, 845.04686pt x 597.50786pt>
+<./images/TC5.pdf, id=431, 845.04686pt x 597.50786pt>
 File: ./images/TC5.pdf Graphic file (type pdf)
 <use ./images/TC5.pdf>
 Package pdftex.def Info: ./images/TC5.pdf  used on input line 271.
@@ -1239,7 +1239,7 @@ Underfull \hbox (badness 2790) in paragraph at lines 283--284
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC6.pdf, id=431, 845.04686pt x 597.50786pt>
+<./images/TC6.pdf, id=434, 845.04686pt x 597.50786pt>
 File: ./images/TC6.pdf Graphic file (type pdf)
 <use ./images/TC6.pdf>
 Package pdftex.def Info: ./images/TC6.pdf  used on input line 300.
@@ -1250,7 +1250,7 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 300--301
  []
 
 [11] [12 <./images/TC5.pdf>]
-<./images/TC7.pdf, id=450, 845.04686pt x 597.50786pt>
+<./images/TC7.pdf, id=453, 845.04686pt x 597.50786pt>
 File: ./images/TC7.pdf Graphic file (type pdf)
 <use ./images/TC7.pdf>
 Package pdftex.def Info: ./images/TC7.pdf  used on input line 329.
@@ -1260,7 +1260,7 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 329--330
 [][] 
  []
 
-<./images/TC8.pdf, id=453, 845.04686pt x 597.50786pt>
+<./images/TC8.pdf, id=456, 845.04686pt x 597.50786pt>
 File: ./images/TC8.pdf Graphic file (type pdf)
 <use ./images/TC8.pdf>
 Package pdftex.def Info: ./images/TC8.pdf  used on input line 358.
@@ -1271,7 +1271,7 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 358--359
  []
 
 [13 <./images/TC6.pdf>] [14 <./images/TC7.pdf>] [15 <./images/TC8.pdf>]
-<./images/TC9.pdf, id=485, 597.50786pt x 845.04686pt>
+<./images/TC9.pdf, id=488, 597.50786pt x 845.04686pt>
 File: ./images/TC9.pdf Graphic file (type pdf)
 <use ./images/TC9.pdf>
 Package pdftex.def Info: ./images/TC9.pdf  used on input line 387.
@@ -1281,7 +1281,7 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 387--388
 [][] 
  []
 
-<./images/TC10.pdf, id=488, 597.50786pt x 845.04686pt>
+<./images/TC10.pdf, id=491, 597.50786pt x 845.04686pt>
 File: ./images/TC10.pdf Graphic file (type pdf)
 <use ./images/TC10.pdf>
 Package pdftex.def Info: ./images/TC10.pdf  used on input line 416.
@@ -1292,7 +1292,7 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 416--417
  []
 
 [16] [17 <./images/TC9.pdf>] [18 <./images/TC10.pdf>]
-<./images/TC11.pdf, id=515, 597.50786pt x 845.04686pt>
+<./images/TC11.pdf, id=518, 597.50786pt x 845.04686pt>
 File: ./images/TC11.pdf Graphic file (type pdf)
 <use ./images/TC11.pdf>
 Package pdftex.def Info: ./images/TC11.pdf  used on input line 445.
@@ -1521,10 +1521,10 @@ Package logreq Info: Writing requests to 'internship-report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26789 strings out of 474587
- 462579 string characters out of 5742840
+ 26792 strings out of 474587
+ 462635 string characters out of 5742840
  2255555 words of memory out of 5000000
- 47588 multiletter control sequences out of 15000+600000
+ 47591 multiletter control sequences out of 15000+600000
  663386 words of font info for 210 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,131p,1016b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1547,9 +1547,9 @@ Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.
 pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/l
 mtt9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/za
 pfding/uzdr.pfb>
-Output written on internship-report.pdf (55 pages, 3736624 bytes).
+Output written on internship-report.pdf (55 pages, 3737115 bytes).
 PDF statistics:
- 1527 PDF objects out of 1728 (max. 8388607)
+ 1530 PDF objects out of 1728 (max. 8388607)
  777 named destinations out of 1000 (max. 500000)
  62970 words of extra memory for PDF output out of 74296 (max. 10000000)
 

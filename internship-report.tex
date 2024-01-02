@@ -65,9 +65,9 @@ The aim of this internship work was to assess the security of the TLS Protocol i
 Therefore, through the generation of some forged TLS Certificates and the definition of a Suite of Automated Unit Tests, the goal was to expose vulnerabilities in these libraries, or validate their implementation as secure.
 
 \section{Related Works}
-As it was just stated, the main inspiration for this work has been the article published by my colleague Edoardo Di Paolo \cite{mqttpaper}, which gave us clear information on the publish-subscribe communication paradigm of the MQTT Protocol and on which libraries to test, finally focusing our efforts on the \textit{Mosquitto}, \textit{HiveMQ}, \textit{Moquette}, \textit{EMQX} and \textit{Aedes} MQTT Broker Libraries. The article \cite{mqttpaper} also helped us designing our communication Test Environment, which is later discussed in \textit{Section 3.8}.
+As it was just stated, the main inspiration for this work has been the article published by my colleague Edoardo Di Paolo \cite{mqttpaper}, which gave us clear information on the publish-subscribe communication paradigm of the MQTT Protocol and on which libraries to test, finally focusing our efforts on the \textit{Mosquitto}, \textit{HiveMQ}, \textit{Moquette}, \textit{EMQX} and \textit{Aedes} MQTT Broker Libraries. The article \cite{mqttpaper} also helped us designing our communication Test Environment, which is later discussed in \autoref{sec:docker_env}.
 
-On top of that, the research led by Stanford and Texas at Austin Universities on SSL Certificate Validation in Non-Browser Software \cite{sslvalidation} helped us targeting possible MQTT over TLS Implementation Faults, namely \textit{Chain Of Trust Verification}, \textit{Hostname Verification} and \textit{X.509 Extension Verification}. The research \cite{sslvalidation} also pointed us towards the official RFCs \cites{rfc2818}{rfc5280}{rfc8446} which contain more extensive information regarding TLS Certificate Validation. All these pieces of information allowed us to formally define the TLS Vulnerabilities and Unit Test Suite, described respectively in \textit{Section 1.4} and \textit{Chapter 2}.
+On top of that, the research led by Stanford and Texas at Austin Universities on SSL Certificate Validation in Non-Browser Software \cite{sslvalidation} helped us targeting possible MQTT over TLS Implementation Faults, namely \textit{Chain Of Trust Verification}, \textit{Hostname Verification} and \textit{X.509 Extension Verification}. The research \cite{sslvalidation} also pointed us towards the official RFCs \cites{rfc2818}{rfc5280}{rfc8446} which contain more extensive information regarding TLS Certificate Validation. All these pieces of information allowed us to formally define the TLS Vulnerabilities and Unit Test Suite, described respectively in \autoref{sec:tls_vulnerabilities} and \autoref{ch:test_suite}.
 
 Finally, the article published by University of Padua and the Technical University of Denmark on the design of an SSL Validation Proxy named MITHYS \cite{mithys} exhibits how similar TLS Implementation Faults could be found in some widely spread Mobile Application Software.
 
@@ -99,7 +99,7 @@ SSL, also known as Secure Sockets Layer, is a protocol used on the Transport Lay
 \subsection{Certificate Authority}
 A Certificate Authority, abbreviated CA, is a secure third party who is trusted by both TLS server and TLS client. In general, the client trusts the CA to certify that the server is who they claim to be. In mutual TLS, the CA is also used by the server, to certify that the client is who they claim to be.
 
-\section{TLS Vulnerabilities}
+\section{TLS Vulnerabilities}\label{sec:tls_vulnerabilities}
 One of the main pieces of work done for this Internship was to define the ways in which an Attacker could possibly exploit a badly implemented TLS connection. Therefore, referencing the specifications RFC 2818 \cite{rfc2818}, RFC 8446 \cite{rfc8446} and RFC 5280 \cite{rfc5280}, the following list of validations an MQTT Broker Library should implement was produced:
 
 \begin{itemize}
@@ -111,7 +111,7 @@ One of the main pieces of work done for this Internship was to define the ways i
 	\item \textbf{Downgrade attack}: some attackers might try pretending that the latests versions of TLS are not supported by one of the two communicating parties, or they could also pretend that the set of supported ciphers is limited to only easily breakable ciphers, for example based on 512 bit-long cipher keys. This is why it’s important to support only the versions of TLS that are still considered secure, and it’s important to restrict the set of supported ciphers to only implementation-strong ciphers. This known vulnerability led us to test RouterOS for weak ciphers. This will be described later in \textit{Chapter/Section (TODO)}.
 \end{itemize}
 
-\chapter{Test Suite}
+\chapter{Test Suite}\label{ch:test_suite}
 To test the MQTT Broker Libraries, a Unit Test Suite was formally defined, with a series of descriptions and assertions made. The Unit Tests are defined following the Triangulation technique, which means that the Test Suite should assert both the valid scenarios in which the connection should be established and the illegal scenarios in which the connection should be rejected. Hence the Tests are defined as follows:
 \begin{enumerate}
 	\item Test Case 1 - Legal Connection
@@ -654,7 +654,7 @@ For each library an automated Tester Script has been developed. The script is de
 \end{enumerate}
 The automated script works only if, before executing it, both the MQTT Server and MQTT Client Docker Containers are running.
 
-\section{Docker Test Environment}
+\section{Docker Test Environment}\label{sec:docker_env}
 \subsection{MQTT Client Tester Image}
 For the Docker Test Environment, the main piece of work was to setup the MQTT Client Tester Docker Container Image. The code used for the generation of this Image can be found in the following Dockerfile:
 \lstinputlisting{snippets/tester-image-dockerfile}
