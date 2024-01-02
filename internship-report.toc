@@ -11,46 +11,46 @@
 \contentsline {section}{\numberline {2.1}Test Case 1 - Legal Connection}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Test Case 2 - Self Signed Attacker}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Test Case 3 - Self Signed Attacker's Fake CA}{7}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Test Case 4 - Alteration 1 (Common Name)}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Test Case 5 - Alteration 2 (Expiration Date)}{10}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Test Case 6 - Alteration 3 (Public Key)}{11}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Test Case 7 - Expired CA (Alteration 4)}{12}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Test Case 8 - Certificate Extension}{13}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Test Case 9 - Longer Chain Of Trust Legal Connection}{14}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Test Case 10 - Altered Intermediate CA Common Name}{15}{section.2.10}%
-\contentsline {section}{\numberline {2.11}Test Case 11 - Altered Intermediate CA Public Key}{16}{section.2.11}%
-\contentsline {chapter}{\numberline {3}Developed Code}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}TLS Certificates Generation Script}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}TLS Certificate Common Name Alteration Script}{27}{section.3.2}%
-\contentsline {section}{\numberline {3.3}TLS Certificate Expiration Date Alteration Script}{28}{section.3.3}%
-\contentsline {section}{\numberline {3.4}TLS Certificate Public Key Alteration Script}{29}{section.3.4}%
-\contentsline {section}{\numberline {3.5}TLS Certificate Keystores Generation Script}{30}{section.3.5}%
-\contentsline {section}{\numberline {3.6}MQTT Client Tester Script}{33}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Library Tester Script}{34}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Docker Test Environment}{36}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}MQTT Client Tester Image}{36}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Moquette MQTT Server Image}{37}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Aedes MQTT Server Image}{37}{subsection.3.8.3}%
-\contentsline {section}{\numberline {3.9}Libraries Differences}{38}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Mosquitto}{38}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Hive MQ}{38}{subsection.3.9.2}%
-\contentsline {subsection}{\numberline {3.9.3}Aedes}{39}{subsection.3.9.3}%
-\contentsline {subsection}{\numberline {3.9.4}Moquette}{39}{subsection.3.9.4}%
-\contentsline {subsection}{\numberline {3.9.5}EMQX}{39}{subsection.3.9.5}%
-\contentsline {subsection}{\numberline {3.9.6}RouterOS}{39}{subsection.3.9.6}%
-\contentsline {chapter}{\numberline {4}Test Results}{41}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Tested MQTT Libraries}{41}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Result Table}{42}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Test Case 1 - Legal Connection}{42}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Test Case 2 - Self Signed Attacker}{42}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Test Case 3 - Self Signed Attacker's Fake CA}{43}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Test Case 4 - Alteration 1 (Common Name)}{43}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Test Case 5 - Alteration 2 (Expiration Date)}{43}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Test Case 6 - Alteration 3 (Public Key)}{43}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}Test Case 7 - Expired CA (Alteration 4)}{43}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8}Test Case 8 - Certificate Extension}{43}{subsection.4.2.8}%
-\contentsline {subsection}{\numberline {4.2.9}Test Case 9 - Longer Chain Of Trust Legal Connection}{44}{subsection.4.2.9}%
-\contentsline {subsection}{\numberline {4.2.10}Test Case 10 - Altered Intermediate CA Common Name}{44}{subsection.4.2.10}%
-\contentsline {subsection}{\numberline {4.2.11}Test Case 11 - Altered Intermediate CA Public Key}{44}{subsection.4.2.11}%
-\contentsline {chapter}{\numberline {5}Conclusion}{45}{chapter.5}%
-\contentsline {chapter}{Bibliography}{47}{section*.2}%
+\contentsline {section}{\numberline {2.4}Test Case 4 - Alteration 1 (Common Name)}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Test Case 5 - Alteration 2 (Expiration Date)}{11}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Test Case 6 - Alteration 3 (Public Key)}{12}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Test Case 7 - Expired CA (Alteration 4)}{13}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Test Case 8 - Certificate Extension}{14}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Test Case 9 - Longer Chain Of Trust Legal Connection}{15}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Test Case 10 - Altered Intermediate CA Common Name}{16}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Test Case 11 - Altered Intermediate CA Public Key}{18}{section.2.11}%
+\contentsline {chapter}{\numberline {3}Developed Code}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}TLS Certificates Generation Script}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}TLS Certificate Common Name Alteration Script}{29}{section.3.2}%
+\contentsline {section}{\numberline {3.3}TLS Certificate Expiration Date Alteration Script}{30}{section.3.3}%
+\contentsline {section}{\numberline {3.4}TLS Certificate Public Key Alteration Script}{31}{section.3.4}%
+\contentsline {section}{\numberline {3.5}TLS Certificate Keystores Generation Script}{32}{section.3.5}%
+\contentsline {section}{\numberline {3.6}MQTT Client Tester Script}{35}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Library Tester Script}{36}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Docker Test Environment}{38}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}MQTT Client Tester Image}{38}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Moquette MQTT Server Image}{39}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Aedes MQTT Server Image}{39}{subsection.3.8.3}%
+\contentsline {section}{\numberline {3.9}Libraries Differences}{40}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Mosquitto}{40}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}HiveMQ}{40}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}Aedes}{41}{subsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.9.4}Moquette}{41}{subsection.3.9.4}%
+\contentsline {subsection}{\numberline {3.9.5}EMQX}{41}{subsection.3.9.5}%
+\contentsline {subsection}{\numberline {3.9.6}RouterOS}{41}{subsection.3.9.6}%
+\contentsline {chapter}{\numberline {4}Test Results}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Tested MQTT Libraries}{43}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Result Table}{44}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Test Case 1 - Legal Connection}{44}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Test Case 2 - Self Signed Attacker}{44}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Test Case 3 - Self Signed Attacker's Fake CA}{45}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Test Case 4 - Alteration 1 (Common Name)}{45}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Test Case 5 - Alteration 2 (Expiration Date)}{45}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Test Case 6 - Alteration 3 (Public Key)}{45}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Test Case 7 - Expired CA (Alteration 4)}{45}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8}Test Case 8 - Certificate Extension}{45}{subsection.4.2.8}%
+\contentsline {subsection}{\numberline {4.2.9}Test Case 9 - Longer Chain Of Trust Legal Connection}{46}{subsection.4.2.9}%
+\contentsline {subsection}{\numberline {4.2.10}Test Case 10 - Altered Intermediate CA Common Name}{46}{subsection.4.2.10}%
+\contentsline {subsection}{\numberline {4.2.11}Test Case 11 - Altered Intermediate CA Public Key}{46}{subsection.4.2.11}%
+\contentsline {chapter}{\numberline {5}Conclusion}{47}{chapter.5}%
+\contentsline {chapter}{Bibliography}{49}{section*.3}%

@@ -79,9 +79,13 @@ For the sake of this report, we will be using some core concepts that are critic
 \subsection{MQTT}
 MQTT, also known as Message Queuing Telemetry Transport, is a lightweight protocol used on the Application Layer of the TCP/IP stack. MQTT is an alternative to the widely spread HTTP, and it’s mainly used for connectivity to and from Internet of Things devices, due to the lightweight nature of the protocol and due to the low memory availability of the above mentioned IoT devices.
 Since the MQTT protocol is by nature a lightweight protocol, it does not feature many security capabilities, so it must rely on the security checks made by the layer immediately below MQTT, the Transport layer, via SSL/TLS.
-We can see here a representation of a typical message exchange via the MQTT protocol:
+In \autoref{fig:mqtt} we can see a representation of a typical message exchange via the MQTT protocol.
 
-\includegraphics[width=13cm]{MQTT}
+\begin{figure}
+	\includegraphics[width=14cm]{MQTT}
+	\caption{MQTT Message Exchange.}
+	\label{fig:mqtt}
+\end{figure}
 
 The exchange of information is mainly done through the publish/subscribe paradigm:
 \begin{itemize}
@@ -637,7 +641,7 @@ Mosquitto has been the easiest Library to setup. Clear documentation and fast st
 
 Once that is done, the configuration can be loaded directly by the command line interface using the `-c' parameter.
 
-\subsection{Hive MQ}
+\subsection{HiveMQ}
 HiveMQ's configuration is in XML tree format, and it is loaded automatically by the library in a pre-defined reserved path inside the library's folder. The TLS parameters in this configuration are:
 
 \begin{itemize}
