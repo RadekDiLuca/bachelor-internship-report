@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  2 JAN 2024 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  2 JAN 2024 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1217,9 +1217,8 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 242--243
 [][] 
  []
 
-[6] [7 <./images/TC1.pdf>] [8 <./images/TC2.pdf>] [9 <./images/TC3.pdf>]
-[10 <./images/TC4.pdf>]
-<./images/TC5.pdf, id=431, 845.04686pt x 597.50786pt>
+[6] [7]
+<./images/TC5.pdf, id=402, 845.04686pt x 597.50786pt>
 File: ./images/TC5.pdf Graphic file (type pdf)
 <use ./images/TC5.pdf>
 Package pdftex.def Info: ./images/TC5.pdf  used on input line 271.
@@ -1239,7 +1238,7 @@ Underfull \hbox (badness 2790) in paragraph at lines 283--284
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC6.pdf, id=434, 845.04686pt x 597.50786pt>
+<./images/TC6.pdf, id=405, 845.04686pt x 597.50786pt>
 File: ./images/TC6.pdf Graphic file (type pdf)
 <use ./images/TC6.pdf>
 Package pdftex.def Info: ./images/TC6.pdf  used on input line 300.
@@ -1249,8 +1248,11 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 300--301
 [][] 
  []
 
-[11] [12 <./images/TC5.pdf>]
-<./images/TC7.pdf, id=453, 845.04686pt x 597.50786pt>
+
+Underfull \vbox (badness 4660) has occurred while \output is active []
+
+ [8 <./images/TC1.pdf>] [9]
+<./images/TC7.pdf, id=425, 845.04686pt x 597.50786pt>
 File: ./images/TC7.pdf Graphic file (type pdf)
 <use ./images/TC7.pdf>
 Package pdftex.def Info: ./images/TC7.pdf  used on input line 329.
@@ -1260,7 +1262,7 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 329--330
 [][] 
  []
 
-<./images/TC8.pdf, id=456, 845.04686pt x 597.50786pt>
+<./images/TC8.pdf, id=428, 845.04686pt x 597.50786pt>
 File: ./images/TC8.pdf Graphic file (type pdf)
 <use ./images/TC8.pdf>
 Package pdftex.def Info: ./images/TC8.pdf  used on input line 358.
@@ -1270,8 +1272,11 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 358--359
 [][] 
  []
 
-[13 <./images/TC6.pdf>] [14 <./images/TC7.pdf>] [15 <./images/TC8.pdf>]
-<./images/TC9.pdf, id=488, 597.50786pt x 845.04686pt>
+
+Underfull \vbox (badness 1430) has occurred while \output is active []
+
+ [10 <./images/TC2.pdf>] [11]
+<./images/TC9.pdf, id=447, 597.50786pt x 845.04686pt>
 File: ./images/TC9.pdf Graphic file (type pdf)
 <use ./images/TC9.pdf>
 Package pdftex.def Info: ./images/TC9.pdf  used on input line 387.
@@ -1281,7 +1286,7 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 387--388
 [][] 
  []
 
-<./images/TC10.pdf, id=491, 597.50786pt x 845.04686pt>
+<./images/TC10.pdf, id=450, 597.50786pt x 845.04686pt>
 File: ./images/TC10.pdf Graphic file (type pdf)
 <use ./images/TC10.pdf>
 Package pdftex.def Info: ./images/TC10.pdf  used on input line 416.
@@ -1291,8 +1296,8 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 416--417
 [][] 
  []
 
-[16] [17 <./images/TC9.pdf>] [18 <./images/TC10.pdf>]
-<./images/TC11.pdf, id=518, 597.50786pt x 845.04686pt>
+[12] [13]
+<./images/TC11.pdf, id=465, 597.50786pt x 845.04686pt>
 File: ./images/TC11.pdf Graphic file (type pdf)
 <use ./images/TC11.pdf>
 Package pdftex.def Info: ./images/TC11.pdf  used on input line 445.
@@ -1302,7 +1307,9 @@ Overfull \hbox (2.33858pt too wide) in paragraph at lines 445--446
 [][] 
  []
 
-[19] [20 <./images/TC11.pdf>] [21] [22
+[14] [15 <./images/TC3.pdf>] [16 <./images/TC4.pdf> <./images/TC5.pdf>]
+[17 <./images/TC6.pdf> <./images/TC7.pdf>] [18 <./images/TC8.pdf>] [19 <./image
+s/TC9.pdf>] [20 <./images/TC10.pdf>] [21 <./images/TC11.pdf>] [22
 
 ]
 Chapter 3.
@@ -1547,7 +1554,7 @@ Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.
 pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/l
 mtt9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/za
 pfding/uzdr.pfb>
-Output written on internship-report.pdf (55 pages, 3736990 bytes).
+Output written on internship-report.pdf (55 pages, 3735175 bytes).
 PDF statistics:
  1530 PDF objects out of 1728 (max. 8388607)
  777 named destinations out of 1000 (max. 500000)
