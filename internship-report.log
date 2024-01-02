@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  2 JAN 2024 16:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  2 JAN 2024 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1515,7 +1515,7 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
 Package rerunfilecheck Info: File `internship-report.out' has not changed.
-(rerunfilecheck)             Checksum: C714FF90CE1B0BC73537BAC300CDBED4;11412.
+(rerunfilecheck)             Checksum: EB05671CDAA8395D81FAE1FD7D0E635C;11392.
 Package logreq Info: Writing requests to 'internship-report.run.xml'.
 \openout1 = `internship-report.run.xml'.
 
@@ -1547,7 +1547,7 @@ Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.
 pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/l
 mtt9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/za
 pfding/uzdr.pfb>
-Output written on internship-report.pdf (55 pages, 3737115 bytes).
+Output written on internship-report.pdf (55 pages, 3736990 bytes).
 PDF statistics:
  1530 PDF objects out of 1728 (max. 8388607)
  777 named destinations out of 1000 (max. 500000)
