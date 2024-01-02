@@ -129,8 +129,9 @@ To test the MQTT Broker Libraries, a Unit Test Suite was formally defined, with 
 Note: The tested libraries are set up as MQTT Broker, or MQTT Server. The Client, which asserts the outcome of the test, always uses the Mosquitto command line tools to connect to the Server.
 
 \section{Test Case 1 - Legal Connection}
-This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc1}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc1}. In \autoref{tab:tc1} we can find the formal details of the Test Case 1.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -145,7 +146,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{valid}} \\
 Assertion & The Library should \textbf{\textit{accept}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 1 Formal Details.}
+\label{tab:tc1}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC1}
@@ -154,8 +158,9 @@ Assertion & The Library should \textbf{\textit{accept}} the connection when a cl
 \end{figure}
 
 \section{Test Case 2 - Self Signed Attacker}
-This Test Case is set up by configuring the MQTT Broker Library with a forged self-signed TLS Certificate. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc2}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with a forged self-signed TLS Certificate. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc2}.  In \autoref{tab:tc2} we can find the formal details of the Test Case 2.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -170,7 +175,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{valid}} \\
 Assertion & The Library should \textbf{\textit{reject}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 2 Formal Details.}
+\label{tab:tc2}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC2}
@@ -179,8 +187,9 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{figure}
 
 \section{Test Case 3 - Self Signed Attacker's Fake CA}
-This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by a forged Root Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc3}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by a forged Root Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc3}.  In \autoref{tab:tc3} we can find the formal details of the Test Case 3.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -195,7 +204,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{valid}} \\
 Assertion & The Library should \textbf{\textit{reject}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 3 Formal Details.}
+\label{tab:tc3}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC3}
@@ -204,8 +216,9 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{figure}
 
 \section{Test Case 4 - Alteration 1 (Common Name)}
-This Test Case is set up by configuring the MQTT Broker Library with an altered TLS Certificate signed by the real Certificate Authority. The intruder alters the Common Name field, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc4}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with an altered TLS Certificate signed by the real Certificate Authority. The intruder alters the Common Name field, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc4}.  In \autoref{tab:tc4} we can find the formal details of the Test Case 4.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -220,7 +233,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{not}} vali
 Assertion & The Library should \textbf{\textit{reject}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 4 Formal Details.}
+\label{tab:tc4}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC4}
@@ -229,8 +245,9 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{figure}
 
 \section{Test Case 5 - Alteration 2 (Expiration Date)}
-This Test Case is set up by configuring the MQTT Broker Library with an altered expired TLS Certificate signed by the real Certificate Authority. The intruder alters the Not Valid After field, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc5}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with an altered expired TLS Certificate signed by the real Certificate Authority. The intruder alters the Not Valid After field, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc5}.  In \autoref{tab:tc5} we can find the formal details of the Test Case 5.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -245,7 +262,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{not}} vali
 Assertion & The Library should \textbf{\textit{reject}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 5 Formal Details.}
+\label{tab:tc5}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC5}
@@ -254,8 +274,9 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{figure}
 
 \section{Test Case 6 - Alteration 3 (Public Key)}
-This Test Case is set up by configuring the MQTT Broker Library with an altered TLS Certificate signed by the real Certificate Authority. The intruder replaces the contents of the Public Key field with their own Public Key, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc6}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with an altered TLS Certificate signed by the real Certificate Authority. The intruder replaces the contents of the Public Key field with their own Public Key, therefore the signature is compromised because the Server Certificate has been tampered with. The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc6}.  In \autoref{tab:tc6} we can find the formal details of the Test Case 6.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -270,7 +291,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{not}} vali
 Assertion & The Library should \textbf{\textit{reject}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 6 Formal Details.}
+\label{tab:tc6}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC6}
@@ -279,8 +303,9 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{figure}
 
 \section{Test Case 7 - Expired CA (Alteration 4)}
-This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an expired (real) Certificate Authority. This test represents a scenario in which the Intruder manages to decrypt the Certificate Authority’s Public Key over a long period of time, during which the Client under attack is not updated with a new CA Certificate. Because of this, the Tester Client in this Test Case connects to the server checking the Server TLS Certificate against the expired Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc7}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an expired (real) Certificate Authority. This test represents a scenario in which the Intruder manages to decrypt the Certificate Authority’s Public Key over a long period of time, during which the Client under attack is not updated with a new CA Certificate. Because of this, the Tester Client in this Test Case connects to the server checking the Server TLS Certificate against the expired Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc7}.  In \autoref{tab:tc7} we can find the formal details of the Test Case 7.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -295,7 +320,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{valid}} \\
 Assertion & The Library should \textbf{\textit{reject}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 7 Formal Details.}
+\label{tab:tc7}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC7}
@@ -304,8 +332,9 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{figure}
 
 \section{Test Case 8 - Certificate Extension}
-This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Certificate Authority, though this Certificate has been signed by the CA for the MQTT Broker to use only as a Client Certificate towards other Brokers (in mTLS). The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc8}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Certificate Authority, though this Certificate has been signed by the CA for the MQTT Broker to use only as a Client Certificate towards other Brokers (in mTLS). The Tester Client connects to the server checking the Server TLS Certificate against the real Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc8}.  In \autoref{tab:tc8} we can find the formal details of the Test Case 8.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -320,7 +349,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{valid}} \\
 Assertion & The Library should \textbf{\textit{reject}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 8 Formal Details.}
+\label{tab:tc8}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC8}
@@ -329,8 +361,9 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{figure}
 
 \section{Test Case 9 - Longer Chain Of Trust Legal Connection}
-This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc9}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with a valid TLS Certificate signed by the real Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc9}.  In \autoref{tab:tc9} we can find the formal details of the Test Case 9.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -345,7 +378,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{valid}} \\
 Assertion & The Library should \textbf{\textit{accept}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 9 Formal Details.}
+\label{tab:tc9}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC9}
@@ -354,8 +390,9 @@ Assertion & The Library should \textbf{\textit{accept}} the connection when a cl
 \end{figure}
 
 \section{Test Case 10 - Altered Intermediate CA Common Name}
-This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an altered Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The intruder alters their Intermediate CA’s Common Name to pretend they are the real Intermediate CA, therefore the signature of the Intermediate CA is compromised. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc10}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an altered Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The intruder alters their Intermediate CA’s Common Name to pretend they are the real Intermediate CA, therefore the signature of the Intermediate CA is compromised. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc10}.  In \autoref{tab:tc10} we can find the formal details of the Test Case 10.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -370,7 +407,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{not}} vali
 Assertion & The Library should \textbf{\textit{reject}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 10 Formal Details.}
+\label{tab:tc10}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC10}
@@ -379,8 +419,9 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 \end{figure}
 
 \section{Test Case 11 - Altered Intermediate CA Public Key}
-This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an altered Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The intruder replaces the real Intermediate CA’s Public Key field contents with their own Public Key, to be able to decrypt the traffic easily, therefore the signature of the Intermediate CA is compromised. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc11}. The details of the Unit Test are as follows:
+This Test Case is set up by configuring the MQTT Broker Library with a forged TLS Certificate signed by an altered Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The intruder replaces the real Intermediate CA’s Public Key field contents with their own Public Key, to be able to decrypt the traffic easily, therefore the signature of the Intermediate CA is compromised. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc11}.  In \autoref{tab:tc11} we can find the formal details of the Test Case 11.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{| p{6cm} | p{6cm} |}
 \hline
@@ -395,7 +436,10 @@ State of Certificate’s Signature & The signature is \textbf{\textit{not}} vali
 Assertion & The Library should \textbf{\textit{reject}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
 \hline
 \end{tabular}
+\caption{Test Case 11 Formal Details.}
+\label{tab:tc11}
 \end{center}
+\end{table}
 
 \begin{figure}
 	\includegraphics[width=14cm]{TC11}
