@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  2 JAN 2024 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  2 JAN 2024 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1147,127 +1147,188 @@ Chapter 2.
 [5
 
 ]
-<./images/TC1.pdf, id=368, 845.04686pt x 597.50786pt>
+<./images/TC1.pdf, id=369, 845.04686pt x 597.50786pt>
 File: ./images/TC1.pdf Graphic file (type pdf)
 <use ./images/TC1.pdf>
-Package pdftex.def Info: ./images/TC1.pdf  used on input line 150.
-(pdftex.def)             Requested size: 369.88582pt x 261.53668pt.
+Package pdftex.def Info: ./images/TC1.pdf  used on input line 151.
+(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 151--152
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 158--159
+Underfull \hbox (badness 2790) in paragraph at lines 162--163
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./images/TC1.pdf>]
-<./images/TC2.pdf, id=378, 845.04686pt x 597.50786pt>
+[6 <./images/TC1.pdf>]
+<./images/TC2.pdf, id=382, 845.04686pt x 597.50786pt>
 File: ./images/TC2.pdf Graphic file (type pdf)
 <use ./images/TC2.pdf>
-Package pdftex.def Info: ./images/TC2.pdf  used on input line 171.
-(pdftex.def)             Requested size: 369.88582pt x 261.53668pt.
+Package pdftex.def Info: ./images/TC2.pdf  used on input line 176.
+(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 176--177
+[][] 
+ []
+
+[7 <./images/TC2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 179--180
+Underfull \hbox (badness 2790) in paragraph at lines 187--188
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./images/TC2.pdf>]
-<./images/TC3.pdf, id=387, 597.50786pt x 845.04686pt>
+<./images/TC3.pdf, id=392, 597.50786pt x 845.04686pt>
 File: ./images/TC3.pdf Graphic file (type pdf)
 <use ./images/TC3.pdf>
-Package pdftex.def Info: ./images/TC3.pdf  used on input line 192.
-(pdftex.def)             Requested size: 369.88582pt x 523.12419pt.
+Package pdftex.def Info: ./images/TC3.pdf  used on input line 201.
+(pdftex.def)             Requested size: 398.33858pt x 563.3675pt.
+
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 201--202
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+[]|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 212--213
+\T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
 [9 <./images/TC3.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-[]|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
- []
-
-
-Underfull \hbox (badness 2790) in paragraph at lines 201--202
-\T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
- []
-
-<./images/TC4.pdf, id=401, 845.04686pt x 597.50786pt>
+<./images/TC4.pdf, id=409, 845.04686pt x 597.50786pt>
 File: ./images/TC4.pdf Graphic file (type pdf)
 <use ./images/TC4.pdf>
-Package pdftex.def Info: ./images/TC4.pdf  used on input line 214.
-(pdftex.def)             Requested size: 341.43306pt x 241.41496pt.
+Package pdftex.def Info: ./images/TC4.pdf  used on input line 226.
+(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 226--227
+[][] 
+ []
+
 [10 <./images/TC4.pdf>]
-<./images/TC5.pdf, id=410, 845.04686pt x 597.50786pt>
+<./images/TC5.pdf, id=419, 845.04686pt x 597.50786pt>
 File: ./images/TC5.pdf Graphic file (type pdf)
 <use ./images/TC5.pdf>
-Package pdftex.def Info: ./images/TC5.pdf  used on input line 236.
-(pdftex.def)             Requested size: 369.88582pt x 261.53668pt.
- [11 <./images/TC5.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Package pdftex.def Info: ./images/TC5.pdf  used on input line 251.
+(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 251--252
+[][] 
+ []
+
+[11 <./images/TC5.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
 
 
-Underfull \hbox (badness 2790) in paragraph at lines 244--245
+Underfull \hbox (badness 2790) in paragraph at lines 262--263
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC6.pdf, id=419, 845.04686pt x 597.50786pt>
+<./images/TC6.pdf, id=430, 845.04686pt x 597.50786pt>
 File: ./images/TC6.pdf Graphic file (type pdf)
 <use ./images/TC6.pdf>
-Package pdftex.def Info: ./images/TC6.pdf  used on input line 257.
-(pdftex.def)             Requested size: 341.43306pt x 241.41496pt.
-[12 <./images/TC6.pdf>]
-<./images/TC7.pdf, id=428, 845.04686pt x 597.50786pt>
+Package pdftex.def Info: ./images/TC6.pdf  used on input line 276.
+(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 276--277
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+<./images/TC7.pdf, id=438, 845.04686pt x 597.50786pt>
 File: ./images/TC7.pdf Graphic file (type pdf)
 <use ./images/TC7.pdf>
-Package pdftex.def Info: ./images/TC7.pdf  used on input line 279.
-(pdftex.def)             Requested size: 341.43306pt x 241.41496pt.
- [13 <./images/TC7.pdf>]
-<./images/TC8.pdf, id=437, 845.04686pt x 597.50786pt>
+Package pdftex.def Info: ./images/TC7.pdf  used on input line 301.
+(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 301--302
+[][] 
+ []
+
+[13 <./images/TC6.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <./images/TC7.pdf>]
+<./images/TC8.pdf, id=457, 845.04686pt x 597.50786pt>
 File: ./images/TC8.pdf Graphic file (type pdf)
 <use ./images/TC8.pdf>
-Package pdftex.def Info: ./images/TC8.pdf  used on input line 300.
-(pdftex.def)             Requested size: 369.88582pt x 261.53668pt.
+Package pdftex.def Info: ./images/TC8.pdf  used on input line 326.
+(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 326--327
+[][] 
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
-<./images/TC9.pdf, id=442, 597.50786pt x 845.04686pt>
+ [15 <./images/TC8.pdf>]
+<./images/TC9.pdf, id=468, 597.50786pt x 845.04686pt>
 File: ./images/TC9.pdf Graphic file (type pdf)
 <use ./images/TC9.pdf>
-Package pdftex.def Info: ./images/TC9.pdf  used on input line 321.
-(pdftex.def)             Requested size: 312.9803pt x 442.63759pt.
+Package pdftex.def Info: ./images/TC9.pdf  used on input line 351.
+(pdftex.def)             Requested size: 398.33858pt x 563.3675pt.
 
-[15 <./images/TC8.pdf>]
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 351--352
+[][] 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <./images/TC9.pdf>] [17]
-<./images/TC10.pdf, id=464, 597.50786pt x 845.04686pt>
+ [16]
+[17 <./images/TC9.pdf>]
+<./images/TC10.pdf, id=484, 597.50786pt x 845.04686pt>
 File: ./images/TC10.pdf Graphic file (type pdf)
 <use ./images/TC10.pdf>
-Package pdftex.def Info: ./images/TC10.pdf  used on input line 343.
-(pdftex.def)             Requested size: 369.88582pt x 523.12419pt.
- [18 <./images/TC10.pdf>] [19]
-<./images/TC11.pdf, id=477, 597.50786pt x 845.04686pt>
+Package pdftex.def Info: ./images/TC10.pdf  used on input line 376.
+(pdftex.def)             Requested size: 398.33858pt x 563.3675pt.
+
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 376--377
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+[19 <./images/TC10.pdf>]
+<./images/TC11.pdf, id=499, 597.50786pt x 845.04686pt>
 File: ./images/TC11.pdf Graphic file (type pdf)
 <use ./images/TC11.pdf>
-Package pdftex.def Info: ./images/TC11.pdf  used on input line 365.
-(pdftex.def)             Requested size: 369.88582pt x 523.12419pt.
- [20 <./images/TC11.pdf>]
+Package pdftex.def Info: ./images/TC11.pdf  used on input line 401.
+(pdftex.def)             Requested size: 398.33858pt x 563.3675pt.
+
+Overfull \hbox (2.33858pt too wide) in paragraph at lines 401--402
+[][] 
+ []
+
+[20] [21 <./images/TC11.pdf>] [22
+
+]
 Chapter 3.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1
@@ -1279,9 +1340,9 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 371.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-71.
+nput line 410.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+10.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1291,187 +1352,185 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-(snippets/setupCertificates.sh [21
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
+(snippets/setupCertificates.sh [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25])
-[26] [27] [28]
+ [25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27])
+[28] [29] [30]
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1
 .sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (snippets/alterCommonName.py [29]) (snippets/alterExpirationDate.py
-[30])
-Overfull \hbox (2.87344pt too wide) in paragraph at lines 525--526
+) (snippets/alterCommonName.py [31]) (snippets/alterExpirationDate.py
+[32])
+Overfull \hbox (2.87344pt too wide) in paragraph at lines 564--565
 []\T1/lmr/m/n/10.95 (-20) Read the cer-tifi-cate to be al-tered (`\T1/lmr/bx/n/
 10.95 (-20) server-certificate/serverCertificate.der\T1/lmr/m/n/10.95 (-20) ')
  []
 
-(snippets/alterPublicKey.py) [31] (snippets/setupKeystores.sh [32]
+(snippets/alterPublicKey.py) [33] (snippets/setupKeystores.sh [34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
+ [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34])
-(snippets/testMQTTBroker.sh [35]) (snippets/runTests.sh [36]) [37]
-(snippets/tester-image-dockerfile) [38] (snippets/moquette-image-dockerfile)
-Overfull \hbox (27.7942pt too wide) in paragraph at lines 611--612
+ [36])
+(snippets/testMQTTBroker.sh [37]) (snippets/runTests.sh [38]) [39]
+(snippets/tester-image-dockerfile) [40] (snippets/moquette-image-dockerfile)
+Overfull \hbox (27.7942pt too wide) in paragraph at lines 650--651
 \T1/lmr/m/n/10.95 (-20) Lastly, the Dock-er-file runs on startup the script `\T
 1/lmr/bx/n/10.95 (-20) /app/src/moquette/bin/moquette.sh\T1/lmr/m/n/10.95 (-20)
  ' 
  []
 
-(snippets/aedes-image-dockerfile) [39] [40] [41] [42
+(snippets/aedes-image-dockerfile) [41] [42] [43] [44
 
 ]
 Chapter 4.
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 738--738
 []|\T1/lmr/bx/n/10.95 (+20) Host-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--699
+Underfull \hbox (badness 10000) in paragraph at lines 738--738
 []|\T1/lmr/bx/n/10.95 (+20) Exp.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--700
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
 []|\T1/lmr/bx/n/10.95 (+20) Public
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--701
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 705--705
+Underfull \hbox (badness 10000) in paragraph at lines 744--744
 []|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
 
-Overfull \hbox (4.18019pt too wide) in paragraph at lines 697--716
+Overfull \hbox (4.18019pt too wide) in paragraph at lines 736--755
 []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--721
+Underfull \hbox (badness 10000) in paragraph at lines 760--760
 []|\T1/lmr/bx/n/10.95 (+20) Exp.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--721
+Underfull \hbox (badness 10000) in paragraph at lines 760--760
 []|\T1/lmr/bx/n/10.95 (+20) Cert.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--721
+Underfull \hbox (badness 10000) in paragraph at lines 760--760
 \T1/lmr/bx/n/10.95 (+20) Exten-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--721
+Underfull \hbox (badness 10000) in paragraph at lines 760--760
 []|\T1/lmr/bx/n/10.95 (+20) Chain
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--721
+Underfull \hbox (badness 10000) in paragraph at lines 760--760
 []|\T1/lmr/bx/n/10.95 (+20) Host-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--722
+Underfull \hbox (badness 10000) in paragraph at lines 760--761
 []|\T1/lmr/bx/n/10.95 (+20) Public
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--723
+Underfull \hbox (badness 10000) in paragraph at lines 762--762
 []|\T1/lmr/bx/n/10.95 (+20) Library
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--723
+Underfull \hbox (badness 10000) in paragraph at lines 762--762
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--723
+Underfull \hbox (badness 10000) in paragraph at lines 762--762
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--723
+Underfull \hbox (badness 10000) in paragraph at lines 762--762
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--723
+Underfull \hbox (badness 10000) in paragraph at lines 762--762
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
 []|\T1/lmr/bx/n/10.95 (+20) Test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--727
+Underfull \hbox (badness 10000) in paragraph at lines 766--766
 []|\T1/lmr/m/n/10.95 (+20) HiveMQ
  []
 
-[44] [45] [46]
+[46] [47] [48]
 Chapter 5.
-[47
+[49
 
-] [48
+] [50
 
 ]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [49
+ [51
 
 
 ] (internship-report.aux)
@@ -1480,16 +1539,16 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
 Package rerunfilecheck Info: File `internship-report.out' has not changed.
-(rerunfilecheck)             Checksum: A57CFD03F4BEC24A31B6FEF08D3B6E3F;11411.
+(rerunfilecheck)             Checksum: 565EEF6EBEC4E259CE542AE0E9A93E8D;11412.
 Package logreq Info: Writing requests to 'internship-report.run.xml'.
 \openout1 = `internship-report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26739 strings out of 474587
- 461908 string characters out of 5742840
+ 26763 strings out of 474587
+ 462206 string characters out of 5742840
  2255555 words of memory out of 5000000
- 47562 multiletter control sequences out of 15000+600000
+ 47573 multiletter control sequences out of 15000+600000
  663386 words of font info for 210 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,13n,131p,1016b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1512,9 +1571,9 @@ Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.
 pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/l
 mtt9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/za
 pfding/uzdr.pfb>
-Output written on internship-report.pdf (53 pages, 3726751 bytes).
+Output written on internship-report.pdf (55 pages, 3732682 bytes).
 PDF statistics:
- 1469 PDF objects out of 1728 (max. 8388607)
- 753 named destinations out of 1000 (max. 500000)
+ 1503 PDF objects out of 1728 (max. 8388607)
+ 766 named destinations out of 1000 (max. 500000)
  62970 words of extra memory for PDF output out of 74296 (max. 10000000)
 
