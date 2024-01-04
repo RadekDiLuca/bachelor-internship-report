@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  2 JAN 2024 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  4 JAN 2024 12:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1132,11 +1132,11 @@ Chapter 1.
 
 
 ]
-<./images/MQTT.pdf, id=334, 845.04686pt x 597.50786pt>
+<./images/MQTT.pdf, id=334, 1842.72437pt x 1230.19597pt>
 File: ./images/MQTT.pdf Graphic file (type pdf)
 <use ./images/MQTT.pdf>
 Package pdftex.def Info: ./images/MQTT.pdf  used on input line 85.
-(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+(pdftex.def)             Requested size: 398.33858pt x 265.91359pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 85--86
 [][] 
@@ -1147,17 +1147,17 @@ Chapter 2.
 [5
 
 ]
-<./images/TC1.pdf, id=373, 845.04686pt x 597.50786pt>
+<./images/TC1.pdf, id=383, 1448.83287pt x 960.99028pt>
 File: ./images/TC1.pdf Graphic file (type pdf)
 <use ./images/TC1.pdf>
 Package pdftex.def Info: ./images/TC1.pdf  used on input line 155.
-(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+(pdftex.def)             Requested size: 398.33858pt x 264.20715pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 155--156
 [][] 
  []
 
-
+[6 <./images/TC1.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 167--168
 []|\T1/lmr/m/n/10.95 (+20) The In-truder im-per-son-ates an
  []
@@ -1167,11 +1167,11 @@ Underfull \hbox (badness 2790) in paragraph at lines 167--168
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC2.pdf, id=376, 845.04686pt x 597.50786pt>
+<./images/TC2.pdf, id=407, 1677.15585pt x 969.36151pt>
 File: ./images/TC2.pdf Graphic file (type pdf)
 <use ./images/TC2.pdf>
 Package pdftex.def Info: ./images/TC2.pdf  used on input line 184.
-(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+(pdftex.def)             Requested size: 398.33858pt x 230.22575pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 184--185
 [][] 
@@ -1187,11 +1187,11 @@ Underfull \hbox (badness 2790) in paragraph at lines 196--197
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC3.pdf, id=379, 597.50786pt x 845.04686pt>
+<./images/TC3.pdf, id=410, 1492.8974pt x 1343.60968pt>
 File: ./images/TC3.pdf Graphic file (type pdf)
 <use ./images/TC3.pdf>
 Package pdftex.def Info: ./images/TC3.pdf  used on input line 213.
-(pdftex.def)             Requested size: 398.33858pt x 563.3675pt.
+(pdftex.def)             Requested size: 398.33858pt x 358.49458pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 213--214
 [][] 
@@ -1207,22 +1207,26 @@ Underfull \hbox (badness 2790) in paragraph at lines 225--226
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC4.pdf, id=382, 845.04686pt x 597.50786pt>
+<./images/TC4.pdf, id=413, 1554.46751pt x 1179.77763pt>
 File: ./images/TC4.pdf Graphic file (type pdf)
 <use ./images/TC4.pdf>
 Package pdftex.def Info: ./images/TC4.pdf  used on input line 242.
-(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+(pdftex.def)             Requested size: 398.33858pt x 302.32448pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 242--243
 [][] 
  []
 
-[6] [7]
-<./images/TC5.pdf, id=402, 845.04686pt x 597.50786pt>
+
+Underfull \vbox (badness 6461) has occurred while \output is active []
+
+ [7]
+[8]
+<./images/TC5.pdf, id=430, 1515.95363pt x 1263.01868pt>
 File: ./images/TC5.pdf Graphic file (type pdf)
 <use ./images/TC5.pdf>
 Package pdftex.def Info: ./images/TC5.pdf  used on input line 271.
-(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+(pdftex.def)             Requested size: 398.33858pt x 331.86536pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 271--272
 [][] 
@@ -1238,78 +1242,72 @@ Underfull \hbox (badness 2790) in paragraph at lines 283--284
 \T1/lmr/m/n/10.95 (+20) MQTT Server dur-ing the TLS
  []
 
-<./images/TC6.pdf, id=405, 845.04686pt x 597.50786pt>
+<./images/TC6.pdf, id=433, 1535.92815pt x 1246.23589pt>
 File: ./images/TC6.pdf Graphic file (type pdf)
 <use ./images/TC6.pdf>
 Package pdftex.def Info: ./images/TC6.pdf  used on input line 300.
-(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+(pdftex.def)             Requested size: 398.33858pt x 323.196pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 300--301
 [][] 
  []
 
-
-Underfull \vbox (badness 4660) has occurred while \output is active []
-
- [8 <./images/TC1.pdf>] [9]
-<./images/TC7.pdf, id=425, 845.04686pt x 597.50786pt>
+[9 <./images/TC2.pdf>] [10]
+<./images/TC7.pdf, id=463, 1475.80362pt x 1134.18727pt>
 File: ./images/TC7.pdf Graphic file (type pdf)
 <use ./images/TC7.pdf>
 Package pdftex.def Info: ./images/TC7.pdf  used on input line 329.
-(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+(pdftex.def)             Requested size: 398.33858pt x 306.13081pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 329--330
 [][] 
  []
 
-<./images/TC8.pdf, id=428, 845.04686pt x 597.50786pt>
+<./images/TC8.pdf, id=466, 1909.93555pt x 1186.90424pt>
 File: ./images/TC8.pdf Graphic file (type pdf)
 <use ./images/TC8.pdf>
 Package pdftex.def Info: ./images/TC8.pdf  used on input line 358.
-(pdftex.def)             Requested size: 398.33858pt x 281.64928pt.
+(pdftex.def)             Requested size: 398.33858pt x 247.53673pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 358--359
 [][] 
  []
 
-
-Underfull \vbox (badness 1430) has occurred while \output is active []
-
- [10 <./images/TC2.pdf>] [11]
-<./images/TC9.pdf, id=447, 597.50786pt x 845.04686pt>
+[11 <./images/TC3.pdf>] [12]
+<./images/TC9.pdf, id=495, 1507.08038pt x 1152.88713pt>
 File: ./images/TC9.pdf Graphic file (type pdf)
 <use ./images/TC9.pdf>
 Package pdftex.def Info: ./images/TC9.pdf  used on input line 387.
-(pdftex.def)             Requested size: 398.33858pt x 563.3675pt.
+(pdftex.def)             Requested size: 398.33858pt x 304.72202pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 387--388
 [][] 
  []
 
-<./images/TC10.pdf, id=450, 597.50786pt x 845.04686pt>
+[13 <./images/TC4.pdf>]
+<./images/TC10.pdf, id=518, 1292.037pt x 1754.52486pt>
 File: ./images/TC10.pdf Graphic file (type pdf)
 <use ./images/TC10.pdf>
 Package pdftex.def Info: ./images/TC10.pdf  used on input line 416.
-(pdftex.def)             Requested size: 398.33858pt x 563.3675pt.
+(pdftex.def)             Requested size: 398.33858pt x 540.92542pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 416--417
 [][] 
  []
 
-[12] [13]
-<./images/TC11.pdf, id=465, 597.50786pt x 845.04686pt>
+<./images/TC11.pdf, id=521, 1414.47441pt x 1602.6475pt>
 File: ./images/TC11.pdf Graphic file (type pdf)
 <use ./images/TC11.pdf>
 Package pdftex.def Info: ./images/TC11.pdf  used on input line 445.
-(pdftex.def)             Requested size: 398.33858pt x 563.3675pt.
+(pdftex.def)             Requested size: 398.33858pt x 451.33041pt.
 
 Overfull \hbox (2.33858pt too wide) in paragraph at lines 445--446
 [][] 
  []
 
-[14] [15 <./images/TC3.pdf>] [16 <./images/TC4.pdf> <./images/TC5.pdf>]
-[17 <./images/TC6.pdf> <./images/TC7.pdf>] [18 <./images/TC8.pdf>] [19 <./image
-s/TC9.pdf>] [20 <./images/TC10.pdf>] [21 <./images/TC11.pdf>] [22
+[14 <./images/TC5.pdf>] [15] [16 <./images/TC6.pdf>] [17 <./images/TC7.pdf> <./
+images/TC8.pdf>] [18 <./images/TC9.pdf>] [19 <./images/TC10.pdf>] [20] [21 <./i
+mages/TC11.pdf>] [22
 
 ]
 Chapter 3.
@@ -1554,9 +1552,9 @@ Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.
 pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/l
 mtt9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/za
 pfding/uzdr.pfb>
-Output written on internship-report.pdf (55 pages, 3735175 bytes).
+Output written on internship-report.pdf (55 pages, 3378309 bytes).
 PDF statistics:
- 1530 PDF objects out of 1728 (max. 8388607)
+ 1650 PDF objects out of 1728 (max. 8388607)
  777 named destinations out of 1000 (max. 500000)
  62970 words of extra memory for PDF output out of 74296 (max. 10000000)
 
