@@ -765,7 +765,9 @@ Moquette & 0.18 \\
 \hline
 EMQX & 5.3.0 \\
 \hline
-RouterOS & CHR (6.49.10 Long-term) \\
+RouterOS \textbf{6} & CHR (6.49.10 Long-term) \\
+\hline
+RouterOS \textbf{7} & CHR (7.13.3 Stable) \\
 \hline
 \end{tabular}
 \end{center}
@@ -793,7 +795,9 @@ Moquette & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
 \hline
 EMQX & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
 \hline
-RouterOS & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
+RouterOS \textbf{6} & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
+\hline
+RouterOS \textbf{7} & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
 \hline
 \end{tabular}
 \end{flushleft}
@@ -815,7 +819,9 @@ Moquette & \cmark & \cmark & \cmark & \cmark & \cmark \\
 \hline
 EMQX & \cmark & \cmark & \cmark & \cmark & \cmark \\
 \hline
-RouterOS & \cmark & \cmark & \cmark & \cmark & \cmark \\
+RouterOS \textbf{6} & \cmark & \cmark & \cmark & \cmark & \cmark \\
+\hline
+RouterOS \textbf{7} & \cmark & \xmark & \cmark & \cmark & \cmark \\
 \hline
 \end{tabular}
 \end{flushleft}
@@ -849,8 +855,8 @@ In this Test Case the Library is checking the server certificate using an expire
 Also RouterOS refused the connection to the Mosquitto Broker.
 
 \subsection{Test Case 8 - Certificate Extension}
-In this Test Case the attacker uses a valid server certificate that has a wrong Certificate Extension, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to a wrong usage of the Server Certificate. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
-Also RouterOS refused the connection to the Mosquitto Broker.
+In this Test Case the attacker uses a valid server certificate that has a wrong Certificate Extension, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to a wrong usage of the Server Certificate. The MQTT Broker Libraries passed this test, since they all Libraries refused our MQTT Tester Client connection.
+On the other hand, RouterOS version 7 \textbf{accepted} the connection to the Mosquitto Broker, which represents a regression in comparison to RouterOS version 6, which refused the connection to the Mosquitto Broker as expected.
 
 \subsection{Test Case 9 - Longer Chain Of Trust Legal Connection}
 In this Test Case we expected the Libraries to correctly accept the connection of our MQTT Tester Client, since the TLS Certificates used were all valid. The main difference with Test Case 1 is that in this Test Case we used a chain of trust consisting of a Root Certificate Authority and an additional Intermediate Certificate Authority Certificate signed by the Root CA. All the Libraries passed this test, since all Libraries accepted our MQTT Tester Client connection.
@@ -869,7 +875,7 @@ MQTT is a protocol which, inherently to its lightweight nature, has little secur
 
 Thanks to our literary research, we could produce a formally defined Test Suite, with Test Cases designed to expose possible weaknesses of a faulty TLS implementation of any Application, all the more so of a faulty TLS implementation of an MQTT Broker.
 
-Through the setup of our Test Laboratory Environment, we managed to adapt those formal Test Cases in a reproducible manner, allowing us to recreate the same conditions and reach the same results over time. More specifically, our results showed that the tested Libraries are secure from the Transport Layer Security perspective.
+Through the setup of our Test Laboratory Environment, we managed to adapt those formal Test Cases in a reproducible manner, allowing us to recreate the same conditions and reach the same results over time. More specifically, our results showed that most of the tested Libraries are secure from the Transport Layer Security perspective, and we even managed to find a security threat on RouterOS version 7.
 
 Furthermore, the developed Test Suite and Laboratory Environment will enable us for future monitoring of the TLS security requirements of new versions of the tested libraries, or of additional Libraries altogether.
 
