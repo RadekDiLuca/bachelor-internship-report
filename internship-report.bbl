@@ -220,6 +220,38 @@
       \endverb
       \keyw{ssl,tls}
     \endentry
+    \entry{ciphersuiteinfo}{online}{}
+      \name{author}{2}{}{%
+        {{hash=b82b8c563bd6202265b2ee8c0849f253}{%
+           family={Rudolph},
+           familyi={R\bibinitperiod},
+           given={Hans\bibnamedelima Christian},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3a119755a07d02ac4cd8b174d0635a8b}{%
+           family={Nils},
+           familyi={N\bibinitperiod},
+           given={Grundmann},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{41b51804e23cd8d5b7d0f53f678d803f}
+      \strng{fullhash}{41b51804e23cd8d5b7d0f53f678d803f}
+      \strng{bibnamehash}{41b51804e23cd8d5b7d0f53f678d803f}
+      \strng{authorbibnamehash}{41b51804e23cd8d5b7d0f53f678d803f}
+      \strng{authornamehash}{41b51804e23cd8d5b7d0f53f678d803f}
+      \strng{authorfullhash}{41b51804e23cd8d5b7d0f53f678d803f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{www.ciphersuite.info}
+      \verb{urlraw}
+      \verb https://ciphersuite.info/cs/?singlepage=true&software=openssl&tls=tls12
+      \endverb
+      \verb{url}
+      \verb https://ciphersuite.info/cs/?singlepage=true&software=openssl&tls=tls12
+      \endverb
+      \keyw{tls,cipher}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

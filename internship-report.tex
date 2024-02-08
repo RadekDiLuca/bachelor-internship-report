@@ -108,7 +108,7 @@ One of the main pieces of work done for this Internship was to define the ways i
 	\item \textbf{(Recursive) Expiration}: the \textit{Not Valid Before} and \textit{Not Valid After} fields contain information on the timestamps that delimit the interval in which the certificate should be accepted as valid. The Library should check that today's date is contained within that interval. This is valid also recursively for the Certificates of the issuing Certificate Authorities throughout the chain of trust. Validating this check led us to define \textit{Test Cases 5 and 7}.
 	\item \textbf{Public key}: the \textit{Public Key Info > Public Key} field should match the information provided by the Certificate Authority. This public key will be used to encrypt all the upcoming communication, so using the correct public key is essential. Validating this check led us to define \textit{Test Cases 6 and 11}.
 	\item \textbf{X.509 Certificate Extension}: the \textit{Certificate Extensions} should not contain information that would impair the validity of the Certificate itself. In our example, in \textit{Test Case 8}, the Certificate used by the MQTT Server should not be flagged as "Client Only" in the Certificate Extensions, and the tested Library should check for these fields to be valid.
-	\item \textbf{Downgrade attack}: some attackers might try pretending that the latests versions of TLS are not supported by one of the two communicating parties, or they could also pretend that the set of supported ciphers is limited to only easily breakable ciphers, for example based on 512 bit-long cipher keys. This is why it’s important to support only the versions of TLS that are still considered secure, and it’s important to restrict the set of supported ciphers to only implementation-strong ciphers. This known vulnerability led us to test RouterOS for weak ciphers. This will be described later in \textit{Chapter/Section (TODO)}.
+	\item \textbf{Downgrade attack}: some attackers might try pretending that the latests versions of TLS are not supported by one of the two communicating parties, or they could also pretend that the set of supported ciphers is limited to only easily breakable ciphers, for example based on 512 bit-long cipher keys. This is why it’s important to support only the versions of TLS that are still considered secure, and it’s important to restrict the set of supported ciphers to only implementation-strong ciphers. This known vulnerability led us to test RouterOS for weak ciphers. This will be described later in \autoref{sec:routeros_ciphers}.
 \end{itemize}
 
 \chapter{Test Suite}\label{ch:test_suite}
@@ -869,6 +869,57 @@ Also RouterOS refused the connection to the Mosquitto Broker.
 \subsection{Test Case 11 - Altered Intermediate CA Public Key}
 In this Test Case the attacker alters a valid Intermediate Certificate Authority's Certificate by changing its Public Key. Then they use this Certificate to sign a forged server certificate. Therefore, we expected the Libraries to refuse the connection of our MQTT Tester Client due to an invalid chain of trust. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
 Also RouterOS refused the connection to the Mosquitto Broker.
+
+\section{RouterOS Cipher Check Results}\label{sec:routeros_ciphers}
+While subjecting RouterOS to the Test Suite, we found out that neither version 6 nor version 7 of RouterOS support TLS version 1.3. This led us to do a check on the TLS 1.2. Cipher Suite supported by RouterOS, to find out if any weak Ciphers were supported. In \autoref{tab:routeros_ciphers} are the results of this test, where we can see that both versions support some weak Ciphers, according to \cite{ciphersuiteinfo}, but the support for some of those weak Ciphers has been removed in version 7. \autoref{tab:routeros_ciphers} omits all TLS 1.2. Ciphers that aren't supported by either RouterOS version, to avoid clutter. Also, \autoref{tab:routeros_ciphers} mentions the Ciphers' OpenSSL identifiers in the first column, more verbose info on the Ciphers can be found through the OpenSSL Command Line Interface or in \cite{ciphersuiteinfo}.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{| p{3cm} | p{3cm} | p{3cm} | p{3cm} |}
+\hline
+Cipher Identifier (OpenSSL) & Supported by RouterOS 6 & Supported by RouterOS 7 & Security Level \\
+\hline
+ECDHE-RSA-AES256-GCM-SHA384 & \cmark & \cmark & secure \\
+\hline
+DHE-RSA-AES256-GCM-SHA384 & \cmark & \cmark & weak \\
+\hline
+ECDHE-RSA-AES128-GCM-SHA256 & \cmark & \cmark & secure \\
+\hline
+DHE-RSA-AES128-GCM-SHA256 & \cmark & \cmark & weak \\
+\hline
+ECDHE-RSA-AES256-SHA384 & \cmark & \cmark & weak \\
+\hline
+DHE-RSA-AES256-SHA256 & \cmark & \xmark & weak \\
+\hline
+ECDHE-RSA-AES128-SHA256 & \cmark & \cmark & weak \\
+\hline
+DHE-RSA-AES128-SHA256 & \cmark & \xmark & weak \\
+\hline
+ECDHE-RSA-AES256-SHA & \cmark & \cmark & weak \\
+\hline
+DHE-RSA-AES256-SHA & \cmark & \cmark & weak \\
+\hline
+ECDHE-RSA-AES128-SHA & \cmark & \cmark & weak \\
+\hline
+DHE-RSA-AES128-SHA & \cmark & \cmark & weak \\
+\hline
+AES256-GCM-SHA384 & \cmark & \cmark & weak \\
+\hline
+AES128-GCM-SHA256 & \cmark & \xmark & weak \\
+\hline
+AES256-SHA256 & \cmark & \xmark & weak \\
+\hline
+AES128-SHA256 & \cmark & \cmark & weak \\
+\hline
+AES256-SHA & \cmark & \cmark & weak \\
+\hline
+AES128-SHA & \cmark & \cmark & weak \\
+\hline
+\end{tabular}
+\caption{Router OS Supported Ciphers.}
+\label{tab:routeros_ciphers}
+\end{center}
+\end{table}
 
 \chapter{Conclusion}
 MQTT is a protocol which, inherently to its lightweight nature, has little security measures. Therefore it needs to rely on the Transport Layer Security protocol much more than other Application Level protocols such as SFTP.

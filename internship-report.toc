@@ -52,5 +52,6 @@
 \contentsline {subsection}{\numberline {4.2.9}Test Case 9 - Longer Chain Of Trust Legal Connection}{48}{subsection.4.2.9}%
 \contentsline {subsection}{\numberline {4.2.10}Test Case 10 - Altered Intermediate CA Common Name}{48}{subsection.4.2.10}%
 \contentsline {subsection}{\numberline {4.2.11}Test Case 11 - Altered Intermediate CA Public Key}{48}{subsection.4.2.11}%
-\contentsline {chapter}{\numberline {5}Conclusion}{49}{chapter.5}%
-\contentsline {chapter}{Bibliography}{51}{section*.25}%
+\contentsline {section}{\numberline {4.3}RouterOS Cipher Check Results}{48}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{51}{chapter.5}%
+\contentsline {chapter}{Bibliography}{53}{section*.26}%
