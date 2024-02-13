@@ -125,6 +125,7 @@ To test the MQTT Broker Libraries, a Unit Test Suite was formally defined, with 
 	\item Test Case 9 - Longer Chain Of Trust Legal Connection
 	\item Test Case 10 - Altered Intermediate CA Common Name
 	\item Test Case 11 - Altered Intermediate CA Public Key
+	\item Test Case 12 - Denial Of Service on Chain Of Trust Length
 \end{enumerate}
 Note: The tested libraries are set up as MQTT Broker, or MQTT Server. The Client, which asserts the outcome of the test, always uses the Mosquitto command line tools to connect to the Server.
 
@@ -445,6 +446,35 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 	\includegraphics[width=14cm]{TC11}
 	\caption{Test Case 11 Actors' Interaction.}
 	\label{fig:tc11}
+\end{figure}
+
+\section{Test Case 12 - Denial Of Service on Chain Of Trust Length}
+This Test Case is set up by configuring the MQTT Broker Library with a TLS Certificate signed by a Third Level Intermediate Certificate Authority, which is signed by the real Intermediate Certificate Authority, which in turn is signed by the real Root Certificate Authority. The Tester Client connects to the server checking the Server TLS Certificate against the real Root Certificate Authority’s Certificate. A visual representation of the Test Case's actors' interaction can be found in \autoref{fig:tc12}.  In \autoref{tab:tc12} we can find the formal details of the Test Case 12.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{| p{6cm} | p{6cm} |}
+\hline
+Intruder Access Capabilities & The Intruder owns a Certificate signed by the Intermediate CA, which has a constraint on not being allowed to be used to sign other certificates. \\
+\hline
+Intruder’s Attack description & The Intruder uses the "Third Level" Certificate to sign a MQTT Broker Certificate. \\
+\hline
+State of TLS Certificate & The TLS Certificate we use for this test is exactly the Server’s Certificate. (In this case, the Client connecting to the Server expects to receive a certificate signed by the Intermediate CA, but instead this one is being signed by the "Third Level" Certificate owned by the Intruder) \\
+\hline
+State of Certificate’s Signature & The signature is \textbf{\textit{valid}} \\
+\hline
+Assertion & The Library should \textbf{\textit{reject}} the connection when a client tries connecting to the MQTT Library configured with this certificate. \\
+\hline
+\end{tabular}
+\caption{Test Case 12 Formal Details.}
+\label{tab:tc12}
+\end{center}
+\end{table}
+
+\begin{figure}[htb]
+	\includegraphics[width=14cm]{TC12}
+	\caption{Test Case 12 Actors' Interaction.}
+	\label{fig:tc12}
 \end{figure}
 
 \chapter{Developed Code}
@@ -803,25 +833,25 @@ RouterOS \textbf{7} & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark  \\
 \end{flushleft}
 
 \begin{flushleft}
-\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
+\begin{tabular}{| p{2cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} | p{1.5cm} |}
 \hline
- & \bf Exp. Date & \bf Cert. Exten- sions & \bf Chain of trust & \bf Host- name & \bf Public Key \\
+ & \bf Exp. Date & \bf Cert. Exten- sions & \bf Chain of trust & \bf Host- name & \bf Public Key & \bf Chain Of Trust \\
 \hline
-\bf Library Name & \bf Test Case 7 & \bf Test Case 8 & \bf Test Case 9 & \bf Test Case 10 & \bf Test Case 11 \\
+\bf Library Name & \bf Test Case 7 & \bf Test Case 8 & \bf Test Case 9 & \bf Test Case 10 & \bf Test Case 11 & Test Case 12 \\
 \hline
-Mosquitto & \cmark & \cmark & \cmark & \cmark & \cmark \\
+Mosquitto & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark \\
 \hline
-HiveMQ Community Edition & \cmark & \cmark & \cmark & \cmark & \cmark \\
+HiveMQ Community Edition & \cmark & \cmark & \cmark & \cmark & \cmark  & \cmark \\
 \hline
-Aedes & \cmark & \cmark & \cmark & \cmark & \cmark \\
+Aedes & \cmark & \cmark & \cmark & \cmark & \cmark  & \cmark \\
 \hline
-Moquette & \cmark & \cmark & \cmark & \cmark & \cmark \\
+Moquette & \cmark & \cmark & \cmark & \cmark & \cmark  & \cmark \\
 \hline
-EMQX & \cmark & \cmark & \cmark & \cmark & \cmark \\
+EMQX & \cmark & \cmark & \cmark & \cmark & \cmark  & \cmark \\
 \hline
-RouterOS \textbf{6} & \cmark & \cmark & \cmark & \cmark & \cmark \\
+RouterOS \textbf{6} & \cmark & \cmark & \cmark & \cmark & \cmark  & \cmark \\
 \hline
-RouterOS \textbf{7} & \cmark & \xmark & \cmark & \cmark & \cmark \\
+RouterOS \textbf{7} & \cmark & \xmark & \cmark & \cmark & \cmark  & \cmark \\
 \hline
 \end{tabular}
 \end{flushleft}
@@ -855,7 +885,7 @@ In this Test Case the Library is checking the server certificate using an expire
 Also RouterOS refused the connection to the Mosquitto Broker.
 
 \subsection{Test Case 8 - Certificate Extension}
-In this Test Case the attacker uses a valid server certificate that has a wrong Certificate Extension, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to a wrong usage of the Server Certificate. The MQTT Broker Libraries passed this test, since they all Libraries refused our MQTT Tester Client connection.
+In this Test Case the attacker uses a valid server certificate that has a wrong Certificate Extension, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to a wrong usage of the Server Certificate. The MQTT Broker Libraries passed this test, since they all refused our MQTT Tester Client connection.
 On the other hand, RouterOS version 7 \textbf{accepted} the connection to the Mosquitto Broker, which represents a regression in comparison to RouterOS version 6, which refused the connection to the Mosquitto Broker as expected.
 
 \subsection{Test Case 9 - Longer Chain Of Trust Legal Connection}
@@ -868,6 +898,10 @@ Also RouterOS refused the connection to the Mosquitto Broker.
 
 \subsection{Test Case 11 - Altered Intermediate CA Public Key}
 In this Test Case the attacker alters a valid Intermediate Certificate Authority's Certificate by changing its Public Key. Then they use this Certificate to sign a forged server certificate. Therefore, we expected the Libraries to refuse the connection of our MQTT Tester Client due to an invalid chain of trust. All the Libraries passed this test, since all Libraries refused our MQTT Tester Client connection.
+Also RouterOS refused the connection to the Mosquitto Broker.
+
+\subsection{Test Case 12 - Denial Of Service on Chain Of Trust Length}
+In this Test Case the attacker uses a Certificate - designed to not be used to sign any other certificate - to sign the server's Certificate, so we expected the Libraries to refuse the connection of our MQTT Tester Client due to a wrong usage of the Certificate that acts as the "Third Level" Certificate Authority. The MQTT Broker Libraries passed this test, since they all refused our MQTT Tester Client connection.
 Also RouterOS refused the connection to the Mosquitto Broker.
 
 \section{RouterOS Cipher Check Results}\label{sec:routeros_ciphers}
