@@ -88,6 +88,13 @@ openssl pkcs12 -export \
 -name hivemq \
 -out keystores/alteration4ExpiredCA.p12
 
+openssl pkcs12 -export \
+-in $CERTIFICATES/server-certificate/serverCertificateSignedByThirdLevelIntermediate-withRootCAIntegrated.pem \
+-inkey $CERTIFICATES/server-certificate/serverKey.pem \
+-passout pass:hivemqStorePassword \
+-name hivemq \
+-out keystores/serverCertificateSignedByThirdLevelIntermediate.p12
+
 # For each PKCS12, convert to JKS for HiveMQ
 cd keystores
 
@@ -154,5 +161,11 @@ keytool -importkeystore \
 keytool -importkeystore \
 -srckeystore alteration4ExpiredCA.p12 -srcstoretype PKCS12 \
 -destkeystore alteration4ExpiredCA.jks -deststoretype JKS \
+-srcstorepass hivemqStorePassword \
+-deststorepass hivemqStorePassword
+
+keytool -importkeystore \
+-srckeystore serverCertificateSignedByThirdLevelIntermediate.p12 -srcstoretype PKCS12 \
+-destkeystore serverCertificateSignedByThirdLevelIntermediate.jks -deststoretype JKS \
 -srcstorepass hivemqStorePassword \
 -deststorepass hivemqStorePassword

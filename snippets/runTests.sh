@@ -16,6 +16,7 @@ testConfigurations=(
     "mosquitto-longer-chain-of-trust.conf"
     "mosquitto-altered-common-name-longer-chain-of-trust.conf"
     "mosquitto-altered-public-key-longer-chain-of-trust.conf"
+    "mosquitto-denial-of-service-on-chain-of-trust-length.conf"
 )
 
 testTitles=(
@@ -30,6 +31,7 @@ testTitles=(
     "Test Case 9 - Longer Chain Of Trust Legal Connection"
     "Test Case 10 - Altered Intermediate CA Common Name"
     "Test Case 11 - Altered Intermediate CA Public Key"
+    "Test Case 12 - Chain Of Trust Path Length Certificate Extension"
 )
 
 # Test Case 7 has to be validated against expired ca on client side, not default legal ca.
@@ -41,6 +43,7 @@ caPathOverride=(
     ""
     ""
     "certificates/expired-ca/ca.pem"
+    ""
     ""
     ""
     ""

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  13 FEB 2024 20:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.11.20)  13 FEB 2024 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1367,38 +1367,40 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29])
-[30] [31] [32]
+ [29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30])
+[31] [32] [33]
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1
 .sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (snippets/alterCommonName.py [33]) (snippets/alterExpirationDate.py
-[34])
+) (snippets/alterCommonName.py) [34] (snippets/alterExpirationDate.py)
 Overfull \hbox (2.87344pt too wide) in paragraph at lines 638--639
 []\T1/lmr/m/n/10.95 (-20) Read the cer-tifi-cate to be al-tered (`\T1/lmr/bx/n/
 10.95 (-20) server-certificate/serverCertificate.der\T1/lmr/m/n/10.95 (-20) ')
  []
 
-(snippets/alterPublicKey.py) [35] (snippets/setupKeystores.sh [36]
+[35] (snippets/alterPublicKey.py) [36] (snippets/setupKeystores.sh [37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
+ [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38])
-(snippets/testMQTTBroker.sh [39]) (snippets/runTests.sh [40]) [41]
-(snippets/tester-image-dockerfile) [42] (snippets/moquette-image-dockerfile)
+ [39])
+(snippets/testMQTTBroker.sh [40]) (snippets/runTests.sh [41]) [42]
+(snippets/tester-image-dockerfile) [43] (snippets/moquette-image-dockerfile)
 Overfull \hbox (27.7942pt too wide) in paragraph at lines 724--725
 \T1/lmr/m/n/10.95 (-20) Lastly, the Dock-er-file runs on startup the script `\T
 1/lmr/bx/n/10.95 (-20) /app/src/moquette/bin/moquette.sh\T1/lmr/m/n/10.95 (-20)
  ' 
  []
 
-(snippets/aedes-image-dockerfile) [43] [44] [45] [46
+(snippets/aedes-image-dockerfile [44]) [45] [46]
+Chapter 4.
+[47
 
 ]
-Chapter 4.
-[47]
 Underfull \hbox (badness 10000) in paragraph at lines 814--814
 []|\T1/lmr/bx/n/10.95 (+20) Host-
  []
@@ -1673,13 +1675,13 @@ Package logreq Info: Writing requests to 'internship-report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26829 strings out of 474587
- 463329 string characters out of 5742840
- 2255555 words of memory out of 5000000
- 47612 multiletter control sequences out of 15000+600000
+ 26876 strings out of 474587
+ 464108 string characters out of 5742840
+ 2261555 words of memory out of 5000000
+ 47614 multiletter control sequences out of 15000+600000
  663577 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,13n,131p,1016b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,131p,1016b,2346s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-ec.
 enc}{/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/lm/lm-t
 s1.enc}</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/l
@@ -1699,9 +1701,9 @@ Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/lmtt10.
 pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/lm/l
 mtt9.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/za
 pfding/uzdr.pfb>
-Output written on internship-report.pdf (59 pages, 3669030 bytes).
+Output written on internship-report.pdf (59 pages, 3678638 bytes).
 PDF statistics:
- 1703 PDF objects out of 1728 (max. 8388607)
- 789 named destinations out of 1000 (max. 500000)
+ 1757 PDF objects out of 2073 (max. 8388607)
+ 834 named destinations out of 1000 (max. 500000)
  62999 words of extra memory for PDF output out of 74296 (max. 10000000)
 

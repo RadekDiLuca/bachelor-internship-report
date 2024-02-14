@@ -22,23 +22,23 @@
 \contentsline {section}{\numberline {2.12}Test Case 12 - Denial Of Service on Chain Of Trust Length}{16}{section.2.12}%
 \contentsline {chapter}{\numberline {3}Developed Code}{25}{chapter.3}%
 \contentsline {section}{\numberline {3.1}TLS Certificates Generation Script}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}TLS Certificate Common Name Alteration Script}{33}{section.3.2}%
-\contentsline {section}{\numberline {3.3}TLS Certificate Expiration Date Alteration Script}{34}{section.3.3}%
-\contentsline {section}{\numberline {3.4}TLS Certificate Public Key Alteration Script}{35}{section.3.4}%
-\contentsline {section}{\numberline {3.5}TLS Certificate Keystores Generation Script}{36}{section.3.5}%
-\contentsline {section}{\numberline {3.6}MQTT Client Tester Script}{39}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Library Tester Script}{40}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Docker Test Environment}{42}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}MQTT Client Tester Image}{42}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Moquette MQTT Server Image}{43}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Aedes MQTT Server Image}{43}{subsection.3.8.3}%
-\contentsline {section}{\numberline {3.9}Libraries Differences}{44}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Mosquitto}{44}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}HiveMQ}{44}{subsection.3.9.2}%
-\contentsline {subsection}{\numberline {3.9.3}Aedes}{45}{subsection.3.9.3}%
-\contentsline {subsection}{\numberline {3.9.4}Moquette}{45}{subsection.3.9.4}%
-\contentsline {subsection}{\numberline {3.9.5}EMQX}{45}{subsection.3.9.5}%
-\contentsline {subsection}{\numberline {3.9.6}RouterOS}{45}{subsection.3.9.6}%
+\contentsline {section}{\numberline {3.2}TLS Certificate Common Name Alteration Script}{34}{section.3.2}%
+\contentsline {section}{\numberline {3.3}TLS Certificate Expiration Date Alteration Script}{35}{section.3.3}%
+\contentsline {section}{\numberline {3.4}TLS Certificate Public Key Alteration Script}{36}{section.3.4}%
+\contentsline {section}{\numberline {3.5}TLS Certificate Keystores Generation Script}{37}{section.3.5}%
+\contentsline {section}{\numberline {3.6}MQTT Client Tester Script}{40}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Library Tester Script}{41}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Docker Test Environment}{43}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}MQTT Client Tester Image}{43}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Moquette MQTT Server Image}{44}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Aedes MQTT Server Image}{44}{subsection.3.8.3}%
+\contentsline {section}{\numberline {3.9}Libraries Differences}{45}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Mosquitto}{45}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}HiveMQ}{45}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}Aedes}{46}{subsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.9.4}Moquette}{46}{subsection.3.9.4}%
+\contentsline {subsection}{\numberline {3.9.5}EMQX}{46}{subsection.3.9.5}%
+\contentsline {subsection}{\numberline {3.9.6}RouterOS}{46}{subsection.3.9.6}%
 \contentsline {chapter}{\numberline {4}Test Results}{47}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Tested MQTT Libraries}{47}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Result Table}{48}{section.4.2}%

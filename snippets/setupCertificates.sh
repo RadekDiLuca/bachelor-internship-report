@@ -53,6 +53,13 @@ touch ca.db.index
 echo "1234" > ca.db.serial
 cd ../
 
+mkdir third-level-ca
+cd third-level-ca
+mkdir ca.db.certs
+touch ca.db.index
+echo "1234" > ca.db.serial
+cd ../
+
 mkdir server-certificate
 mkdir attacker-certificate
 mkdir alt1-common-name
@@ -94,7 +101,7 @@ openssl ca -config ca.conf -out server-certificate/serverCertificateAsClient.pem
 -extfile clientCertificateExtensions.conf \
 -batch
 
-# Intermediate Certificate Authority's Certificate Signing Request and Root CA Signing of it,
+# Intermediate Certificate Authority (Second Level)'s Certificate Signing Request and Root CA Signing of it,
 # then Signing the Certificate Signing Request of the Server with the Intermediate Certificate
 openssl genrsa -out second-level-ca/ca.key 2048
 openssl req -new -nodes -key second-level-ca/ca.key \
@@ -143,7 +150,7 @@ openssl ca -config fake-ca.conf -out fake-chain-of-trust/attackerCertificate.pem
 -in fake-chain-of-trust/attackerCertificateRequest.pem \
 -batch
 
-# Second Intermediate CA
+# Second Intermediate CA (Still Second Level)
 openssl genrsa -out second-level-ca-2/ca.key 2048
 openssl req -new -nodes -key second-level-ca-2/ca.key \
 -sha256 \
@@ -242,6 +249,28 @@ openssl req -new -nodes -key attacker-certificate/attackerKey.pem \
 openssl ca -config expired-ca.conf -out alt4-expired-ca/attackerCertificate.pem \
 -in alt4-expired-ca/attackerCertificateRequest.pem \
 -batch
+
+# Intermediate CA (Third Level)
+openssl genrsa -out third-level-ca/ca.key 2048
+openssl req -new -nodes -key third-level-ca/ca.key \
+-sha256 \
+-out third-level-ca/intermediateCACertificateRequest.pem \
+-subj "/C=it/ST=State/L=City/CN=Third Level Intermediate Certificate Authority" \
+-batch
+
+openssl ca -config second-level-ca.conf -out third-level-ca/ca.pem \
+-in third-level-ca/intermediateCACertificateRequest.pem \
+-extfile intermediateCAExtensions.conf \
+-batch
+
+openssl ca -config third-level-ca.conf -out server-certificate/serverCertificateSignedByThirdLevelIntermediate.pem \
+-in server-certificate/serverCertificateRequest.pem \
+-batch
+
+touch server-certificate/serverCertificateSignedByThirdLevelIntermediate-withRootCAIntegrated.pem
+touch third-level-ca/ca-chain-of-trust.pem
+cat third-level-ca/ca.pem second-level-ca/ca.pem ca/ca.pem > third-level-ca/ca-chain-of-trust.pem
+cat server-certificate/serverCertificateSignedByThirdLevelIntermediate.pem third-level-ca/ca-chain-of-trust.pem > server-certificate/serverCertificateSignedByThirdLevelIntermediate-withRootCAIntegrated.pem
 
 # For each Attacker Certificate, convert from .der to .pem for MQTT Library
 openssl x509 -inform DER -in attacker-certificate/attackerCertificate.der -out attacker-certificate/attackerCertificate.pem
