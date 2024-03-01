@@ -3,7 +3,7 @@
 % !TeX spellcheck = en_EN
 \documentclass[binding=0.6cm,noexaminfo]{sapthesis}
 \usepackage{microtype} \usepackage[english]{babel}
-\usepackage[utf8]{inputenc} \usepackage{hyperref}
+\usepackage[utf8]{inputenc} \usepackage[hidelinks]{hyperref}
 \usepackage{array} \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{graphicx}
@@ -61,7 +61,7 @@
 \mainmatter
 \chapter{Introduction}
 \section{Problem Definition}
-The aim of this internship work was to assess the security of the TLS Protocol implementation of some of the main MQTT Broker Libraries that can be found in the IT community. Some faults in the Application layer Protocol (MQTT) of some of these libraries were found by my colleague Edoardo Di Paolo during his Internship work \cite{mqttpaper}, so the hypothesis was that these libraries might very well have some faults in the Transport layer Protocol (TLS) too.
+The aim of this internship was to assess the security of the TLS Protocol implementation in some of the main MQTT Broker Libraries that can be found in the IT community. Some faults in the Application layer Protocol (MQTT) of some of these libraries were found by my colleague Edoardo Di Paolo during his Internship \cite{mqttpaper}, so the hypothesis was that these libraries might very well have some faults in the Transport layer Protocol (TLS) too.
 Therefore, through the generation of some forged TLS Certificates and the definition of a Suite of Automated Unit Tests, the goal was to expose vulnerabilities in these libraries, or validate their implementation as secure.
 
 \section{Related Works}
@@ -74,7 +74,7 @@ Finally, the article published by University of Padua and the Technical Universi
 Although all these Related Works helped us shape the criteria behind our work, none of them tackle specifically the possible faults in the TLS implementation of an MQTT Broker, hence our motivation to research deeper on this topic.
 
 \section{Key Concepts}
-For the sake of this report, we will be using some core concepts that are critical to understanding the Internship work.
+For the sake of this report, we will be using some core concepts that are critical to understanding the Internship.
 
 \subsection{MQTT}
 MQTT, also known as Message Queuing Telemetry Transport, is a lightweight protocol used on the Application Layer of the TCP/IP stack. MQTT is an alternative to the widely spread HTTP, and it’s mainly used for connectivity to and from Internet of Things devices, due to the lightweight nature of the protocol and due to the low memory availability of the above mentioned IoT devices.
@@ -111,7 +111,7 @@ One of the main pieces of work done for this Internship was to define the ways i
 	\item \textbf{Downgrade attack}: some attackers might try pretending that the latests versions of TLS are not supported by one of the two communicating parties, or they could also pretend that the set of supported ciphers is limited to only easily breakable ciphers, for example based on 512 bit-long cipher keys. This is why it’s important to support only the versions of TLS that are still considered secure, and it’s important to restrict the set of supported ciphers to only implementation-strong ciphers. This known vulnerability led us to test RouterOS for weak ciphers. This will be described later in \autoref{sec:routeros_ciphers}.
 \end{itemize}
 
-\chapter{Test Suite}\label{ch:test_suite}
+\chapter{Test Suite Design}\label{ch:test_suite}
 To test the MQTT Broker Libraries, a Unit Test Suite was formally defined, with a series of descriptions and assertions made. The Unit Tests are defined following the Triangulation technique, which means that the Test Suite should assert both the valid scenarios in which the connection should be established and the illegal scenarios in which the connection should be rejected. Hence the Tests are defined as follows:
 \begin{enumerate}
 	\item Test Case 1 - Legal Connection
@@ -477,7 +477,7 @@ Assertion & The Library should \textbf{\textit{reject}} the connection when a cl
 	\label{fig:tc12}
 \end{figure}
 
-\chapter{Developed Code}
+\chapter{Implementation}
 The code developed for this Internship is used to setup the laboratory environment and to execute the Unit Tests for each library. For each file there will be the code snippet followed by an explanation of the code.
 
 \section{TLS Certificates Generation Script}
@@ -776,7 +776,7 @@ EMQX's default configuration is already set to support TLS, so the way we config
 \subsection{RouterOS}
 The RouterOS setup was done through a Virtual Machine environment. To upload the needed TLS Certificates to the Virtual Machine, we used the `Winbox' helper tool. Then, from the RouterOS console we would define a new broker via the `iot mqtt broker add' command. This command retrieves the TLS Certificate Components via path, but for some persistency bug it would not retrieve new TLS Certificates when the same path was rewritten via `winbox'. Therefore, in each Test Case we had to remove and re-add the broker before publishing a message.
 
-\chapter{Test Results}
+\chapter{Results Evaluation}
 \section{Tested MQTT Libraries}
 These are the Libraries that were subjected to Unit Testing and their respective version:
 
@@ -805,7 +805,6 @@ RouterOS \textbf{7} & CHR (7.13.3 Stable) \\
 All the Libraries except RouterOS have been set up as MQTT Broker and have been interacted with using the Mosquitto command line tools as MQTT Tester Client. On the other hand, RouterOS is a Library that enables MQTT connection in the form of Client-only up until version \textbf{v7.4beta4}. Therefore, RouterOS has been submitted to the same Test Suite as the other Libraries, except the Client connection was made by the tested Library itself, and the MQTT Tester Broker we chose was Mosquitto.
 
 \newpage
-\section{Result Table}
 The Test Results for the tested Libraries can be found in the following tables. A tick `\cmark' represents a positive test outcome, a cross `\xmark' represents a failed test outcome.
 
 \begin{flushleft}
